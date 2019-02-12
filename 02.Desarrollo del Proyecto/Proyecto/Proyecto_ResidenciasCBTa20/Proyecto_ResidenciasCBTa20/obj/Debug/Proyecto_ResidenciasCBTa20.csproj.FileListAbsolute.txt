@@ -1,0 +1,11 @@
+C:\Users\Luis\source\repos\Proyecto_ResidenciasCBTa20\Proyecto_ResidenciasCBTa20\bin\Debug\Proyecto_ResidenciasCBTa20.exe.config
+C:\Users\Luis\source\repos\Proyecto_ResidenciasCBTa20\Proyecto_ResidenciasCBTa20\bin\Debug\Proyecto_ResidenciasCBTa20.exe
+C:\Users\Luis\source\repos\Proyecto_ResidenciasCBTa20\Proyecto_ResidenciasCBTa20\bin\Debug\Proyecto_ResidenciasCBTa20.pdb
+C:\Users\Luis\source\repos\Proyecto_ResidenciasCBTa20\Proyecto_ResidenciasCBTa20\obj\Debug\Proyecto_ResidenciasCBTa20.csprojAssemblyReference.cache
+C:\Users\Luis\source\repos\Proyecto_ResidenciasCBTa20\Proyecto_ResidenciasCBTa20\obj\Debug\Proyecto_ResidenciasCBTa20.Agregar_Equipo.resources
+C:\Users\Luis\source\repos\Proyecto_ResidenciasCBTa20\Proyecto_ResidenciasCBTa20\obj\Debug\Proyecto_ResidenciasCBTa20.Login.resources
+C:\Users\Luis\source\repos\Proyecto_ResidenciasCBTa20\Proyecto_ResidenciasCBTa20\obj\Debug\Proyecto_ResidenciasCBTa20.Properties.Resources.resources
+C:\Users\Luis\source\repos\Proyecto_ResidenciasCBTa20\Proyecto_ResidenciasCBTa20\obj\Debug\Proyecto_ResidenciasCBTa20.csproj.GenerateResource.cache
+C:\Users\Luis\source\repos\Proyecto_ResidenciasCBTa20\Proyecto_ResidenciasCBTa20\obj\Debug\Proyecto_ResidenciasCBTa20.csproj.CoreCompileInputs.cache
+C:\Users\Luis\source\repos\Proyecto_ResidenciasCBTa20\Proyecto_ResidenciasCBTa20\obj\Debug\Proyecto_ResidenciasCBTa20.exe
+C:\Users\Luis\source\repos\Proyecto_ResidenciasCBTa20\Proyecto_ResidenciasCBTa20\obj\Debug\Proyecto_ResidenciasCBTa20.pdb
