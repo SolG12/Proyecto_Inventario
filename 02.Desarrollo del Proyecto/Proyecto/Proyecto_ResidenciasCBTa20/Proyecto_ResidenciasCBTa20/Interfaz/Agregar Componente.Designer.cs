@@ -37,9 +37,9 @@
             this.TxtCantidad = new System.Windows.Forms.TextBox();
             this.TxtCosto = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.TxtEstado = new System.Windows.Forms.TextBox();
             this.BtnAgregar = new System.Windows.Forms.Button();
             this.BtnSalir = new System.Windows.Forms.Button();
+            this.CmbEstado = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // LblNombre
@@ -115,13 +115,6 @@
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 8;
             // 
-            // TxtEstado
-            // 
-            this.TxtEstado.Location = new System.Drawing.Point(91, 189);
-            this.TxtEstado.Name = "TxtEstado";
-            this.TxtEstado.Size = new System.Drawing.Size(100, 20);
-            this.TxtEstado.TabIndex = 9;
-            // 
             // BtnAgregar
             // 
             this.BtnAgregar.Location = new System.Drawing.Point(223, 279);
@@ -140,14 +133,22 @@
             this.BtnSalir.Text = "Salir";
             this.BtnSalir.UseVisualStyleBackColor = true;
             // 
+            // CmbEstado
+            // 
+            this.CmbEstado.FormattingEnabled = true;
+            this.CmbEstado.Location = new System.Drawing.Point(91, 188);
+            this.CmbEstado.Name = "CmbEstado";
+            this.CmbEstado.Size = new System.Drawing.Size(121, 21);
+            this.CmbEstado.TabIndex = 12;
+            // 
             // Agregar_Componente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(446, 344);
+            this.Controls.Add(this.CmbEstado);
             this.Controls.Add(this.BtnSalir);
             this.Controls.Add(this.BtnAgregar);
-            this.Controls.Add(this.TxtEstado);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.TxtCosto);
             this.Controls.Add(this.TxtCantidad);
@@ -175,8 +176,8 @@
         private System.Windows.Forms.TextBox TxtCantidad;
         private System.Windows.Forms.TextBox TxtCosto;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox TxtEstado;
         private System.Windows.Forms.Button BtnAgregar;
         private System.Windows.Forms.Button BtnSalir;
+        private System.Windows.Forms.ComboBox CmbEstado;
     }
 }

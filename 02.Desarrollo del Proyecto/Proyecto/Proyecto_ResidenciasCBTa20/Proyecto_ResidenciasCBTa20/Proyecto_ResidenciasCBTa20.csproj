@@ -46,6 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Datos\Componente.cs" />
+    <Compile Include="Datos\Equipo.cs" />
     <Compile Include="Interfaz\Agregar Componente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -57,6 +59,24 @@
     </Compile>
     <Compile Include="Interfaz\Agregar Equipo.Designer.cs">
       <DependentUpon>Agregar Equipo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Componentes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Componentes.Designer.cs">
+      <DependentUpon>Componentes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Consultar Equipo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Consultar Equipo.Designer.cs">
+      <DependentUpon>Consultar Equipo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Inventario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Inventario.Designer.cs">
+      <DependentUpon>Inventario.cs</DependentUpon>
     </Compile>
     <Compile Include="Interfaz\Login.cs">
       <SubType>Form</SubType>
@@ -70,6 +90,8 @@
     <Compile Include="Interfaz\Menu Principal.Designer.cs">
       <DependentUpon>Menu Principal.cs</DependentUpon>
     </Compile>
+    <Compile Include="Logica\ControlComponente.cs" />
+    <Compile Include="Logica\ControlEquipo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Interfaz\Agregar Componente.resx">
@@ -77,6 +99,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Interfaz\Agregar Equipo.resx">
       <DependentUpon>Agregar Equipo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Componentes.resx">
+      <DependentUpon>Componentes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Consultar Equipo.resx">
+      <DependentUpon>Consultar Equipo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Inventario.resx">
+      <DependentUpon>Inventario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Interfaz\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -110,5 +141,6 @@
   <ItemGroup>
     <None Include="Resources\CBTa20.jpg" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
