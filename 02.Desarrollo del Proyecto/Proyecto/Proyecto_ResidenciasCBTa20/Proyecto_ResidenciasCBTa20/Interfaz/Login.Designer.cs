@@ -75,6 +75,7 @@
             this.BtnIniciar.TabIndex = 4;
             this.BtnIniciar.Text = "Iniciar";
             this.BtnIniciar.UseVisualStyleBackColor = true;
+            this.BtnIniciar.Click += new System.EventHandler(this.BtnIniciar_Click);
             // 
             // Login
             // 

@@ -43,6 +43,7 @@
             this.BtnAgregarEq.TabIndex = 0;
             this.BtnAgregarEq.Text = "Agregar Equipo";
             this.BtnAgregarEq.UseVisualStyleBackColor = true;
+            this.BtnAgregarEq.Click += new System.EventHandler(this.BtnAgregarEq_Click);
             // 
             // BtnConsularEquipo
             // 
@@ -52,6 +53,7 @@
             this.BtnConsularEquipo.TabIndex = 1;
             this.BtnConsularEquipo.Text = "Consultar Equipo";
             this.BtnConsularEquipo.UseVisualStyleBackColor = true;
+            this.BtnConsularEquipo.Click += new System.EventHandler(this.BtnConsularEquipo_Click);
             // 
             // BtnAgregarComp
             // 
@@ -61,6 +63,7 @@
             this.BtnAgregarComp.TabIndex = 2;
             this.BtnAgregarComp.Text = "Agregar Componente";
             this.BtnAgregarComp.UseVisualStyleBackColor = true;
+            this.BtnAgregarComp.Click += new System.EventHandler(this.BtnAgregarComp_Click);
             // 
             // BtnConsultarComp
             // 
@@ -70,6 +73,7 @@
             this.BtnConsultarComp.TabIndex = 3;
             this.BtnConsultarComp.Text = "Consultar  Componente";
             this.BtnConsultarComp.UseVisualStyleBackColor = true;
+            this.BtnConsultarComp.Click += new System.EventHandler(this.BtnConsultarComp_Click);
             // 
             // BtnInventario
             // 
@@ -79,6 +83,7 @@
             this.BtnInventario.TabIndex = 4;
             this.BtnInventario.Text = "Inventario";
             this.BtnInventario.UseVisualStyleBackColor = true;
+            this.BtnInventario.Click += new System.EventHandler(this.BtnInventario_Click);
             // 
             // Menu_Principal
             // 

@@ -167,6 +167,7 @@
             this.BtnCancelar.TabIndex = 8;
             this.BtnCancelar.Text = "Cancelar";
             this.BtnCancelar.UseVisualStyleBackColor = true;
+            this.BtnCancelar.Click += new System.EventHandler(this.BtnCancelar_Click);
             // 
             // BtnRepMantenimiento
             // 
@@ -176,6 +177,7 @@
             this.BtnRepMantenimiento.TabIndex = 9;
             this.BtnRepMantenimiento.Text = "Generar Reporte de Mantenimiento";
             this.BtnRepMantenimiento.UseVisualStyleBackColor = true;
+            this.BtnRepMantenimiento.Click += new System.EventHandler(this.BtnRepMantenimiento_Click);
             // 
             // BtnInventario
             // 
@@ -185,6 +187,7 @@
             this.BtnInventario.TabIndex = 10;
             this.BtnInventario.Text = "Consultar Inventario";
             this.BtnInventario.UseVisualStyleBackColor = true;
+            this.BtnInventario.Click += new System.EventHandler(this.BtnInventario_Click);
             // 
             // Consultar_Equipo
             // 

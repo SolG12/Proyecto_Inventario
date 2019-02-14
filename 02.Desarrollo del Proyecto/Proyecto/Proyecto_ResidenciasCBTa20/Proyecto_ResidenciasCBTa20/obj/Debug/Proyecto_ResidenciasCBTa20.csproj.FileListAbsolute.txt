@@ -9,3 +9,20 @@ C:\Users\Luis\source\repos\Proyecto_ResidenciasCBTa20\Proyecto_ResidenciasCBTa20
 C:\Users\Luis\source\repos\Proyecto_ResidenciasCBTa20\Proyecto_ResidenciasCBTa20\obj\Debug\Proyecto_ResidenciasCBTa20.csproj.CoreCompileInputs.cache
 C:\Users\Luis\source\repos\Proyecto_ResidenciasCBTa20\Proyecto_ResidenciasCBTa20\obj\Debug\Proyecto_ResidenciasCBTa20.exe
 C:\Users\Luis\source\repos\Proyecto_ResidenciasCBTa20\Proyecto_ResidenciasCBTa20\obj\Debug\Proyecto_ResidenciasCBTa20.pdb
+C:\Users\Luis\Documents\GitHub\Proyecto_Inventario\02.Desarrollo del Proyecto\Proyecto\Proyecto_ResidenciasCBTa20\Proyecto_ResidenciasCBTa20\bin\Debug\Proyecto_ResidenciasCBTa20.exe.config
+C:\Users\Luis\Documents\GitHub\Proyecto_Inventario\02.Desarrollo del Proyecto\Proyecto\Proyecto_ResidenciasCBTa20\Proyecto_ResidenciasCBTa20\bin\Debug\Proyecto_ResidenciasCBTa20.exe
+C:\Users\Luis\Documents\GitHub\Proyecto_Inventario\02.Desarrollo del Proyecto\Proyecto\Proyecto_ResidenciasCBTa20\Proyecto_ResidenciasCBTa20\bin\Debug\Proyecto_ResidenciasCBTa20.pdb
+C:\Users\Luis\Documents\GitHub\Proyecto_Inventario\02.Desarrollo del Proyecto\Proyecto\Proyecto_ResidenciasCBTa20\Proyecto_ResidenciasCBTa20\obj\Debug\Proyecto_ResidenciasCBTa20.csprojAssemblyReference.cache
+C:\Users\Luis\Documents\GitHub\Proyecto_Inventario\02.Desarrollo del Proyecto\Proyecto\Proyecto_ResidenciasCBTa20\Proyecto_ResidenciasCBTa20\obj\Debug\Proyecto_ResidenciasCBTa20.Interfaz.Agregar_Componente.resources
+C:\Users\Luis\Documents\GitHub\Proyecto_Inventario\02.Desarrollo del Proyecto\Proyecto\Proyecto_ResidenciasCBTa20\Proyecto_ResidenciasCBTa20\obj\Debug\Proyecto_ResidenciasCBTa20.Agregar_Equipo.resources
+C:\Users\Luis\Documents\GitHub\Proyecto_Inventario\02.Desarrollo del Proyecto\Proyecto\Proyecto_ResidenciasCBTa20\Proyecto_ResidenciasCBTa20\obj\Debug\Proyecto_ResidenciasCBTa20.Interfaz.Componentes.resources
+C:\Users\Luis\Documents\GitHub\Proyecto_Inventario\02.Desarrollo del Proyecto\Proyecto\Proyecto_ResidenciasCBTa20\Proyecto_ResidenciasCBTa20\obj\Debug\Proyecto_ResidenciasCBTa20.Interfaz.Consultar_Equipo.resources
+C:\Users\Luis\Documents\GitHub\Proyecto_Inventario\02.Desarrollo del Proyecto\Proyecto\Proyecto_ResidenciasCBTa20\Proyecto_ResidenciasCBTa20\obj\Debug\Proyecto_ResidenciasCBTa20.Interfaz.Inventario.resources
+C:\Users\Luis\Documents\GitHub\Proyecto_Inventario\02.Desarrollo del Proyecto\Proyecto\Proyecto_ResidenciasCBTa20\Proyecto_ResidenciasCBTa20\obj\Debug\Proyecto_ResidenciasCBTa20.Login.resources
+C:\Users\Luis\Documents\GitHub\Proyecto_Inventario\02.Desarrollo del Proyecto\Proyecto\Proyecto_ResidenciasCBTa20\Proyecto_ResidenciasCBTa20\obj\Debug\Proyecto_ResidenciasCBTa20.Interfaz.Menu_Principal.resources
+C:\Users\Luis\Documents\GitHub\Proyecto_Inventario\02.Desarrollo del Proyecto\Proyecto\Proyecto_ResidenciasCBTa20\Proyecto_ResidenciasCBTa20\obj\Debug\Proyecto_ResidenciasCBTa20.Properties.Resources.resources
+C:\Users\Luis\Documents\GitHub\Proyecto_Inventario\02.Desarrollo del Proyecto\Proyecto\Proyecto_ResidenciasCBTa20\Proyecto_ResidenciasCBTa20\obj\Debug\Proyecto_ResidenciasCBTa20.csproj.GenerateResource.cache
+C:\Users\Luis\Documents\GitHub\Proyecto_Inventario\02.Desarrollo del Proyecto\Proyecto\Proyecto_ResidenciasCBTa20\Proyecto_ResidenciasCBTa20\obj\Debug\Proyecto_ResidenciasCBTa20.csproj.CoreCompileInputs.cache
+C:\Users\Luis\Documents\GitHub\Proyecto_Inventario\02.Desarrollo del Proyecto\Proyecto\Proyecto_ResidenciasCBTa20\Proyecto_ResidenciasCBTa20\obj\Debug\Proyecto_ResidenciasCBTa20.csproj.CopyComplete
+C:\Users\Luis\Documents\GitHub\Proyecto_Inventario\02.Desarrollo del Proyecto\Proyecto\Proyecto_ResidenciasCBTa20\Proyecto_ResidenciasCBTa20\obj\Debug\Proyecto_ResidenciasCBTa20.exe
+C:\Users\Luis\Documents\GitHub\Proyecto_Inventario\02.Desarrollo del Proyecto\Proyecto\Proyecto_ResidenciasCBTa20\Proyecto_ResidenciasCBTa20\obj\Debug\Proyecto_ResidenciasCBTa20.pdb

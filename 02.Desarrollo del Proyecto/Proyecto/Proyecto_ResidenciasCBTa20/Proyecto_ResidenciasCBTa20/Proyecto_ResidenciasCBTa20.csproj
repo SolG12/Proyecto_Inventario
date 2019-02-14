@@ -33,6 +33,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="itextsharp, Version=5.0.5.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\itextsharp.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -46,6 +50,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BD\Conexión.cs" />
     <Compile Include="Datos\Componente.cs" />
     <Compile Include="Datos\Equipo.cs" />
     <Compile Include="Interfaz\Agregar Componente.cs">
@@ -92,7 +97,7 @@
     </Compile>
     <Compile Include="Logica\ControlComponente.cs" />
     <Compile Include="Logica\ControlEquipo.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="Logica\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Interfaz\Agregar Componente.resx">
       <DependentUpon>Agregar Componente.cs</DependentUpon>

@@ -36,7 +36,7 @@
             this.TxtNombre = new System.Windows.Forms.TextBox();
             this.TxtCantidad = new System.Windows.Forms.TextBox();
             this.TxtCosto = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.TxtFecha_Ingreso = new System.Windows.Forms.TextBox();
             this.BtnAgregar = new System.Windows.Forms.Button();
             this.BtnSalir = new System.Windows.Forms.Button();
             this.CmbEstado = new System.Windows.Forms.ComboBox();
@@ -108,12 +108,12 @@
             this.TxtCosto.Size = new System.Drawing.Size(100, 20);
             this.TxtCosto.TabIndex = 7;
             // 
-            // textBox1
+            // TxtFecha_Ingreso
             // 
-            this.textBox1.Location = new System.Drawing.Point(132, 151);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 8;
+            this.TxtFecha_Ingreso.Location = new System.Drawing.Point(132, 151);
+            this.TxtFecha_Ingreso.Name = "TxtFecha_Ingreso";
+            this.TxtFecha_Ingreso.Size = new System.Drawing.Size(100, 20);
+            this.TxtFecha_Ingreso.TabIndex = 8;
             // 
             // BtnAgregar
             // 
@@ -123,6 +123,7 @@
             this.BtnAgregar.TabIndex = 10;
             this.BtnAgregar.Text = "Agregar";
             this.BtnAgregar.UseVisualStyleBackColor = true;
+            this.BtnAgregar.Click += new System.EventHandler(this.BtnAgregar_Click);
             // 
             // BtnSalir
             // 
@@ -149,7 +150,7 @@
             this.Controls.Add(this.CmbEstado);
             this.Controls.Add(this.BtnSalir);
             this.Controls.Add(this.BtnAgregar);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.TxtFecha_Ingreso);
             this.Controls.Add(this.TxtCosto);
             this.Controls.Add(this.TxtCantidad);
             this.Controls.Add(this.TxtNombre);
@@ -175,7 +176,7 @@
         private System.Windows.Forms.TextBox TxtNombre;
         private System.Windows.Forms.TextBox TxtCantidad;
         private System.Windows.Forms.TextBox TxtCosto;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox TxtFecha_Ingreso;
         private System.Windows.Forms.Button BtnAgregar;
         private System.Windows.Forms.Button BtnSalir;
         private System.Windows.Forms.ComboBox CmbEstado;
