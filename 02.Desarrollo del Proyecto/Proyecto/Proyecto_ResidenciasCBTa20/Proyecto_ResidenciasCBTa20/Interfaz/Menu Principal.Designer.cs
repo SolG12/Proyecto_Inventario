@@ -37,9 +37,10 @@
             // 
             // BtnAgregarEq
             // 
-            this.BtnAgregarEq.Location = new System.Drawing.Point(102, 53);
+            this.BtnAgregarEq.Location = new System.Drawing.Point(45, 60);
+            this.BtnAgregarEq.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.BtnAgregarEq.Name = "BtnAgregarEq";
-            this.BtnAgregarEq.Size = new System.Drawing.Size(113, 22);
+            this.BtnAgregarEq.Size = new System.Drawing.Size(151, 34);
             this.BtnAgregarEq.TabIndex = 0;
             this.BtnAgregarEq.Text = "Agregar Equipo";
             this.BtnAgregarEq.UseVisualStyleBackColor = true;
@@ -47,9 +48,10 @@
             // 
             // BtnConsularEquipo
             // 
-            this.BtnConsularEquipo.Location = new System.Drawing.Point(102, 99);
+            this.BtnConsularEquipo.Location = new System.Drawing.Point(45, 121);
+            this.BtnConsularEquipo.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.BtnConsularEquipo.Name = "BtnConsularEquipo";
-            this.BtnConsularEquipo.Size = new System.Drawing.Size(113, 28);
+            this.BtnConsularEquipo.Size = new System.Drawing.Size(151, 43);
             this.BtnConsularEquipo.TabIndex = 1;
             this.BtnConsularEquipo.Text = "Consultar Equipo";
             this.BtnConsularEquipo.UseVisualStyleBackColor = true;
@@ -57,9 +59,10 @@
             // 
             // BtnAgregarComp
             // 
-            this.BtnAgregarComp.Location = new System.Drawing.Point(102, 149);
+            this.BtnAgregarComp.Location = new System.Drawing.Point(261, 60);
+            this.BtnAgregarComp.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.BtnAgregarComp.Name = "BtnAgregarComp";
-            this.BtnAgregarComp.Size = new System.Drawing.Size(113, 36);
+            this.BtnAgregarComp.Size = new System.Drawing.Size(174, 34);
             this.BtnAgregarComp.TabIndex = 2;
             this.BtnAgregarComp.Text = "Agregar Componente";
             this.BtnAgregarComp.UseVisualStyleBackColor = true;
@@ -67,9 +70,10 @@
             // 
             // BtnConsultarComp
             // 
-            this.BtnConsultarComp.Location = new System.Drawing.Point(102, 201);
+            this.BtnConsultarComp.Location = new System.Drawing.Point(261, 121);
+            this.BtnConsultarComp.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.BtnConsultarComp.Name = "BtnConsultarComp";
-            this.BtnConsultarComp.Size = new System.Drawing.Size(113, 36);
+            this.BtnConsultarComp.Size = new System.Drawing.Size(174, 43);
             this.BtnConsultarComp.TabIndex = 3;
             this.BtnConsultarComp.Text = "Consultar  Componente";
             this.BtnConsultarComp.UseVisualStyleBackColor = true;
@@ -77,9 +81,10 @@
             // 
             // BtnInventario
             // 
-            this.BtnInventario.Location = new System.Drawing.Point(102, 255);
+            this.BtnInventario.Location = new System.Drawing.Point(154, 189);
+            this.BtnInventario.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.BtnInventario.Name = "BtnInventario";
-            this.BtnInventario.Size = new System.Drawing.Size(113, 26);
+            this.BtnInventario.Size = new System.Drawing.Size(151, 40);
             this.BtnInventario.TabIndex = 4;
             this.BtnInventario.Text = "Inventario";
             this.BtnInventario.UseVisualStyleBackColor = true;
@@ -87,14 +92,17 @@
             // 
             // Menu_Principal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(326, 348);
+            this.BackColor = System.Drawing.Color.Green;
+            this.ClientSize = new System.Drawing.Size(685, 249);
             this.Controls.Add(this.BtnInventario);
             this.Controls.Add(this.BtnConsultarComp);
             this.Controls.Add(this.BtnAgregarComp);
             this.Controls.Add(this.BtnConsularEquipo);
             this.Controls.Add(this.BtnAgregarEq);
+            this.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.Name = "Menu_Principal";
             this.Text = "Menu Principal";
             this.ResumeLayout(false);

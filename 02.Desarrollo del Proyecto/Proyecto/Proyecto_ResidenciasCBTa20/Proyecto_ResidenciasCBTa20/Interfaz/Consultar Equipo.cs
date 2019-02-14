@@ -63,6 +63,11 @@ namespace Proyecto_ResidenciasCBTa20.Interfaz
         {
 
         }
+
+        private void Consultar_Equipo_Load(object sender, EventArgs e)
+        {
+
+        }
     }
     }
 

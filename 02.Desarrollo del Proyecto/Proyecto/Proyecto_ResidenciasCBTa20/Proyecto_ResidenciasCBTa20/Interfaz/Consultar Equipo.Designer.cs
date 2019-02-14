@@ -52,40 +52,44 @@
             // LblCodigo
             // 
             this.LblCodigo.AutoSize = true;
-            this.LblCodigo.Location = new System.Drawing.Point(23, 32);
+            this.LblCodigo.Location = new System.Drawing.Point(12, 23);
             this.LblCodigo.Name = "LblCodigo";
-            this.LblCodigo.Size = new System.Drawing.Size(88, 13);
+            this.LblCodigo.Size = new System.Drawing.Size(105, 20);
             this.LblCodigo.TabIndex = 0;
             this.LblCodigo.Text = "Codigo de Barras";
             // 
             // TxtCodigo
             // 
-            this.TxtCodigo.Location = new System.Drawing.Point(129, 29);
+            this.TxtCodigo.Location = new System.Drawing.Point(135, 18);
+            this.TxtCodigo.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.TxtCodigo.Name = "TxtCodigo";
-            this.TxtCodigo.Size = new System.Drawing.Size(153, 20);
+            this.TxtCodigo.Size = new System.Drawing.Size(178, 25);
             this.TxtCodigo.TabIndex = 1;
             // 
             // LblArea
             // 
             this.LblArea.AutoSize = true;
-            this.LblArea.Location = new System.Drawing.Point(327, 32);
+            this.LblArea.Location = new System.Drawing.Point(366, 18);
             this.LblArea.Name = "LblArea";
-            this.LblArea.Size = new System.Drawing.Size(29, 13);
+            this.LblArea.Size = new System.Drawing.Size(34, 20);
             this.LblArea.TabIndex = 2;
             this.LblArea.Text = "Area";
             // 
             // TxtArea
             // 
-            this.TxtArea.Location = new System.Drawing.Point(379, 32);
+            this.TxtArea.Location = new System.Drawing.Point(427, 18);
+            this.TxtArea.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.TxtArea.Name = "TxtArea";
-            this.TxtArea.Size = new System.Drawing.Size(100, 20);
+            this.TxtArea.Size = new System.Drawing.Size(116, 25);
             this.TxtArea.TabIndex = 3;
             // 
             // BtnBuscarEquipo
             // 
-            this.BtnBuscarEquipo.Location = new System.Drawing.Point(545, 32);
+            this.BtnBuscarEquipo.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnBuscarEquipo.Location = new System.Drawing.Point(623, 11);
+            this.BtnBuscarEquipo.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.BtnBuscarEquipo.Name = "BtnBuscarEquipo";
-            this.BtnBuscarEquipo.Size = new System.Drawing.Size(75, 23);
+            this.BtnBuscarEquipo.Size = new System.Drawing.Size(87, 35);
             this.BtnBuscarEquipo.TabIndex = 4;
             this.BtnBuscarEquipo.Text = "Buscar";
             this.BtnBuscarEquipo.UseVisualStyleBackColor = true;
@@ -101,9 +105,10 @@
             this.Encargado,
             this.Área,
             this.Estado});
-            this.DgvEquipos.Location = new System.Drawing.Point(12, 61);
+            this.DgvEquipos.Location = new System.Drawing.Point(16, 56);
+            this.DgvEquipos.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.DgvEquipos.Name = "DgvEquipos";
-            this.DgvEquipos.Size = new System.Drawing.Size(744, 183);
+            this.DgvEquipos.Size = new System.Drawing.Size(750, 282);
             this.DgvEquipos.TabIndex = 5;
             // 
             // Numero
@@ -143,27 +148,33 @@
             // 
             // BtnModificar
             // 
-            this.BtnModificar.Location = new System.Drawing.Point(61, 286);
+            this.BtnModificar.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnModificar.Location = new System.Drawing.Point(12, 373);
+            this.BtnModificar.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.BtnModificar.Name = "BtnModificar";
-            this.BtnModificar.Size = new System.Drawing.Size(75, 23);
+            this.BtnModificar.Size = new System.Drawing.Size(87, 35);
             this.BtnModificar.TabIndex = 6;
             this.BtnModificar.Text = "Modificar";
             this.BtnModificar.UseVisualStyleBackColor = true;
             // 
             // BtnEliminar
             // 
-            this.BtnEliminar.Location = new System.Drawing.Point(207, 286);
+            this.BtnEliminar.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnEliminar.Location = new System.Drawing.Point(146, 373);
+            this.BtnEliminar.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.BtnEliminar.Name = "BtnEliminar";
-            this.BtnEliminar.Size = new System.Drawing.Size(75, 23);
+            this.BtnEliminar.Size = new System.Drawing.Size(87, 35);
             this.BtnEliminar.TabIndex = 7;
             this.BtnEliminar.Text = "Eliminar";
             this.BtnEliminar.UseVisualStyleBackColor = true;
             // 
             // BtnCancelar
             // 
-            this.BtnCancelar.Location = new System.Drawing.Point(369, 286);
+            this.BtnCancelar.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnCancelar.Location = new System.Drawing.Point(293, 373);
+            this.BtnCancelar.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.BtnCancelar.Name = "BtnCancelar";
-            this.BtnCancelar.Size = new System.Drawing.Size(75, 23);
+            this.BtnCancelar.Size = new System.Drawing.Size(87, 35);
             this.BtnCancelar.TabIndex = 8;
             this.BtnCancelar.Text = "Cancelar";
             this.BtnCancelar.UseVisualStyleBackColor = true;
@@ -171,9 +182,11 @@
             // 
             // BtnRepMantenimiento
             // 
-            this.BtnRepMantenimiento.Location = new System.Drawing.Point(510, 278);
+            this.BtnRepMantenimiento.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnRepMantenimiento.Location = new System.Drawing.Point(427, 373);
+            this.BtnRepMantenimiento.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.BtnRepMantenimiento.Name = "BtnRepMantenimiento";
-            this.BtnRepMantenimiento.Size = new System.Drawing.Size(153, 39);
+            this.BtnRepMantenimiento.Size = new System.Drawing.Size(247, 35);
             this.BtnRepMantenimiento.TabIndex = 9;
             this.BtnRepMantenimiento.Text = "Generar Reporte de Mantenimiento";
             this.BtnRepMantenimiento.UseVisualStyleBackColor = true;
@@ -181,9 +194,11 @@
             // 
             // BtnInventario
             // 
-            this.BtnInventario.Location = new System.Drawing.Point(762, 138);
+            this.BtnInventario.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnInventario.Location = new System.Drawing.Point(721, 373);
+            this.BtnInventario.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.BtnInventario.Name = "BtnInventario";
-            this.BtnInventario.Size = new System.Drawing.Size(92, 38);
+            this.BtnInventario.Size = new System.Drawing.Size(157, 35);
             this.BtnInventario.TabIndex = 10;
             this.BtnInventario.Text = "Consultar Inventario";
             this.BtnInventario.UseVisualStyleBackColor = true;
@@ -191,9 +206,10 @@
             // 
             // Consultar_Equipo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(861, 337);
+            this.BackColor = System.Drawing.Color.Green;
+            this.ClientSize = new System.Drawing.Size(1004, 416);
             this.Controls.Add(this.BtnInventario);
             this.Controls.Add(this.BtnRepMantenimiento);
             this.Controls.Add(this.BtnCancelar);
@@ -205,8 +221,11 @@
             this.Controls.Add(this.LblArea);
             this.Controls.Add(this.TxtCodigo);
             this.Controls.Add(this.LblCodigo);
+            this.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.Name = "Consultar_Equipo";
             this.Text = "Consultar Equipo";
+            this.Load += new System.EventHandler(this.Consultar_Equipo_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DgvEquipos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

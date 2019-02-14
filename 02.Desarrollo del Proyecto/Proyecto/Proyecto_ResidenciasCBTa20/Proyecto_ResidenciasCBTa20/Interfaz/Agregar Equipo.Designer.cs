@@ -49,124 +49,133 @@
             // LblMarca
             // 
             this.LblMarca.AutoSize = true;
-            this.LblMarca.Location = new System.Drawing.Point(15, 26);
+            this.LblMarca.Location = new System.Drawing.Point(25, 107);
             this.LblMarca.Name = "LblMarca";
-            this.LblMarca.Size = new System.Drawing.Size(37, 13);
+            this.LblMarca.Size = new System.Drawing.Size(45, 20);
             this.LblMarca.TabIndex = 0;
             this.LblMarca.Text = "Marca";
             // 
             // LblModelo
             // 
             this.LblModelo.AutoSize = true;
-            this.LblModelo.Location = new System.Drawing.Point(15, 61);
+            this.LblModelo.Location = new System.Drawing.Point(25, 151);
             this.LblModelo.Name = "LblModelo";
-            this.LblModelo.Size = new System.Drawing.Size(42, 13);
+            this.LblModelo.Size = new System.Drawing.Size(51, 20);
             this.LblModelo.TabIndex = 1;
             this.LblModelo.Text = "Modelo";
             // 
             // LblFuncionalidad
             // 
             this.LblFuncionalidad.AutoSize = true;
-            this.LblFuncionalidad.Location = new System.Drawing.Point(15, 93);
+            this.LblFuncionalidad.Location = new System.Drawing.Point(25, 238);
             this.LblFuncionalidad.Name = "LblFuncionalidad";
-            this.LblFuncionalidad.Size = new System.Drawing.Size(73, 13);
+            this.LblFuncionalidad.Size = new System.Drawing.Size(89, 20);
             this.LblFuncionalidad.TabIndex = 2;
             this.LblFuncionalidad.Text = "Funcionalidad";
             // 
             // LblTipo
             // 
             this.LblTipo.AutoSize = true;
-            this.LblTipo.Location = new System.Drawing.Point(15, 132);
+            this.LblTipo.Location = new System.Drawing.Point(21, 12);
             this.LblTipo.Name = "LblTipo";
-            this.LblTipo.Size = new System.Drawing.Size(28, 13);
+            this.LblTipo.Size = new System.Drawing.Size(35, 20);
             this.LblTipo.TabIndex = 3;
             this.LblTipo.Text = "Tipo";
             // 
             // LblArea
             // 
             this.LblArea.AutoSize = true;
-            this.LblArea.Location = new System.Drawing.Point(15, 179);
+            this.LblArea.Location = new System.Drawing.Point(22, 59);
             this.LblArea.Name = "LblArea";
-            this.LblArea.Size = new System.Drawing.Size(29, 13);
+            this.LblArea.Size = new System.Drawing.Size(34, 20);
             this.LblArea.TabIndex = 5;
             this.LblArea.Text = "Área";
             // 
             // LblEncargado
             // 
             this.LblEncargado.AutoSize = true;
-            this.LblEncargado.Location = new System.Drawing.Point(15, 211);
+            this.LblEncargado.Location = new System.Drawing.Point(25, 195);
             this.LblEncargado.Name = "LblEncargado";
-            this.LblEncargado.Size = new System.Drawing.Size(59, 13);
+            this.LblEncargado.Size = new System.Drawing.Size(70, 20);
             this.LblEncargado.TabIndex = 6;
             this.LblEncargado.Text = "Encargado";
             // 
             // LblDesc
             // 
             this.LblDesc.AutoSize = true;
-            this.LblDesc.Location = new System.Drawing.Point(253, 143);
+            this.LblDesc.Location = new System.Drawing.Point(25, 275);
             this.LblDesc.Name = "LblDesc";
-            this.LblDesc.Size = new System.Drawing.Size(63, 13);
+            this.LblDesc.Size = new System.Drawing.Size(76, 20);
             this.LblDesc.TabIndex = 7;
             this.LblDesc.Text = "Descripción";
             // 
             // TxtMarca
             // 
-            this.TxtMarca.Location = new System.Drawing.Point(73, 26);
+            this.TxtMarca.Location = new System.Drawing.Point(120, 107);
+            this.TxtMarca.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.TxtMarca.Name = "TxtMarca";
-            this.TxtMarca.Size = new System.Drawing.Size(100, 20);
+            this.TxtMarca.Size = new System.Drawing.Size(140, 25);
             this.TxtMarca.TabIndex = 9;
             // 
             // TxtModelo
             // 
-            this.TxtModelo.Location = new System.Drawing.Point(73, 58);
+            this.TxtModelo.Location = new System.Drawing.Point(120, 148);
+            this.TxtModelo.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.TxtModelo.Name = "TxtModelo";
-            this.TxtModelo.Size = new System.Drawing.Size(100, 20);
+            this.TxtModelo.Size = new System.Drawing.Size(140, 25);
             this.TxtModelo.TabIndex = 10;
             // 
             // CmbFuncionalidad
             // 
             this.CmbFuncionalidad.FormattingEnabled = true;
-            this.CmbFuncionalidad.Location = new System.Drawing.Point(94, 93);
+            this.CmbFuncionalidad.Location = new System.Drawing.Point(120, 238);
+            this.CmbFuncionalidad.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.CmbFuncionalidad.Name = "CmbFuncionalidad";
-            this.CmbFuncionalidad.Size = new System.Drawing.Size(121, 21);
+            this.CmbFuncionalidad.Size = new System.Drawing.Size(140, 28);
             this.CmbFuncionalidad.TabIndex = 11;
             // 
             // CmbTipo
             // 
             this.CmbTipo.FormattingEnabled = true;
-            this.CmbTipo.Location = new System.Drawing.Point(73, 124);
+            this.CmbTipo.Location = new System.Drawing.Point(120, 14);
+            this.CmbTipo.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.CmbTipo.Name = "CmbTipo";
-            this.CmbTipo.Size = new System.Drawing.Size(121, 21);
+            this.CmbTipo.Size = new System.Drawing.Size(140, 28);
             this.CmbTipo.TabIndex = 13;
             // 
             // TxtEncargado
             // 
-            this.TxtEncargado.Location = new System.Drawing.Point(80, 211);
+            this.TxtEncargado.Location = new System.Drawing.Point(120, 195);
+            this.TxtEncargado.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.TxtEncargado.Name = "TxtEncargado";
-            this.TxtEncargado.Size = new System.Drawing.Size(100, 20);
+            this.TxtEncargado.Size = new System.Drawing.Size(140, 25);
             this.TxtEncargado.TabIndex = 14;
             // 
             // CmbArea
             // 
             this.CmbArea.FormattingEnabled = true;
-            this.CmbArea.Location = new System.Drawing.Point(73, 176);
+            this.CmbArea.Location = new System.Drawing.Point(120, 59);
+            this.CmbArea.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.CmbArea.Name = "CmbArea";
-            this.CmbArea.Size = new System.Drawing.Size(121, 21);
+            this.CmbArea.Size = new System.Drawing.Size(140, 28);
             this.CmbArea.TabIndex = 15;
             // 
             // TxtDescripcion
             // 
-            this.TxtDescripcion.Location = new System.Drawing.Point(256, 179);
+            this.TxtDescripcion.Location = new System.Drawing.Point(29, 314);
+            this.TxtDescripcion.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.TxtDescripcion.Multiline = true;
             this.TxtDescripcion.Name = "TxtDescripcion";
-            this.TxtDescripcion.Size = new System.Drawing.Size(265, 130);
+            this.TxtDescripcion.Size = new System.Drawing.Size(602, 88);
             this.TxtDescripcion.TabIndex = 16;
             // 
             // BtnAgregar
             // 
-            this.BtnAgregar.Location = new System.Drawing.Point(311, 334);
+            this.BtnAgregar.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnAgregar.Location = new System.Drawing.Point(348, 477);
+            this.BtnAgregar.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.BtnAgregar.Name = "BtnAgregar";
-            this.BtnAgregar.Size = new System.Drawing.Size(75, 23);
+            this.BtnAgregar.Size = new System.Drawing.Size(87, 35);
             this.BtnAgregar.TabIndex = 17;
             this.BtnAgregar.Text = "Agregar";
             this.BtnAgregar.UseVisualStyleBackColor = true;
@@ -174,9 +183,11 @@
             // 
             // BtnRegresar
             // 
-            this.BtnRegresar.Location = new System.Drawing.Point(98, 334);
+            this.BtnRegresar.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnRegresar.Location = new System.Drawing.Point(99, 477);
+            this.BtnRegresar.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.BtnRegresar.Name = "BtnRegresar";
-            this.BtnRegresar.Size = new System.Drawing.Size(75, 23);
+            this.BtnRegresar.Size = new System.Drawing.Size(87, 35);
             this.BtnRegresar.TabIndex = 18;
             this.BtnRegresar.Text = "Regresar";
             this.BtnRegresar.UseVisualStyleBackColor = true;
@@ -184,9 +195,10 @@
             // 
             // Agregar_Equipo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(580, 421);
+            this.BackColor = System.Drawing.Color.Green;
+            this.ClientSize = new System.Drawing.Size(638, 530);
             this.Controls.Add(this.BtnRegresar);
             this.Controls.Add(this.BtnAgregar);
             this.Controls.Add(this.TxtDescripcion);
@@ -203,6 +215,8 @@
             this.Controls.Add(this.LblFuncionalidad);
             this.Controls.Add(this.LblModelo);
             this.Controls.Add(this.LblMarca);
+            this.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.Name = "Agregar_Equipo";
             this.Text = "Agregar Equipo";
             this.ResumeLayout(false);

@@ -51,9 +51,10 @@
             this.Costo,
             this.Estado,
             this.Fecha_Ingreso});
-            this.dataGridView1.Location = new System.Drawing.Point(57, 12);
+            this.dataGridView1.Location = new System.Drawing.Point(14, 18);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(520, 159);
+            this.dataGridView1.Size = new System.Drawing.Size(650, 208);
             this.dataGridView1.TabIndex = 0;
             // 
             // Id_Componente
@@ -88,9 +89,11 @@
             // 
             // BtnGenerarRepCostos
             // 
-            this.BtnGenerarRepCostos.Location = new System.Drawing.Point(57, 223);
+            this.BtnGenerarRepCostos.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnGenerarRepCostos.Location = new System.Drawing.Point(32, 273);
+            this.BtnGenerarRepCostos.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.BtnGenerarRepCostos.Name = "BtnGenerarRepCostos";
-            this.BtnGenerarRepCostos.Size = new System.Drawing.Size(112, 36);
+            this.BtnGenerarRepCostos.Size = new System.Drawing.Size(170, 35);
             this.BtnGenerarRepCostos.TabIndex = 1;
             this.BtnGenerarRepCostos.Text = "Generar Reporte de Costos";
             this.BtnGenerarRepCostos.UseVisualStyleBackColor = true;
@@ -98,9 +101,11 @@
             // 
             // BtnAgregarComp
             // 
-            this.BtnAgregarComp.Location = new System.Drawing.Point(274, 223);
+            this.BtnAgregarComp.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnAgregarComp.Location = new System.Drawing.Point(284, 273);
+            this.BtnAgregarComp.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.BtnAgregarComp.Name = "BtnAgregarComp";
-            this.BtnAgregarComp.Size = new System.Drawing.Size(95, 36);
+            this.BtnAgregarComp.Size = new System.Drawing.Size(153, 35);
             this.BtnAgregarComp.TabIndex = 2;
             this.BtnAgregarComp.Text = "Agregar Componentes";
             this.BtnAgregarComp.UseVisualStyleBackColor = true;
@@ -108,9 +113,11 @@
             // 
             // BtnSalir
             // 
-            this.BtnSalir.Location = new System.Drawing.Point(502, 230);
+            this.BtnSalir.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnSalir.Location = new System.Drawing.Point(551, 273);
+            this.BtnSalir.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.BtnSalir.Name = "BtnSalir";
-            this.BtnSalir.Size = new System.Drawing.Size(75, 23);
+            this.BtnSalir.Size = new System.Drawing.Size(87, 35);
             this.BtnSalir.TabIndex = 3;
             this.BtnSalir.Text = "Salir";
             this.BtnSalir.UseVisualStyleBackColor = true;
@@ -118,13 +125,16 @@
             // 
             // Componentes
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(673, 304);
+            this.BackColor = System.Drawing.Color.Green;
+            this.ClientSize = new System.Drawing.Size(934, 315);
             this.Controls.Add(this.BtnSalir);
             this.Controls.Add(this.BtnAgregarComp);
             this.Controls.Add(this.BtnGenerarRepCostos);
             this.Controls.Add(this.dataGridView1);
+            this.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.Name = "Componentes";
             this.Text = "Componentes";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

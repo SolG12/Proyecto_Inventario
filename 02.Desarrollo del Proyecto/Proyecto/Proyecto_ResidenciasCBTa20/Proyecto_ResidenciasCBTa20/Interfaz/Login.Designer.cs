@@ -38,40 +38,44 @@
             // LblUsuario
             // 
             this.LblUsuario.AutoSize = true;
-            this.LblUsuario.Location = new System.Drawing.Point(43, 41);
+            this.LblUsuario.Location = new System.Drawing.Point(50, 63);
             this.LblUsuario.Name = "LblUsuario";
-            this.LblUsuario.Size = new System.Drawing.Size(43, 13);
+            this.LblUsuario.Size = new System.Drawing.Size(52, 20);
             this.LblUsuario.TabIndex = 0;
             this.LblUsuario.Text = "Usuario";
             // 
             // LblContra
             // 
             this.LblContra.AutoSize = true;
-            this.LblContra.Location = new System.Drawing.Point(25, 89);
+            this.LblContra.Location = new System.Drawing.Point(29, 137);
             this.LblContra.Name = "LblContra";
-            this.LblContra.Size = new System.Drawing.Size(61, 13);
+            this.LblContra.Size = new System.Drawing.Size(73, 20);
             this.LblContra.TabIndex = 1;
             this.LblContra.Text = "Contraseña";
             // 
             // TxtUsuario
             // 
-            this.TxtUsuario.Location = new System.Drawing.Point(92, 38);
+            this.TxtUsuario.Location = new System.Drawing.Point(107, 58);
+            this.TxtUsuario.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.TxtUsuario.Name = "TxtUsuario";
-            this.TxtUsuario.Size = new System.Drawing.Size(100, 20);
+            this.TxtUsuario.Size = new System.Drawing.Size(116, 25);
             this.TxtUsuario.TabIndex = 2;
             // 
             // TxtContraseña
             // 
-            this.TxtContraseña.Location = new System.Drawing.Point(92, 86);
+            this.TxtContraseña.Location = new System.Drawing.Point(107, 132);
+            this.TxtContraseña.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.TxtContraseña.Name = "TxtContraseña";
-            this.TxtContraseña.Size = new System.Drawing.Size(100, 20);
+            this.TxtContraseña.Size = new System.Drawing.Size(116, 25);
             this.TxtContraseña.TabIndex = 3;
             // 
             // BtnIniciar
             // 
-            this.BtnIniciar.Location = new System.Drawing.Point(117, 178);
+            this.BtnIniciar.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnIniciar.Location = new System.Drawing.Point(126, 193);
+            this.BtnIniciar.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.BtnIniciar.Name = "BtnIniciar";
-            this.BtnIniciar.Size = new System.Drawing.Size(75, 23);
+            this.BtnIniciar.Size = new System.Drawing.Size(87, 35);
             this.BtnIniciar.TabIndex = 4;
             this.BtnIniciar.Text = "Iniciar";
             this.BtnIniciar.UseVisualStyleBackColor = true;
@@ -79,14 +83,17 @@
             // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(385, 242);
+            this.BackColor = System.Drawing.Color.Green;
+            this.ClientSize = new System.Drawing.Size(472, 241);
             this.Controls.Add(this.BtnIniciar);
             this.Controls.Add(this.TxtContraseña);
             this.Controls.Add(this.TxtUsuario);
             this.Controls.Add(this.LblContra);
             this.Controls.Add(this.LblUsuario);
+            this.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.Name = "Login";
             this.Text = "Login";
             this.ResumeLayout(false);
