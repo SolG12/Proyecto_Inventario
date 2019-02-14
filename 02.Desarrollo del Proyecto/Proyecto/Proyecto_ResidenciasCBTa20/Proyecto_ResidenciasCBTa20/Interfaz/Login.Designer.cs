@@ -38,7 +38,7 @@
             // LblUsuario
             // 
             this.LblUsuario.AutoSize = true;
-            this.LblUsuario.Location = new System.Drawing.Point(50, 63);
+            this.LblUsuario.Location = new System.Drawing.Point(45, 31);
             this.LblUsuario.Name = "LblUsuario";
             this.LblUsuario.Size = new System.Drawing.Size(52, 20);
             this.LblUsuario.TabIndex = 0;
@@ -47,7 +47,7 @@
             // LblContra
             // 
             this.LblContra.AutoSize = true;
-            this.LblContra.Location = new System.Drawing.Point(29, 137);
+            this.LblContra.Location = new System.Drawing.Point(24, 105);
             this.LblContra.Name = "LblContra";
             this.LblContra.Size = new System.Drawing.Size(73, 20);
             this.LblContra.TabIndex = 1;
@@ -55,7 +55,7 @@
             // 
             // TxtUsuario
             // 
-            this.TxtUsuario.Location = new System.Drawing.Point(107, 58);
+            this.TxtUsuario.Location = new System.Drawing.Point(102, 26);
             this.TxtUsuario.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.TxtUsuario.Name = "TxtUsuario";
             this.TxtUsuario.Size = new System.Drawing.Size(116, 25);
@@ -63,7 +63,7 @@
             // 
             // TxtContraseña
             // 
-            this.TxtContraseña.Location = new System.Drawing.Point(107, 132);
+            this.TxtContraseña.Location = new System.Drawing.Point(102, 100);
             this.TxtContraseña.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.TxtContraseña.Name = "TxtContraseña";
             this.TxtContraseña.Size = new System.Drawing.Size(116, 25);
@@ -72,7 +72,7 @@
             // BtnIniciar
             // 
             this.BtnIniciar.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnIniciar.Location = new System.Drawing.Point(126, 193);
+            this.BtnIniciar.Location = new System.Drawing.Point(121, 161);
             this.BtnIniciar.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.BtnIniciar.Name = "BtnIniciar";
             this.BtnIniciar.Size = new System.Drawing.Size(87, 35);

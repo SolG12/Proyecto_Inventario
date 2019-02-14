@@ -69,5 +69,15 @@ namespace Proyecto_ResidenciasCBTa20.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Sin_título {
+            get {
+                object obj = ResourceManager.GetObject("Sin título", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
