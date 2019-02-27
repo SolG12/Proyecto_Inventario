@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             this.DgvInventario = new System.Windows.Forms.DataGridView();
-            this.BtnModificar = new System.Windows.Forms.Button();
-            this.BtnMenu = new System.Windows.Forms.Button();
-            this.BtnConsultarComp = new System.Windows.Forms.Button();
             this.Numero = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BtnModificar = new System.Windows.Forms.Button();
+            this.BtnMenu = new System.Windows.Forms.Button();
+            this.BtnConsultarComp = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.DgvInventario)).BeginInit();
             this.SuspendLayout();
             // 
@@ -54,6 +54,31 @@
             this.DgvInventario.Name = "DgvInventario";
             this.DgvInventario.Size = new System.Drawing.Size(543, 208);
             this.DgvInventario.TabIndex = 0;
+            // 
+            // Numero
+            // 
+            this.Numero.HeaderText = "No.Parte";
+            this.Numero.Name = "Numero";
+            // 
+            // Nombre
+            // 
+            this.Nombre.HeaderText = "Nombre";
+            this.Nombre.Name = "Nombre";
+            // 
+            // Estado
+            // 
+            this.Estado.HeaderText = "Estado";
+            this.Estado.Name = "Estado";
+            // 
+            // Fecha
+            // 
+            this.Fecha.HeaderText = "Fecha_Ingreso";
+            this.Fecha.Name = "Fecha";
+            // 
+            // Cantidad
+            // 
+            this.Cantidad.HeaderText = "Cantidad";
+            this.Cantidad.Name = "Cantidad";
             // 
             // BtnModificar
             // 
@@ -85,36 +110,11 @@
             this.BtnConsultarComp.Location = new System.Drawing.Point(367, 254);
             this.BtnConsultarComp.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.BtnConsultarComp.Name = "BtnConsultarComp";
-            this.BtnConsultarComp.Size = new System.Drawing.Size(156, 35);
+            this.BtnConsultarComp.Size = new System.Drawing.Size(167, 35);
             this.BtnConsultarComp.TabIndex = 3;
             this.BtnConsultarComp.Text = "Consultar Componentes";
             this.BtnConsultarComp.UseVisualStyleBackColor = true;
             this.BtnConsultarComp.Click += new System.EventHandler(this.BtnConsultarComp_Click);
-            // 
-            // Numero
-            // 
-            this.Numero.HeaderText = "No.Parte";
-            this.Numero.Name = "Numero";
-            // 
-            // Nombre
-            // 
-            this.Nombre.HeaderText = "Nombre";
-            this.Nombre.Name = "Nombre";
-            // 
-            // Estado
-            // 
-            this.Estado.HeaderText = "Estado";
-            this.Estado.Name = "Estado";
-            // 
-            // Fecha
-            // 
-            this.Fecha.HeaderText = "Fecha_Ingreso";
-            this.Fecha.Name = "Fecha";
-            // 
-            // Cantidad
-            // 
-            this.Cantidad.HeaderText = "Cantidad";
-            this.Cantidad.Name = "Cantidad";
             // 
             // Inventario
             // 

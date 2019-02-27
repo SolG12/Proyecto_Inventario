@@ -35,7 +35,7 @@
             this.Costo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Fecha_Ingreso = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.BtnGenerarRepCostos = new System.Windows.Forms.Button();
+            this.BtnRepCostos = new System.Windows.Forms.Button();
             this.BtnAgregarComp = new System.Windows.Forms.Button();
             this.BtnSalir = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -87,17 +87,17 @@
             this.Fecha_Ingreso.HeaderText = "Fecha de Ingreso";
             this.Fecha_Ingreso.Name = "Fecha_Ingreso";
             // 
-            // BtnGenerarRepCostos
+            // BtnRepCostos
             // 
-            this.BtnGenerarRepCostos.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnGenerarRepCostos.Location = new System.Drawing.Point(32, 273);
-            this.BtnGenerarRepCostos.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
-            this.BtnGenerarRepCostos.Name = "BtnGenerarRepCostos";
-            this.BtnGenerarRepCostos.Size = new System.Drawing.Size(170, 35);
-            this.BtnGenerarRepCostos.TabIndex = 1;
-            this.BtnGenerarRepCostos.Text = "Generar Reporte de Costos";
-            this.BtnGenerarRepCostos.UseVisualStyleBackColor = true;
-            this.BtnGenerarRepCostos.Click += new System.EventHandler(this.BtnGenerarRepCostos_Click);
+            this.BtnRepCostos.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnRepCostos.Location = new System.Drawing.Point(32, 273);
+            this.BtnRepCostos.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.BtnRepCostos.Name = "BtnRepCostos";
+            this.BtnRepCostos.Size = new System.Drawing.Size(190, 35);
+            this.BtnRepCostos.TabIndex = 1;
+            this.BtnRepCostos.Text = "Generar Reporte de Costos";
+            this.BtnRepCostos.UseVisualStyleBackColor = true;
+            this.BtnRepCostos.Click += new System.EventHandler(this.BtnRepCostos_Click);
             // 
             // BtnAgregarComp
             // 
@@ -131,7 +131,7 @@
             this.ClientSize = new System.Drawing.Size(934, 315);
             this.Controls.Add(this.BtnSalir);
             this.Controls.Add(this.BtnAgregarComp);
-            this.Controls.Add(this.BtnGenerarRepCostos);
+            this.Controls.Add(this.BtnRepCostos);
             this.Controls.Add(this.dataGridView1);
             this.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
@@ -145,7 +145,7 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button BtnGenerarRepCostos;
+        private System.Windows.Forms.Button BtnRepCostos;
         private System.Windows.Forms.Button BtnAgregarComp;
         private System.Windows.Forms.Button BtnSalir;
         private System.Windows.Forms.DataGridViewTextBoxColumn Id_Componente;

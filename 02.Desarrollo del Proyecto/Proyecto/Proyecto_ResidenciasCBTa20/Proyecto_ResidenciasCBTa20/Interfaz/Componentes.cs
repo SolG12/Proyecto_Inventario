@@ -19,12 +19,6 @@ namespace Proyecto_ResidenciasCBTa20.Interfaz
         {
             InitializeComponent();
         }
-
-        private void BtnGenerarRepCostos_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void BtnAgregarComp_Click(object sender, EventArgs e)
         {
             Agregar_Componente mAgregar_Componente = new Agregar_Componente();
@@ -35,6 +29,11 @@ namespace Proyecto_ResidenciasCBTa20.Interfaz
         private void BtnSalir_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void BtnRepCostos_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

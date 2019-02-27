@@ -46,7 +46,7 @@ namespace Proyecto_ResidenciasCBTa20.Logica
 
         }
 
-        public DataTable ConsultarComponentes(int id_Componente  )
+        public DataTable ConsultarComponentes(int id_Componente)
         {
             String SQL = "select id_componente, cantidad, costo, estado, nombre, fecha_ingreso";
             SQL = SQL.Replace("?1", id_Componente.ToString());
@@ -56,7 +56,7 @@ namespace Proyecto_ResidenciasCBTa20.Logica
 
         public DataTable ConsultarComponente()
         {
-            String SQL = "select id_componente, cantidad, costo, estado, nombre, fecha:ingreso";
+            String SQL = "select id_componente, cantidad, costo, estado, nombre, fecha_ingreso";
             DataTable ListaEquipos = mConexion.EjecutarConsulta(SQL);
             return ListaEquipos;
         }
