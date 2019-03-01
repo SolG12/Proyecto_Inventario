@@ -27,7 +27,7 @@ namespace Proyecto_ResidenciasCBTa20.Logica
             SQL = SQL.Replace("?3", mEquipo.Modelo);
             SQL = SQL.Replace("?4", mEquipo.Funcionalidad);
             SQL = SQL.Replace("?5", mEquipo.Tipo);
-            SQL = SQL.Replace("?6", mEquipo.Estado);
+           
 
             mConexion.EjecutarActualizacion(SQL);
         }
@@ -39,6 +39,7 @@ namespace Proyecto_ResidenciasCBTa20.Logica
             SQL = SQL.Replace("?2", mEquipo.Modelo);
             SQL = SQL.Replace("?3", mEquipo.Funcionalidad);
             SQL = SQL.Replace("?4", mEquipo.Tipo);
+
             
             mConexion.EjecutarActualizacion(SQL);
 
