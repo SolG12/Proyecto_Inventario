@@ -12,7 +12,7 @@ namespace Proyecto_ResidenciasCBTa20.BD
     {
         OdbcConnection ConexionMYSQL;
 
-        public void Conectar(string Controlador, string Servidor, String BaseDatos, string Usuario, string Password)
+        public void Conectar(string  Controlador, string Servidor, String BaseDatos, string Usuario, string Password)
         {
             ConexionMYSQL = new OdbcConnection("DRIVER={" + Controlador + "};SERVER=" + Servidor + ";DATABASE=" + BaseDatos + ";UID=root;PWD=;");
             ConexionMYSQL.Open();

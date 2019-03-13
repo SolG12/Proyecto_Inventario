@@ -17,7 +17,7 @@ namespace Proyecto_ResidenciasCBTa20.Logica
         public ControlComponente()
         {
             mConexion = new Conexión();
-            mConexion.Conectar("MySQL ODBC 5.2w Driver", "localhost", "inventario", "root", "");
+            mConexion.Conectar("MySQL ODBC 5.2w Driver", "localhost", "equipos", "root", "");
         }
 
         public void AgregarComponente(Componente mComponente)

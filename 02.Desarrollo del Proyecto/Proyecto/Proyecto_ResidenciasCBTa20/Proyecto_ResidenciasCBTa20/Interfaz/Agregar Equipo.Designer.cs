@@ -128,6 +128,9 @@
             // CmbFuncionalidad
             // 
             this.CmbFuncionalidad.FormattingEnabled = true;
+            this.CmbFuncionalidad.Items.AddRange(new object[] {
+            "Funcional ",
+            "No funcional"});
             this.CmbFuncionalidad.Location = new System.Drawing.Point(120, 238);
             this.CmbFuncionalidad.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.CmbFuncionalidad.Name = "CmbFuncionalidad";
@@ -137,6 +140,9 @@
             // CmbTipo
             // 
             this.CmbTipo.FormattingEnabled = true;
+            this.CmbTipo.Items.AddRange(new object[] {
+            "Escritorio",
+            "Laptop"});
             this.CmbTipo.Location = new System.Drawing.Point(120, 14);
             this.CmbTipo.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.CmbTipo.Name = "CmbTipo";
@@ -154,6 +160,25 @@
             // CmbArea
             // 
             this.CmbArea.FormattingEnabled = true;
+            this.CmbArea.Items.AddRange(new object[] {
+            "Dirección",
+            "Subdirección",
+            "Recursos Humanos",
+            "Recursos Financieros",
+            "Servicios Escolares",
+            "Formación Docente",
+            "Acádemico y Competencias",
+            "Orientación",
+            "Biblioteca",
+            "Almácen",
+            "Vinculación",
+            "Subdirección Acádemica",
+            "Planeación",
+            "Producción",
+            "Subdirección Administrativa",
+            "Sala 1",
+            "Sala 2",
+            "Sala Interactiva"});
             this.CmbArea.Location = new System.Drawing.Point(120, 59);
             this.CmbArea.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.CmbArea.Name = "CmbArea";

@@ -68,6 +68,7 @@
             this.TxtContraseña.Name = "TxtContraseña";
             this.TxtContraseña.Size = new System.Drawing.Size(116, 25);
             this.TxtContraseña.TabIndex = 3;
+            this.TxtContraseña.TextChanged += new System.EventHandler(this.TxtContraseña_TextChanged);
             // 
             // BtnIniciar
             // 

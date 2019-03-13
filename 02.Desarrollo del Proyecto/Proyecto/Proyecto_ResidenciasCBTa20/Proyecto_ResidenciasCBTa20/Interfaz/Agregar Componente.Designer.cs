@@ -146,10 +146,15 @@
             this.BtnSalir.TabIndex = 11;
             this.BtnSalir.Text = "Salir";
             this.BtnSalir.UseVisualStyleBackColor = true;
+            this.BtnSalir.Click += new System.EventHandler(this.BtnSalir_Click);
             // 
             // CmbEstado
             // 
             this.CmbEstado.FormattingEnabled = true;
+            this.CmbEstado.Items.AddRange(new object[] {
+            "Nuevo",
+            "Reemplazo",
+            "No funcional"});
             this.CmbEstado.Location = new System.Drawing.Point(150, 281);
             this.CmbEstado.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.CmbEstado.Name = "CmbEstado";

@@ -225,7 +225,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.Name = "Consultar_Equipo";
             this.Text = "Consultar Equipo";
-            this.Load += new System.EventHandler(this.Consultar_Equipo_Load);
+            
             ((System.ComponentModel.ISupportInitialize)(this.DgvEquipos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

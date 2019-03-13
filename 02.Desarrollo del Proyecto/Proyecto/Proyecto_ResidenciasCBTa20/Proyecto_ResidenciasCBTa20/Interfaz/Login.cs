@@ -20,11 +20,11 @@ namespace Proyecto_ResidenciasCBTa20
 
         public Login()
         {
-                InitializeComponent();
-                mConexion = new Conexión();
-                mConexion.Conectar("MySQL ODBC 5.2w Driver", "localhost",
-                    "mantenimientobd", "root", "");
-            }
+            InitializeComponent();
+            mConexion = new Conexión();
+            mConexion.Conectar("MySQL ODBC 5.2w Driver", "localhost",
+                "equipos", "root", "");
+        }
 
         private void BtnIniciar_Click(object sender, EventArgs e)
         {
@@ -53,5 +53,6 @@ namespace Proyecto_ResidenciasCBTa20
 
             }
         }
+
     }
 }

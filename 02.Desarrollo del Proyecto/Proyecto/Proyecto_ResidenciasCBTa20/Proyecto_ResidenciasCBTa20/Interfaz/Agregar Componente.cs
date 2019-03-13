@@ -51,6 +51,12 @@ namespace Proyecto_ResidenciasCBTa20.Interfaz
             }
         }
 
+        private void BtnSalir_Click(object sender, EventArgs e)
+        {
+            Menu_Principal mMenu_Principal = new Menu_Principal();
+            this.Hide();
+            mMenu_Principal.Show();
+        }
     }
 }
 
