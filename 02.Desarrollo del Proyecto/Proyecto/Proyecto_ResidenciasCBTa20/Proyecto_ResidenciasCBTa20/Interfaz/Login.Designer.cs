@@ -33,6 +33,7 @@
             this.TxtUsuario = new System.Windows.Forms.TextBox();
             this.TxtContraseña = new System.Windows.Forms.TextBox();
             this.BtnIniciar = new System.Windows.Forms.Button();
+            this.BtnSalir = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // LblUsuario
@@ -82,12 +83,24 @@
             this.BtnIniciar.UseVisualStyleBackColor = true;
             this.BtnIniciar.Click += new System.EventHandler(this.BtnIniciar_Click);
             // 
+            // BtnSalir
+            // 
+            this.BtnSalir.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnSalir.Location = new System.Drawing.Point(243, 161);
+            this.BtnSalir.Name = "BtnSalir";
+            this.BtnSalir.Size = new System.Drawing.Size(95, 35);
+            this.BtnSalir.TabIndex = 6;
+            this.BtnSalir.Text = "Salir";
+            this.BtnSalir.UseVisualStyleBackColor = true;
+            this.BtnSalir.Click += new System.EventHandler(this.BtnSalir_Click);
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Green;
             this.ClientSize = new System.Drawing.Size(472, 241);
+            this.Controls.Add(this.BtnSalir);
             this.Controls.Add(this.BtnIniciar);
             this.Controls.Add(this.TxtContraseña);
             this.Controls.Add(this.TxtUsuario);
@@ -109,6 +122,7 @@
         private System.Windows.Forms.TextBox TxtUsuario;
         private System.Windows.Forms.TextBox TxtContraseña;
         private System.Windows.Forms.Button BtnIniciar;
+        private System.Windows.Forms.Button BtnSalir;
     }
 }
 

@@ -93,6 +93,7 @@
             this.BtnBuscarEquipo.TabIndex = 4;
             this.BtnBuscarEquipo.Text = "Buscar";
             this.BtnBuscarEquipo.UseVisualStyleBackColor = true;
+            this.BtnBuscarEquipo.Click += new System.EventHandler(this.BtnBuscarEquipo_Click);
             // 
             // DgvEquipos
             // 
@@ -156,6 +157,7 @@
             this.BtnModificar.TabIndex = 6;
             this.BtnModificar.Text = "Modificar";
             this.BtnModificar.UseVisualStyleBackColor = true;
+            this.BtnModificar.Click += new System.EventHandler(this.BtnModificar_Click);
             // 
             // BtnEliminar
             // 
@@ -167,6 +169,7 @@
             this.BtnEliminar.TabIndex = 7;
             this.BtnEliminar.Text = "Eliminar";
             this.BtnEliminar.UseVisualStyleBackColor = true;
+            this.BtnEliminar.Click += new System.EventHandler(this.BtnEliminar_Click);
             // 
             // BtnCancelar
             // 
@@ -225,7 +228,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.Name = "Consultar_Equipo";
             this.Text = "Consultar Equipo";
-            
+            this.Load += new System.EventHandler(this.Consultar_Equipo_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DgvEquipos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

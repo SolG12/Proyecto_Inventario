@@ -28,10 +28,17 @@ namespace Proyecto_ResidenciasCBTa20.Interfaz
 
         private void BtnSalir_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Menu_Principal mMenu_Principal = new Menu_Principal();
+            this.Hide();
+            mMenu_Principal.Show();
         }
 
         private void BtnRepCostos_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Componentes_Load(object sender, EventArgs e)
         {
 
         }

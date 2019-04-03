@@ -54,5 +54,9 @@ namespace Proyecto_ResidenciasCBTa20
             }
         }
 
+        private void BtnSalir_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

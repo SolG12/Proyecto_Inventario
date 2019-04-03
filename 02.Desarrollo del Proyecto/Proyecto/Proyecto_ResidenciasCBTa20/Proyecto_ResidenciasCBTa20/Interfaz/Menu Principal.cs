@@ -51,5 +51,10 @@ namespace Proyecto_ResidenciasCBTa20.Interfaz
             this.Hide();
             mConsultar_Inventario.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

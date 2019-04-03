@@ -40,6 +40,25 @@ namespace Proyecto_ResidenciasCBTa20.Interfaz
             mMenu_Principal.Show();
         }
 
+        private void Consultar_Equipo_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnModificar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnEliminar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnBuscarEquipo_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

@@ -33,6 +33,7 @@
             this.BtnAgregarComp = new System.Windows.Forms.Button();
             this.BtnConsultarComp = new System.Windows.Forms.Button();
             this.BtnInventario = new System.Windows.Forms.Button();
+            this.BtnSalir = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // BtnAgregarEq
@@ -81,7 +82,7 @@
             // 
             // BtnInventario
             // 
-            this.BtnInventario.Location = new System.Drawing.Point(154, 189);
+            this.BtnInventario.Location = new System.Drawing.Point(154, 195);
             this.BtnInventario.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.BtnInventario.Name = "BtnInventario";
             this.BtnInventario.Size = new System.Drawing.Size(151, 40);
@@ -90,12 +91,24 @@
             this.BtnInventario.UseVisualStyleBackColor = true;
             this.BtnInventario.Click += new System.EventHandler(this.BtnInventario_Click);
             // 
+            // BtnSalir
+            // 
+            this.BtnSalir.Font = new System.Drawing.Font("Arial Narrow", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnSalir.Location = new System.Drawing.Point(0, -1);
+            this.BtnSalir.Name = "BtnSalir";
+            this.BtnSalir.Size = new System.Drawing.Size(75, 23);
+            this.BtnSalir.TabIndex = 5;
+            this.BtnSalir.Text = "Salir";
+            this.BtnSalir.UseVisualStyleBackColor = true;
+            this.BtnSalir.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Menu_Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Green;
             this.ClientSize = new System.Drawing.Size(685, 249);
+            this.Controls.Add(this.BtnSalir);
             this.Controls.Add(this.BtnInventario);
             this.Controls.Add(this.BtnConsultarComp);
             this.Controls.Add(this.BtnAgregarComp);
@@ -116,5 +129,6 @@
         private System.Windows.Forms.Button BtnAgregarComp;
         private System.Windows.Forms.Button BtnConsultarComp;
         private System.Windows.Forms.Button BtnInventario;
+        private System.Windows.Forms.Button BtnSalir;
     }
 }

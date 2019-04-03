@@ -244,6 +244,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.Name = "Agregar_Equipo";
             this.Text = "Agregar Equipo";
+            this.Load += new System.EventHandler(this.Agregar_Equipo_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

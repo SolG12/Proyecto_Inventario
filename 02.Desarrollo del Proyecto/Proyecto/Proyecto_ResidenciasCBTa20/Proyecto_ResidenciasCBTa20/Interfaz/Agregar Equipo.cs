@@ -68,5 +68,10 @@ namespace Proyecto_ResidenciasCBTa20
             this.Hide();
             mMenu_Principal.Show();
         }
+
+        private void Agregar_Equipo_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
