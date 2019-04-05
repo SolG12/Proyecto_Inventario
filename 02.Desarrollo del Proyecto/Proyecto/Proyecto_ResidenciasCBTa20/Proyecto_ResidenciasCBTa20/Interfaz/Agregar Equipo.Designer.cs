@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Agregar_Equipo));
             this.LblMarca = new System.Windows.Forms.Label();
             this.LblModelo = new System.Windows.Forms.Label();
             this.LblFuncionalidad = new System.Windows.Forms.Label();
@@ -44,6 +45,7 @@
             this.TxtDescripcion = new System.Windows.Forms.TextBox();
             this.BtnAgregar = new System.Windows.Forms.Button();
             this.BtnRegresar = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // LblMarca
@@ -191,39 +193,55 @@
             this.TxtDescripcion.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.TxtDescripcion.Multiline = true;
             this.TxtDescripcion.Name = "TxtDescripcion";
-            this.TxtDescripcion.Size = new System.Drawing.Size(602, 88);
+            this.TxtDescripcion.Size = new System.Drawing.Size(416, 98);
             this.TxtDescripcion.TabIndex = 16;
             // 
             // BtnAgregar
             // 
             this.BtnAgregar.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnAgregar.Location = new System.Drawing.Point(348, 477);
+            this.BtnAgregar.Image = ((System.Drawing.Image)(resources.GetObject("BtnAgregar.Image")));
+            this.BtnAgregar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnAgregar.Location = new System.Drawing.Point(277, 456);
             this.BtnAgregar.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.BtnAgregar.Name = "BtnAgregar";
-            this.BtnAgregar.Size = new System.Drawing.Size(87, 35);
+            this.BtnAgregar.Size = new System.Drawing.Size(97, 35);
             this.BtnAgregar.TabIndex = 17;
             this.BtnAgregar.Text = "Agregar";
+            this.BtnAgregar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnAgregar.UseVisualStyleBackColor = true;
             this.BtnAgregar.Click += new System.EventHandler(this.BtnAgregar_Click);
             // 
             // BtnRegresar
             // 
             this.BtnRegresar.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnRegresar.Location = new System.Drawing.Point(99, 477);
+            this.BtnRegresar.Image = ((System.Drawing.Image)(resources.GetObject("BtnRegresar.Image")));
+            this.BtnRegresar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnRegresar.Location = new System.Drawing.Point(55, 456);
             this.BtnRegresar.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.BtnRegresar.Name = "BtnRegresar";
-            this.BtnRegresar.Size = new System.Drawing.Size(87, 35);
+            this.BtnRegresar.Size = new System.Drawing.Size(96, 35);
             this.BtnRegresar.TabIndex = 18;
             this.BtnRegresar.Text = "Regresar";
+            this.BtnRegresar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnRegresar.UseVisualStyleBackColor = true;
             this.BtnRegresar.Click += new System.EventHandler(this.BtnRegresar_Click);
+            // 
+            // button1
+            // 
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.Location = new System.Drawing.Point(320, 12);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(145, 217);
+            this.button1.TabIndex = 19;
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // Agregar_Equipo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Green;
-            this.ClientSize = new System.Drawing.Size(638, 530);
+            this.ClientSize = new System.Drawing.Size(501, 498);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.BtnRegresar);
             this.Controls.Add(this.BtnAgregar);
             this.Controls.Add(this.TxtDescripcion);
@@ -268,5 +286,6 @@
         private System.Windows.Forms.TextBox TxtDescripcion;
         private System.Windows.Forms.Button BtnAgregar;
         private System.Windows.Forms.Button BtnRegresar;
+        private System.Windows.Forms.Button button1;
     }
 }

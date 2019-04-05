@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Consultar_Equipo));
             this.LblCodigo = new System.Windows.Forms.Label();
             this.TxtCodigo = new System.Windows.Forms.TextBox();
             this.LblArea = new System.Windows.Forms.Label();
@@ -46,6 +47,7 @@
             this.BtnCancelar = new System.Windows.Forms.Button();
             this.BtnRepMantenimiento = new System.Windows.Forms.Button();
             this.BtnInventario = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.DgvEquipos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -86,12 +88,15 @@
             // BtnBuscarEquipo
             // 
             this.BtnBuscarEquipo.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnBuscarEquipo.Image = ((System.Drawing.Image)(resources.GetObject("BtnBuscarEquipo.Image")));
+            this.BtnBuscarEquipo.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnBuscarEquipo.Location = new System.Drawing.Point(623, 11);
             this.BtnBuscarEquipo.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.BtnBuscarEquipo.Name = "BtnBuscarEquipo";
-            this.BtnBuscarEquipo.Size = new System.Drawing.Size(87, 35);
+            this.BtnBuscarEquipo.Size = new System.Drawing.Size(98, 35);
             this.BtnBuscarEquipo.TabIndex = 4;
             this.BtnBuscarEquipo.Text = "Buscar";
+            this.BtnBuscarEquipo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnBuscarEquipo.UseVisualStyleBackColor = true;
             this.BtnBuscarEquipo.Click += new System.EventHandler(this.BtnBuscarEquipo_Click);
             // 
@@ -150,69 +155,94 @@
             // BtnModificar
             // 
             this.BtnModificar.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnModificar.Image = ((System.Drawing.Image)(resources.GetObject("BtnModificar.Image")));
+            this.BtnModificar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnModificar.Location = new System.Drawing.Point(12, 373);
             this.BtnModificar.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.BtnModificar.Name = "BtnModificar";
-            this.BtnModificar.Size = new System.Drawing.Size(87, 35);
+            this.BtnModificar.Size = new System.Drawing.Size(105, 35);
             this.BtnModificar.TabIndex = 6;
             this.BtnModificar.Text = "Modificar";
+            this.BtnModificar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnModificar.UseVisualStyleBackColor = true;
             this.BtnModificar.Click += new System.EventHandler(this.BtnModificar_Click);
             // 
             // BtnEliminar
             // 
             this.BtnEliminar.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnEliminar.Location = new System.Drawing.Point(146, 373);
+            this.BtnEliminar.Image = ((System.Drawing.Image)(resources.GetObject("BtnEliminar.Image")));
+            this.BtnEliminar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnEliminar.Location = new System.Drawing.Point(180, 373);
             this.BtnEliminar.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.BtnEliminar.Name = "BtnEliminar";
-            this.BtnEliminar.Size = new System.Drawing.Size(87, 35);
+            this.BtnEliminar.Size = new System.Drawing.Size(92, 35);
             this.BtnEliminar.TabIndex = 7;
             this.BtnEliminar.Text = "Eliminar";
+            this.BtnEliminar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnEliminar.UseVisualStyleBackColor = true;
             this.BtnEliminar.Click += new System.EventHandler(this.BtnEliminar_Click);
             // 
             // BtnCancelar
             // 
             this.BtnCancelar.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnCancelar.Location = new System.Drawing.Point(293, 373);
+            this.BtnCancelar.Image = ((System.Drawing.Image)(resources.GetObject("BtnCancelar.Image")));
+            this.BtnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnCancelar.Location = new System.Drawing.Point(324, 373);
             this.BtnCancelar.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.BtnCancelar.Name = "BtnCancelar";
-            this.BtnCancelar.Size = new System.Drawing.Size(87, 35);
+            this.BtnCancelar.Size = new System.Drawing.Size(92, 35);
             this.BtnCancelar.TabIndex = 8;
             this.BtnCancelar.Text = "Cancelar";
+            this.BtnCancelar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnCancelar.UseVisualStyleBackColor = true;
             this.BtnCancelar.Click += new System.EventHandler(this.BtnCancelar_Click);
             // 
             // BtnRepMantenimiento
             // 
             this.BtnRepMantenimiento.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnRepMantenimiento.Location = new System.Drawing.Point(427, 373);
+            this.BtnRepMantenimiento.Image = ((System.Drawing.Image)(resources.GetObject("BtnRepMantenimiento.Image")));
+            this.BtnRepMantenimiento.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnRepMantenimiento.Location = new System.Drawing.Point(463, 373);
             this.BtnRepMantenimiento.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.BtnRepMantenimiento.Name = "BtnRepMantenimiento";
-            this.BtnRepMantenimiento.Size = new System.Drawing.Size(247, 35);
+            this.BtnRepMantenimiento.Size = new System.Drawing.Size(258, 35);
             this.BtnRepMantenimiento.TabIndex = 9;
             this.BtnRepMantenimiento.Text = "Generar Reporte de Mantenimiento";
+            this.BtnRepMantenimiento.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnRepMantenimiento.UseVisualStyleBackColor = true;
             this.BtnRepMantenimiento.Click += new System.EventHandler(this.BtnRepMantenimiento_Click);
             // 
             // BtnInventario
             // 
             this.BtnInventario.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnInventario.Location = new System.Drawing.Point(721, 373);
+            this.BtnInventario.Image = ((System.Drawing.Image)(resources.GetObject("BtnInventario.Image")));
+            this.BtnInventario.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnInventario.Location = new System.Drawing.Point(757, 373);
             this.BtnInventario.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.BtnInventario.Name = "BtnInventario";
-            this.BtnInventario.Size = new System.Drawing.Size(157, 35);
+            this.BtnInventario.Size = new System.Drawing.Size(171, 35);
             this.BtnInventario.TabIndex = 10;
             this.BtnInventario.Text = "Consultar Inventario";
+            this.BtnInventario.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnInventario.UseVisualStyleBackColor = true;
             this.BtnInventario.Click += new System.EventHandler(this.BtnInventario_Click);
+            // 
+            // button1
+            // 
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.Location = new System.Drawing.Point(777, 12);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(156, 219);
+            this.button1.TabIndex = 20;
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // Consultar_Equipo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Green;
-            this.ClientSize = new System.Drawing.Size(1004, 416);
+            this.ClientSize = new System.Drawing.Size(939, 416);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.BtnInventario);
             this.Controls.Add(this.BtnRepMantenimiento);
             this.Controls.Add(this.BtnCancelar);
@@ -255,5 +285,6 @@
         private System.Windows.Forms.Button BtnCancelar;
         private System.Windows.Forms.Button BtnRepMantenimiento;
         private System.Windows.Forms.Button BtnInventario;
+        private System.Windows.Forms.Button button1;
     }
 }

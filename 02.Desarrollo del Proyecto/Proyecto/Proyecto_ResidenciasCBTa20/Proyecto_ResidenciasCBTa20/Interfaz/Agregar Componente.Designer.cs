@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Agregar_Componente));
             this.LblNombre = new System.Windows.Forms.Label();
             this.LblCantidad = new System.Windows.Forms.Label();
             this.LblCosto = new System.Windows.Forms.Label();
@@ -40,6 +41,7 @@
             this.BtnAgregar = new System.Windows.Forms.Button();
             this.BtnSalir = new System.Windows.Forms.Button();
             this.CmbEstado = new System.Windows.Forms.ComboBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // LblNombre
@@ -127,24 +129,30 @@
             // BtnAgregar
             // 
             this.BtnAgregar.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnAgregar.Location = new System.Drawing.Point(276, 383);
+            this.BtnAgregar.Image = ((System.Drawing.Image)(resources.GetObject("BtnAgregar.Image")));
+            this.BtnAgregar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnAgregar.Location = new System.Drawing.Point(244, 355);
             this.BtnAgregar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.BtnAgregar.Name = "BtnAgregar";
-            this.BtnAgregar.Size = new System.Drawing.Size(88, 35);
+            this.BtnAgregar.Size = new System.Drawing.Size(97, 35);
             this.BtnAgregar.TabIndex = 10;
             this.BtnAgregar.Text = "Agregar";
+            this.BtnAgregar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnAgregar.UseVisualStyleBackColor = true;
             this.BtnAgregar.Click += new System.EventHandler(this.BtnAgregar_Click);
             // 
             // BtnSalir
             // 
             this.BtnSalir.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnSalir.Location = new System.Drawing.Point(75, 383);
+            this.BtnSalir.Image = ((System.Drawing.Image)(resources.GetObject("BtnSalir.Image")));
+            this.BtnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnSalir.Location = new System.Drawing.Point(69, 355);
             this.BtnSalir.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.BtnSalir.Name = "BtnSalir";
-            this.BtnSalir.Size = new System.Drawing.Size(88, 35);
+            this.BtnSalir.Size = new System.Drawing.Size(77, 35);
             this.BtnSalir.TabIndex = 11;
             this.BtnSalir.Text = "Salir";
+            this.BtnSalir.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnSalir.UseVisualStyleBackColor = true;
             this.BtnSalir.Click += new System.EventHandler(this.BtnSalir_Click);
             // 
@@ -161,12 +169,22 @@
             this.CmbEstado.Size = new System.Drawing.Size(140, 28);
             this.CmbEstado.TabIndex = 12;
             // 
+            // button1
+            // 
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.Location = new System.Drawing.Point(349, 12);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(114, 155);
+            this.button1.TabIndex = 13;
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // Agregar_Componente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Green;
-            this.ClientSize = new System.Drawing.Size(521, 432);
+            this.ClientSize = new System.Drawing.Size(477, 406);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.CmbEstado);
             this.Controls.Add(this.BtnSalir);
             this.Controls.Add(this.BtnAgregar);
@@ -203,5 +221,6 @@
         private System.Windows.Forms.Button BtnAgregar;
         private System.Windows.Forms.Button BtnSalir;
         private System.Windows.Forms.ComboBox CmbEstado;
+        private System.Windows.Forms.Button button1;
     }
 }

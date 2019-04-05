@@ -28,12 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.LblUsuario = new System.Windows.Forms.Label();
             this.LblContra = new System.Windows.Forms.Label();
             this.TxtUsuario = new System.Windows.Forms.TextBox();
             this.TxtContraseña = new System.Windows.Forms.TextBox();
             this.BtnIniciar = new System.Windows.Forms.Button();
             this.BtnSalir = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // LblUsuario
@@ -74,32 +76,48 @@
             // BtnIniciar
             // 
             this.BtnIniciar.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnIniciar.Location = new System.Drawing.Point(121, 161);
+            this.BtnIniciar.Image = ((System.Drawing.Image)(resources.GetObject("BtnIniciar.Image")));
+            this.BtnIniciar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnIniciar.Location = new System.Drawing.Point(49, 161);
             this.BtnIniciar.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.BtnIniciar.Name = "BtnIniciar";
             this.BtnIniciar.Size = new System.Drawing.Size(87, 35);
             this.BtnIniciar.TabIndex = 4;
             this.BtnIniciar.Text = "Iniciar";
+            this.BtnIniciar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnIniciar.UseVisualStyleBackColor = true;
             this.BtnIniciar.Click += new System.EventHandler(this.BtnIniciar_Click);
             // 
             // BtnSalir
             // 
             this.BtnSalir.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnSalir.Location = new System.Drawing.Point(243, 161);
+            this.BtnSalir.Image = ((System.Drawing.Image)(resources.GetObject("BtnSalir.Image")));
+            this.BtnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnSalir.Location = new System.Drawing.Point(191, 161);
             this.BtnSalir.Name = "BtnSalir";
-            this.BtnSalir.Size = new System.Drawing.Size(95, 35);
+            this.BtnSalir.Size = new System.Drawing.Size(78, 35);
             this.BtnSalir.TabIndex = 6;
             this.BtnSalir.Text = "Salir";
+            this.BtnSalir.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnSalir.UseVisualStyleBackColor = true;
             this.BtnSalir.Click += new System.EventHandler(this.BtnSalir_Click);
+            // 
+            // button1
+            // 
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.Location = new System.Drawing.Point(313, 12);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(114, 155);
+            this.button1.TabIndex = 7;
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Green;
-            this.ClientSize = new System.Drawing.Size(472, 241);
+            this.ClientSize = new System.Drawing.Size(439, 215);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.BtnSalir);
             this.Controls.Add(this.BtnIniciar);
             this.Controls.Add(this.TxtContraseña);
@@ -123,6 +141,7 @@
         private System.Windows.Forms.TextBox TxtContraseña;
         private System.Windows.Forms.Button BtnIniciar;
         private System.Windows.Forms.Button BtnSalir;
+        private System.Windows.Forms.Button button1;
     }
 }
 

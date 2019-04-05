@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Componentes));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Id_Componente = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -38,6 +39,7 @@
             this.BtnRepCostos = new System.Windows.Forms.Button();
             this.BtnAgregarComp = new System.Windows.Forms.Button();
             this.BtnSalir = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -90,45 +92,64 @@
             // BtnRepCostos
             // 
             this.BtnRepCostos.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnRepCostos.Image = ((System.Drawing.Image)(resources.GetObject("BtnRepCostos.Image")));
+            this.BtnRepCostos.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnRepCostos.Location = new System.Drawing.Point(32, 273);
             this.BtnRepCostos.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.BtnRepCostos.Name = "BtnRepCostos";
-            this.BtnRepCostos.Size = new System.Drawing.Size(190, 35);
+            this.BtnRepCostos.Size = new System.Drawing.Size(206, 35);
             this.BtnRepCostos.TabIndex = 1;
             this.BtnRepCostos.Text = "Generar Reporte de Costos";
+            this.BtnRepCostos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnRepCostos.UseVisualStyleBackColor = true;
             this.BtnRepCostos.Click += new System.EventHandler(this.BtnRepCostos_Click);
             // 
             // BtnAgregarComp
             // 
             this.BtnAgregarComp.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnAgregarComp.Image = ((System.Drawing.Image)(resources.GetObject("BtnAgregarComp.Image")));
+            this.BtnAgregarComp.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnAgregarComp.Location = new System.Drawing.Point(284, 273);
             this.BtnAgregarComp.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.BtnAgregarComp.Name = "BtnAgregarComp";
-            this.BtnAgregarComp.Size = new System.Drawing.Size(153, 35);
+            this.BtnAgregarComp.Size = new System.Drawing.Size(96, 35);
             this.BtnAgregarComp.TabIndex = 2;
             this.BtnAgregarComp.Text = "Agregar Componentes";
+            this.BtnAgregarComp.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnAgregarComp.UseVisualStyleBackColor = true;
             this.BtnAgregarComp.Click += new System.EventHandler(this.BtnAgregarComp_Click);
             // 
             // BtnSalir
             // 
             this.BtnSalir.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnSalir.Location = new System.Drawing.Point(551, 273);
+            this.BtnSalir.Image = ((System.Drawing.Image)(resources.GetObject("BtnSalir.Image")));
+            this.BtnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnSalir.Location = new System.Drawing.Point(464, 273);
             this.BtnSalir.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.BtnSalir.Name = "BtnSalir";
-            this.BtnSalir.Size = new System.Drawing.Size(87, 35);
+            this.BtnSalir.Size = new System.Drawing.Size(81, 35);
             this.BtnSalir.TabIndex = 3;
             this.BtnSalir.Text = "Salir";
+            this.BtnSalir.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnSalir.UseVisualStyleBackColor = true;
             this.BtnSalir.Click += new System.EventHandler(this.BtnSalir_Click);
+            // 
+            // button1
+            // 
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.Location = new System.Drawing.Point(684, 12);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(142, 214);
+            this.button1.TabIndex = 20;
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // Componentes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Green;
-            this.ClientSize = new System.Drawing.Size(934, 315);
+            this.ClientSize = new System.Drawing.Size(843, 315);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.BtnSalir);
             this.Controls.Add(this.BtnAgregarComp);
             this.Controls.Add(this.BtnRepCostos);
@@ -155,5 +176,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Costo;
         private System.Windows.Forms.DataGridViewTextBoxColumn Estado;
         private System.Windows.Forms.DataGridViewTextBoxColumn Fecha_Ingreso;
+        private System.Windows.Forms.Button button1;
     }
 }
