@@ -21,10 +21,7 @@ namespace Proyecto_ResidenciasCBTa20
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
+      
 
         private void BtnBuscar_Click(object sender, EventArgs e)
         {

@@ -41,6 +41,9 @@
             this.BtnSalir = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.skinEngine1 = new Sunisoft.IrisSkin.SkinEngine(((System.ComponentModel.Component)(this)));
+            this.BtnBuscar = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.TxtNombre = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -54,10 +57,10 @@
             this.Costo,
             this.Estado,
             this.Fecha_Ingreso});
-            this.dataGridView1.Location = new System.Drawing.Point(14, 18);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 91);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(650, 208);
+            this.dataGridView1.Size = new System.Drawing.Size(641, 208);
             this.dataGridView1.TabIndex = 0;
             // 
             // Id_Componente
@@ -95,7 +98,7 @@
             this.BtnRepCostos.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnRepCostos.Image = ((System.Drawing.Image)(resources.GetObject("BtnRepCostos.Image")));
             this.BtnRepCostos.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnRepCostos.Location = new System.Drawing.Point(32, 273);
+            this.BtnRepCostos.Location = new System.Drawing.Point(31, 318);
             this.BtnRepCostos.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.BtnRepCostos.Name = "BtnRepCostos";
             this.BtnRepCostos.Size = new System.Drawing.Size(206, 35);
@@ -110,7 +113,7 @@
             this.BtnAgregarComp.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnAgregarComp.Image = ((System.Drawing.Image)(resources.GetObject("BtnAgregarComp.Image")));
             this.BtnAgregarComp.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnAgregarComp.Location = new System.Drawing.Point(284, 273);
+            this.BtnAgregarComp.Location = new System.Drawing.Point(283, 318);
             this.BtnAgregarComp.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.BtnAgregarComp.Name = "BtnAgregarComp";
             this.BtnAgregarComp.Size = new System.Drawing.Size(179, 35);
@@ -125,7 +128,7 @@
             this.BtnSalir.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnSalir.Image = ((System.Drawing.Image)(resources.GetObject("BtnSalir.Image")));
             this.BtnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnSalir.Location = new System.Drawing.Point(525, 273);
+            this.BtnSalir.Location = new System.Drawing.Point(524, 318);
             this.BtnSalir.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.BtnSalir.Name = "BtnSalir";
             this.BtnSalir.Size = new System.Drawing.Size(81, 35);
@@ -138,7 +141,7 @@
             // button1
             // 
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(681, 12);
+            this.button1.Location = new System.Drawing.Point(692, 12);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(145, 214);
             this.button1.TabIndex = 20;
@@ -152,12 +155,43 @@
     "SkinVS.NET\\Emerald\\EmeraldColor2.ssk";
             this.skinEngine1.SkinStreamMain = ((System.IO.Stream)(resources.GetObject("skinEngine1.SkinStreamMain")));
             // 
+            // BtnBuscar
+            // 
+            this.BtnBuscar.Image = ((System.Drawing.Image)(resources.GetObject("BtnBuscar.Image")));
+            this.BtnBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnBuscar.Location = new System.Drawing.Point(482, 30);
+            this.BtnBuscar.Name = "BtnBuscar";
+            this.BtnBuscar.Size = new System.Drawing.Size(77, 25);
+            this.BtnBuscar.TabIndex = 21;
+            this.BtnBuscar.Text = "Buscar";
+            this.BtnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnBuscar.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(27, 30);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(149, 20);
+            this.label1.TabIndex = 22;
+            this.label1.Text = "Nombre del Componente";
+            // 
+            // TxtNombre
+            // 
+            this.TxtNombre.Location = new System.Drawing.Point(182, 30);
+            this.TxtNombre.Name = "TxtNombre";
+            this.TxtNombre.Size = new System.Drawing.Size(218, 25);
+            this.TxtNombre.TabIndex = 23;
+            // 
             // Componentes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(843, 315);
+            this.ClientSize = new System.Drawing.Size(860, 367);
+            this.Controls.Add(this.TxtNombre);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.BtnBuscar);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.BtnSalir);
             this.Controls.Add(this.BtnAgregarComp);
@@ -170,6 +204,7 @@
             this.Load += new System.EventHandler(this.Componentes_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -187,5 +222,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Fecha_Ingreso;
         private System.Windows.Forms.Button button1;
         private Sunisoft.IrisSkin.SkinEngine skinEngine1;
+        private System.Windows.Forms.Button BtnBuscar;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox TxtNombre;
     }
 }
