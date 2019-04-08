@@ -24,18 +24,20 @@ namespace Proyecto_ResidenciasCBTa20.Logica
         {
             String SQL = "insert into equipo values (null, '?1', '?2', '?3', '?4')";
             SQL = SQL.Replace("?1", mComponente.id_Componente.ToString());
-            SQL = SQL.Replace("?2", mComponente.Descripcion);
-            SQL = SQL.Replace("?3", mComponente.Nombre);
-            SQL = SQL.Replace("?4", mComponente.Fecha_Ingreso.ToString());
+            SQL = SQL.Replace("?2", mComponente.Nombre);
+            SQL = SQL.Replace("?3", mComponente.Cantidad.ToString());
+            SQL = SQL.Replace("?4", mComponente.Costo.ToString());
+            SQL = SQL.Replace("?5", mComponente.Estado);
+            SQL = SQL.Replace("?6", mComponente.Fecha_Ingreso.ToString());
 
             mConexion.EjecutarActualizacion(SQL);
         }
 
         public void ModificarComponente(Componente mComponente)
         {
-            String SQL = "update componente set costo='?1', descripcion='?2', nombre='?3',  where id='?4'";
+            String SQL = "update componente set costo='?1', cantidad='?2', nombre='?3',  where id='?4'";
             SQL = SQL.Replace("?1", mComponente.Costo.ToString());
-            SQL = SQL.Replace("?2", mComponente.Descripcion);
+            SQL = SQL.Replace("?2", mComponente.Cantidad.ToString());
             SQL = SQL.Replace("?3", mComponente.Nombre);
             SQL = SQL.Replace("?4", mComponente.id_Componente.ToString());
 
@@ -45,7 +47,7 @@ namespace Proyecto_ResidenciasCBTa20.Logica
 
         public DataTable ConsultarComponentes(int id_Componente)
         {
-            String SQL = "select id_componente, descripcion, nombre, fecha_ingreso";
+            String SQL = "select id_componente, nombre, cantidad, costo, estado, fecha_ingreso";
             SQL = SQL.Replace("?1", id_Componente.ToString());
             DataTable ListaEquipos = mConexion.EjecutarConsulta(SQL);
             return ListaEquipos;
@@ -53,7 +55,7 @@ namespace Proyecto_ResidenciasCBTa20.Logica
 
         public DataTable ConsultarComponente()
         {
-            String SQL = "select id_componente, descripcion, nombre, fecha_ingreso";
+            String SQL = "select id_componente, nombre, cantidad, costo, estado, fecha_ingreso";
             DataTable ListaEquipos = mConexion.EjecutarConsulta(SQL);
             return ListaEquipos;
         }

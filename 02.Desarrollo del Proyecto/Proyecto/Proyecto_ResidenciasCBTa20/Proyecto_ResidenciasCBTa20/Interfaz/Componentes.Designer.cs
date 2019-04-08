@@ -40,6 +40,7 @@
             this.BtnAgregarComp = new System.Windows.Forms.Button();
             this.BtnSalir = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.skinEngine1 = new Sunisoft.IrisSkin.SkinEngine(((System.ComponentModel.Component)(this)));
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -112,7 +113,7 @@
             this.BtnAgregarComp.Location = new System.Drawing.Point(284, 273);
             this.BtnAgregarComp.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.BtnAgregarComp.Name = "BtnAgregarComp";
-            this.BtnAgregarComp.Size = new System.Drawing.Size(96, 35);
+            this.BtnAgregarComp.Size = new System.Drawing.Size(179, 35);
             this.BtnAgregarComp.TabIndex = 2;
             this.BtnAgregarComp.Text = "Agregar Componentes";
             this.BtnAgregarComp.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -124,7 +125,7 @@
             this.BtnSalir.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnSalir.Image = ((System.Drawing.Image)(resources.GetObject("BtnSalir.Image")));
             this.BtnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnSalir.Location = new System.Drawing.Point(464, 273);
+            this.BtnSalir.Location = new System.Drawing.Point(525, 273);
             this.BtnSalir.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.BtnSalir.Name = "BtnSalir";
             this.BtnSalir.Size = new System.Drawing.Size(81, 35);
@@ -137,17 +138,25 @@
             // button1
             // 
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(684, 12);
+            this.button1.Location = new System.Drawing.Point(681, 12);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(142, 214);
+            this.button1.Size = new System.Drawing.Size(145, 214);
             this.button1.TabIndex = 20;
             this.button1.UseVisualStyleBackColor = true;
+            // 
+            // skinEngine1
+            // 
+            this.skinEngine1.SerialNumber = "U4N2UjLguUZs33UR+Vy47JAZ81t2fjIFvut28vc5oHiVeivGb/NZMA==";
+            this.skinEngine1.SkinFile = "C:\\Users\\Luis\\Documents\\GitHub\\Proyecto_Inventario\\02.Desarrollo del Proyecto\\Pro" +
+    "yecto\\Proyecto_ResidenciasCBTa20\\Proyecto_ResidenciasCBTa20\\SKIN NET 2010 WIN 7\\" +
+    "SkinVS.NET\\Emerald\\EmeraldColor2.ssk";
+            this.skinEngine1.SkinStreamMain = ((System.IO.Stream)(resources.GetObject("skinEngine1.SkinStreamMain")));
             // 
             // Componentes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Green;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(843, 315);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.BtnSalir);
@@ -177,5 +186,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Estado;
         private System.Windows.Forms.DataGridViewTextBoxColumn Fecha_Ingreso;
         private System.Windows.Forms.Button button1;
+        private Sunisoft.IrisSkin.SkinEngine skinEngine1;
     }
 }
