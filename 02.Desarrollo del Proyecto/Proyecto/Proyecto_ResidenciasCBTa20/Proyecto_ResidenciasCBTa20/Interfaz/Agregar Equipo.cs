@@ -30,16 +30,19 @@ namespace Proyecto_ResidenciasCBTa20
 
         private void BtnAgregar_Click(object sender, EventArgs e)
         {
-            if (TxtMarca.Text != "" && TxtModelo.Text != "" && CmbTipo.Text != "" && TxtDescripcion.Text != "" && CmbArea.Text != "" && CmbFuncionalidad.Text != "")
+            if (CmbTipo.Text != "" && CmbArea.Text != "" && TxtMarca.Text != "" && TxtModelo.Text != "" 
+                && TxtEncargado.Text != "" && CmbFuncionalidad.Text != "" && TxtDescripcion.Text !="")
             {
                 try
                 {
                     Equipo mEquipo = new Equipo();
-                    mEquipo.Encargado = TxtEncargado.Text;
+                    mEquipo.Tipo = CmbTipo.Text;
+                    mEquipo.Area = CmbArea.Text;
                     mEquipo.Marca = TxtMarca.Text;
                     mEquipo.Modelo = TxtModelo.Text;
-                    mEquipo.Tipo = CmbTipo.Text;
-                    mEquipo.Funcionalidad = CmbFuncionalidad.SelectedItem.ToString();
+                    mEquipo.Encargado = TxtEncargado.Text;
+                    mEquipo.Funcionalidad = CmbFuncionalidad.Text;
+                    mEquipo.Descripcion = TxtDescripcion.Text;
 
 
                     ControlEquipo mControlEquipo = new ControlEquipo();

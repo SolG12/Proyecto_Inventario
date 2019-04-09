@@ -21,16 +21,16 @@ namespace Proyecto_ResidenciasCBTa20.Logica
 
         public void AgregarEquipo(Equipo mEquipo)
         {
-            String SQL = "insert into equipo values (null, '?1', '?2', '?3', '?4', '?5', '?6')";
+            String SQL = "insert into equipo values (null, '?2', '?3', '?4', '?5', '?6', '?7', '?8')";
             SQL = SQL.Replace("?1", mEquipo.id_Equipo.ToString());
-            SQL = SQL.Replace("?2", mEquipo.Marca);
-            SQL = SQL.Replace("?3", mEquipo.Modelo);
-            SQL = SQL.Replace("?4", mEquipo.Funcionalidad);
-            SQL = SQL.Replace("?5", mEquipo.Tipo);
-            SQL = SQL.Replace("?6", mEquipo.Descripcion);
-            SQL = SQL.Replace("?7", mEquipo.Area);
-            SQL = SQL.Replace("?8", mEquipo.Encargado);
-            SQL = SQL.Replace("?9", mEquipo.Estado);
+            SQL = SQL.Replace("?2", mEquipo.Tipo);
+            SQL = SQL.Replace("?3", mEquipo.Area);
+            SQL = SQL.Replace("?4", mEquipo.Marca);
+            SQL = SQL.Replace("?5", mEquipo.Modelo);
+            SQL = SQL.Replace("?6", mEquipo.Encargado);
+            SQL = SQL.Replace("?7", mEquipo.Funcionalidad);
+            SQL = SQL.Replace("?8", mEquipo.Descripcion);
+       
 
 
 

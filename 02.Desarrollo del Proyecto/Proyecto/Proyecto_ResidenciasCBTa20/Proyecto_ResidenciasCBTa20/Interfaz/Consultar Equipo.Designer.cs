@@ -231,7 +231,7 @@
             // button1
             // 
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(772, 12);
+            this.button1.Location = new System.Drawing.Point(786, 12);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(169, 219);
             this.button1.TabIndex = 20;
@@ -249,8 +249,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(949, 416);
+            this.ClientSize = new System.Drawing.Size(967, 437);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.BtnInventario);
             this.Controls.Add(this.BtnRepMantenimiento);

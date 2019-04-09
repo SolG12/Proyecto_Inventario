@@ -191,8 +191,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(477, 406);
+            this.ClientSize = new System.Drawing.Size(484, 414);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.CmbEstado);
             this.Controls.Add(this.BtnSalir);

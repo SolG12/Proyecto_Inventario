@@ -36,17 +36,17 @@
             this.LblArea = new System.Windows.Forms.Label();
             this.LblEncargado = new System.Windows.Forms.Label();
             this.LblDesc = new System.Windows.Forms.Label();
-            this.TxtMarca = new System.Windows.Forms.TextBox();
-            this.TxtModelo = new System.Windows.Forms.TextBox();
-            this.CmbFuncionalidad = new System.Windows.Forms.ComboBox();
-            this.CmbTipo = new System.Windows.Forms.ComboBox();
-            this.TxtEncargado = new System.Windows.Forms.TextBox();
-            this.CmbArea = new System.Windows.Forms.ComboBox();
-            this.TxtDescripcion = new System.Windows.Forms.TextBox();
             this.BtnAgregar = new System.Windows.Forms.Button();
             this.BtnRegresar = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.skinEngine1 = new Sunisoft.IrisSkin.SkinEngine(((System.ComponentModel.Component)(this)));
+            this.CmbTipo = new System.Windows.Forms.ComboBox();
+            this.CmbArea = new System.Windows.Forms.ComboBox();
+            this.TxtMarca = new System.Windows.Forms.TextBox();
+            this.TxtModelo = new System.Windows.Forms.TextBox();
+            this.TxtEncargado = new System.Windows.Forms.TextBox();
+            this.CmbFuncionalidad = new System.Windows.Forms.ComboBox();
+            this.TxtDescripcion = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // LblMarca
@@ -112,91 +112,6 @@
             this.LblDesc.TabIndex = 7;
             this.LblDesc.Text = "Descripción";
             // 
-            // TxtMarca
-            // 
-            this.TxtMarca.Location = new System.Drawing.Point(120, 107);
-            this.TxtMarca.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
-            this.TxtMarca.Name = "TxtMarca";
-            this.TxtMarca.Size = new System.Drawing.Size(140, 25);
-            this.TxtMarca.TabIndex = 9;
-            // 
-            // TxtModelo
-            // 
-            this.TxtModelo.Location = new System.Drawing.Point(120, 148);
-            this.TxtModelo.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
-            this.TxtModelo.Name = "TxtModelo";
-            this.TxtModelo.Size = new System.Drawing.Size(140, 25);
-            this.TxtModelo.TabIndex = 10;
-            // 
-            // CmbFuncionalidad
-            // 
-            this.CmbFuncionalidad.FormattingEnabled = true;
-            this.CmbFuncionalidad.Items.AddRange(new object[] {
-            "Funcional ",
-            "No funcional"});
-            this.CmbFuncionalidad.Location = new System.Drawing.Point(120, 238);
-            this.CmbFuncionalidad.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
-            this.CmbFuncionalidad.Name = "CmbFuncionalidad";
-            this.CmbFuncionalidad.Size = new System.Drawing.Size(140, 28);
-            this.CmbFuncionalidad.TabIndex = 11;
-            // 
-            // CmbTipo
-            // 
-            this.CmbTipo.FormattingEnabled = true;
-            this.CmbTipo.Items.AddRange(new object[] {
-            "Escritorio",
-            "Laptop"});
-            this.CmbTipo.Location = new System.Drawing.Point(120, 14);
-            this.CmbTipo.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
-            this.CmbTipo.Name = "CmbTipo";
-            this.CmbTipo.Size = new System.Drawing.Size(140, 28);
-            this.CmbTipo.TabIndex = 13;
-            // 
-            // TxtEncargado
-            // 
-            this.TxtEncargado.Location = new System.Drawing.Point(120, 195);
-            this.TxtEncargado.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
-            this.TxtEncargado.Name = "TxtEncargado";
-            this.TxtEncargado.Size = new System.Drawing.Size(140, 25);
-            this.TxtEncargado.TabIndex = 14;
-            // 
-            // CmbArea
-            // 
-            this.CmbArea.FormattingEnabled = true;
-            this.CmbArea.Items.AddRange(new object[] {
-            "Dirección",
-            "Subdirección",
-            "Recursos Humanos",
-            "Recursos Financieros",
-            "Servicios Escolares",
-            "Formación Docente",
-            "Acádemico y Competencias",
-            "Orientación",
-            "Biblioteca",
-            "Almácen",
-            "Vinculación",
-            "Subdirección Acádemica",
-            "Planeación",
-            "Producción",
-            "Subdirección Administrativa",
-            "Sala 1",
-            "Sala 2",
-            "Sala Interactiva"});
-            this.CmbArea.Location = new System.Drawing.Point(120, 59);
-            this.CmbArea.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
-            this.CmbArea.Name = "CmbArea";
-            this.CmbArea.Size = new System.Drawing.Size(140, 28);
-            this.CmbArea.TabIndex = 15;
-            // 
-            // TxtDescripcion
-            // 
-            this.TxtDescripcion.Location = new System.Drawing.Point(29, 314);
-            this.TxtDescripcion.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
-            this.TxtDescripcion.Multiline = true;
-            this.TxtDescripcion.Name = "TxtDescripcion";
-            this.TxtDescripcion.Size = new System.Drawing.Size(416, 98);
-            this.TxtDescripcion.TabIndex = 16;
-            // 
             // BtnAgregar
             // 
             this.BtnAgregar.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -244,22 +159,102 @@
     "SkinVS.NET\\Emerald\\EmeraldColor2.ssk";
             this.skinEngine1.SkinStreamMain = ((System.IO.Stream)(resources.GetObject("skinEngine1.SkinStreamMain")));
             // 
+            // CmbTipo
+            // 
+            this.CmbTipo.FormattingEnabled = true;
+            this.CmbTipo.Items.AddRange(new object[] {
+            "Laptop",
+            "Escritorio"});
+            this.CmbTipo.Location = new System.Drawing.Point(120, 12);
+            this.CmbTipo.Name = "CmbTipo";
+            this.CmbTipo.Size = new System.Drawing.Size(121, 28);
+            this.CmbTipo.TabIndex = 20;
+            // 
+            // CmbArea
+            // 
+            this.CmbArea.FormattingEnabled = true;
+            this.CmbArea.Items.AddRange(new object[] {
+            "Dirección",
+            "Subdirección",
+            "Recursos Humanos",
+            "Recursos FInancieros",
+            "Servicios Escolares",
+            "Formación Docente",
+            "Acádemico y Competencias",
+            "Orientación",
+            "Biblioteca",
+            "Almácen",
+            "Vinculación",
+            "Subdirección Acádemica",
+            "Planeación",
+            "Producción",
+            "Subdirección Administrativa",
+            "Sala 1",
+            "Sala 2",
+            "Sala Interactiva"});
+            this.CmbArea.Location = new System.Drawing.Point(120, 59);
+            this.CmbArea.Name = "CmbArea";
+            this.CmbArea.Size = new System.Drawing.Size(121, 28);
+            this.CmbArea.TabIndex = 21;
+            // 
+            // TxtMarca
+            // 
+            this.TxtMarca.Location = new System.Drawing.Point(120, 107);
+            this.TxtMarca.Name = "TxtMarca";
+            this.TxtMarca.Size = new System.Drawing.Size(121, 25);
+            this.TxtMarca.TabIndex = 22;
+            // 
+            // TxtModelo
+            // 
+            this.TxtModelo.Location = new System.Drawing.Point(120, 151);
+            this.TxtModelo.Name = "TxtModelo";
+            this.TxtModelo.Size = new System.Drawing.Size(121, 25);
+            this.TxtModelo.TabIndex = 23;
+            // 
+            // TxtEncargado
+            // 
+            this.TxtEncargado.Location = new System.Drawing.Point(120, 192);
+            this.TxtEncargado.Name = "TxtEncargado";
+            this.TxtEncargado.Size = new System.Drawing.Size(121, 25);
+            this.TxtEncargado.TabIndex = 24;
+            // 
+            // CmbFuncionalidad
+            // 
+            this.CmbFuncionalidad.FormattingEnabled = true;
+            this.CmbFuncionalidad.Items.AddRange(new object[] {
+            "Funcional ",
+            "No Funcional"});
+            this.CmbFuncionalidad.Location = new System.Drawing.Point(120, 235);
+            this.CmbFuncionalidad.Name = "CmbFuncionalidad";
+            this.CmbFuncionalidad.Size = new System.Drawing.Size(121, 28);
+            this.CmbFuncionalidad.TabIndex = 25;
+            // 
+            // TxtDescripcion
+            // 
+            this.TxtDescripcion.Location = new System.Drawing.Point(30, 308);
+            this.TxtDescripcion.Multiline = true;
+            this.TxtDescripcion.Name = "TxtDescripcion";
+            this.TxtDescripcion.Size = new System.Drawing.Size(367, 118);
+            this.TxtDescripcion.TabIndex = 26;
+            // 
             // Agregar_Equipo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(501, 498);
+            this.ClientSize = new System.Drawing.Size(508, 513);
+            this.Controls.Add(this.TxtDescripcion);
+            this.Controls.Add(this.CmbFuncionalidad);
+            this.Controls.Add(this.TxtEncargado);
+            this.Controls.Add(this.TxtModelo);
+            this.Controls.Add(this.TxtMarca);
+            this.Controls.Add(this.CmbArea);
+            this.Controls.Add(this.CmbTipo);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.BtnRegresar);
             this.Controls.Add(this.BtnAgregar);
-            this.Controls.Add(this.TxtDescripcion);
-            this.Controls.Add(this.CmbArea);
-            this.Controls.Add(this.TxtEncargado);
-            this.Controls.Add(this.CmbTipo);
-            this.Controls.Add(this.CmbFuncionalidad);
-            this.Controls.Add(this.TxtModelo);
-            this.Controls.Add(this.TxtMarca);
             this.Controls.Add(this.LblDesc);
             this.Controls.Add(this.LblEncargado);
             this.Controls.Add(this.LblArea);
@@ -286,16 +281,16 @@
         private System.Windows.Forms.Label LblArea;
         private System.Windows.Forms.Label LblEncargado;
         private System.Windows.Forms.Label LblDesc;
-        private System.Windows.Forms.TextBox TxtMarca;
-        private System.Windows.Forms.TextBox TxtModelo;
-        private System.Windows.Forms.ComboBox CmbFuncionalidad;
-        private System.Windows.Forms.ComboBox CmbTipo;
-        private System.Windows.Forms.TextBox TxtEncargado;
-        private System.Windows.Forms.ComboBox CmbArea;
-        private System.Windows.Forms.TextBox TxtDescripcion;
         private System.Windows.Forms.Button BtnAgregar;
         private System.Windows.Forms.Button BtnRegresar;
         private System.Windows.Forms.Button button1;
         private Sunisoft.IrisSkin.SkinEngine skinEngine1;
+        private System.Windows.Forms.ComboBox CmbTipo;
+        private System.Windows.Forms.ComboBox CmbArea;
+        private System.Windows.Forms.TextBox TxtMarca;
+        private System.Windows.Forms.TextBox TxtModelo;
+        private System.Windows.Forms.TextBox TxtEncargado;
+        private System.Windows.Forms.ComboBox CmbFuncionalidad;
+        private System.Windows.Forms.TextBox TxtDescripcion;
     }
 }
