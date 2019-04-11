@@ -38,8 +38,10 @@ namespace Proyecto_ResidenciasCBTa20.Interfaz
                     
                     mControlComponente.AgregarComponente(mComponente);
                     MessageBox.Show("Componente Guardado");
-          
 
+                this.Hide();
+                Menu_Principal mMenu_Principal = new Menu_Principal();
+                mMenu_Principal.Show();
             }
             else
             {
