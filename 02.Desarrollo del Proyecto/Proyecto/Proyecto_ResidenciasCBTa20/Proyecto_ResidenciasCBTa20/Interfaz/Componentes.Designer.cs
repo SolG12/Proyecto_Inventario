@@ -159,9 +159,9 @@
             // 
             this.BtnBuscar.Image = ((System.Drawing.Image)(resources.GetObject("BtnBuscar.Image")));
             this.BtnBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnBuscar.Location = new System.Drawing.Point(482, 30);
+            this.BtnBuscar.Location = new System.Drawing.Point(566, 27);
             this.BtnBuscar.Name = "BtnBuscar";
-            this.BtnBuscar.Size = new System.Drawing.Size(77, 25);
+            this.BtnBuscar.Size = new System.Drawing.Size(87, 33);
             this.BtnBuscar.TabIndex = 21;
             this.BtnBuscar.Text = "Buscar";
             this.BtnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -170,7 +170,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(27, 30);
+            this.label1.Location = new System.Drawing.Point(8, 30);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(149, 20);
             this.label1.TabIndex = 22;
@@ -180,7 +180,7 @@
             // 
             this.TxtNombre.Location = new System.Drawing.Point(182, 30);
             this.TxtNombre.Name = "TxtNombre";
-            this.TxtNombre.Size = new System.Drawing.Size(218, 25);
+            this.TxtNombre.Size = new System.Drawing.Size(350, 25);
             this.TxtNombre.TabIndex = 23;
             // 
             // Componentes

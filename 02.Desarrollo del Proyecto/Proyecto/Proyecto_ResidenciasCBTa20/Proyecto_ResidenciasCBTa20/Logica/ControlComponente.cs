@@ -22,47 +22,46 @@ namespace Proyecto_ResidenciasCBTa20.Logica
 
         public void AgregarComponente(Componente mComponente)
         {
-            String SQL = "insert into equipo values (null, '?1', '?2', '?3', '?4')";
-            SQL = SQL.Replace("?1", mComponente.id_Componente.ToString());
-            SQL = SQL.Replace("?2", mComponente.Nombre);
-            SQL = SQL.Replace("?3", mComponente.Cantidad.ToString());
-            SQL = SQL.Replace("?4", mComponente.Costo.ToString());
-            SQL = SQL.Replace("?5", mComponente.Estado);
-            SQL = SQL.Replace("?6", mComponente.Fecha_Ingreso.ToString());
+            String SQL = "insert into componente values (null, '?1', '?2', '?3', '?4')";
+            SQL = SQL.Replace("?1", mComponente.Nombre);
+            SQL = SQL.Replace("?2", mComponente.Fecha_Ingreso.ToString());
+            SQL = SQL.Replace("?3", mComponente.Costo.ToString());
+            SQL = SQL.Replace("?4", mComponente.Descripcion);
 
             mConexion.EjecutarActualizacion(SQL);
         }
 
         public void ModificarComponente(Componente mComponente)
         {
-            String SQL = "update componente set costo='?1', cantidad='?2', nombre='?3',  where id='?4'";
+            String SQL = "update componente set Costo='?1', Fecha_Ingreso='?2', Nombre='?3', Descripcion='?4'  where idComponente='?5'";
             SQL = SQL.Replace("?1", mComponente.Costo.ToString());
-            SQL = SQL.Replace("?2", mComponente.Cantidad.ToString());
+            SQL = SQL.Replace("?2", mComponente.Fecha_Ingreso.ToString());
             SQL = SQL.Replace("?3", mComponente.Nombre);
-            SQL = SQL.Replace("?4", mComponente.id_Componente.ToString());
+            SQL = SQL.Replace("?4", mComponente.Descripcion);
+            SQL = SQL.Replace("?5", mComponente.id_Componente.ToString());
 
             mConexion.EjecutarActualizacion(SQL);
 
         }
 
-        public DataTable ConsultarComponentes(int id_Componente)
+        public DataTable ConsultarComponentes()
         {
-            String SQL = "select id_componente, nombre, cantidad, costo, estado, fecha_ingreso";
-            SQL = SQL.Replace("?1", id_Componente.ToString());
+            String SQL = "select * from componente";
             DataTable ListaEquipos = mConexion.EjecutarConsulta(SQL);
             return ListaEquipos;
         }
 
-        public DataTable ConsultarComponente()
+        public DataTable ConsultarComponente(int id_Componente)
         {
-            String SQL = "select id_componente, nombre, cantidad, costo, estado, fecha_ingreso";
+            String SQL = "select * from componente where id='?1'";
+            SQL = SQL.Replace("?1", id_Componente.ToString());
             DataTable ListaEquipos = mConexion.EjecutarConsulta(SQL);
             return ListaEquipos;
         }
 
         public void EliminarComponente(int ID)
         {
-            String SQL = "delete from equipo where id='?1'";
+            String SQL = "delete from componente where id='?1'";
             SQL = SQL.Replace("?1", ID.ToString());
         }
     }

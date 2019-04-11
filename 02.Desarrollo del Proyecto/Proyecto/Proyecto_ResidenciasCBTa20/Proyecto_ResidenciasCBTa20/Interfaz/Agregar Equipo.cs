@@ -31,23 +31,28 @@ namespace Proyecto_ResidenciasCBTa20
         private void BtnAgregar_Click(object sender, EventArgs e)
         {
             if (CmbTipo.Text != "" && CmbArea.Text != "" && TxtMarca.Text != "" && TxtModelo.Text != "" 
-                && TxtEncargado.Text != "" && CmbFuncionalidad.Text != "" && TxtDescripcion.Text !="")
+                && TxtEncargado.Text != "" && CmbEstado.Text != "" && TxtDescripcion.Text !="")
             {
                 try
                 {
                     Equipo mEquipo = new Equipo();
-                    mEquipo.Tipo = CmbTipo.Text;
-                    mEquipo.Area = CmbArea.Text;
                     mEquipo.Marca = TxtMarca.Text;
                     mEquipo.Modelo = TxtModelo.Text;
-                    mEquipo.Encargado = TxtEncargado.Text;
-                    mEquipo.Funcionalidad = CmbFuncionalidad.Text;
+                    mEquipo.Tipo = CmbTipo.Text;
                     mEquipo.Descripcion = TxtDescripcion.Text;
+                    mEquipo.Area = CmbArea.Text;
+                    mEquipo.Encargado = TxtEncargado.Text;
+                    mEquipo.Estado = CmbEstado.Text;
+                  
 
 
                     ControlEquipo mControlEquipo = new ControlEquipo();
                     mControlEquipo.AgregarEquipo(mEquipo);
                     MessageBox.Show("Equipo Guardado");
+
+                    this.Hide();
+                    Menu_Principal mMenu_Principal = new Menu_Principal();
+                    mMenu_Principal.Show();
                 }
                 catch (Exception)
                 {

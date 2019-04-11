@@ -40,6 +40,9 @@
             this.BtnConsultarComp = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.skinEngine1 = new Sunisoft.IrisSkin.SkinEngine(((System.ComponentModel.Component)(this)));
+            this.TxtNombre = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.BtnBuscar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.DgvInventario)).BeginInit();
             this.SuspendLayout();
             // 
@@ -52,7 +55,7 @@
             this.Estado,
             this.Fecha,
             this.Cantidad});
-            this.DgvInventario.Location = new System.Drawing.Point(14, 18);
+            this.DgvInventario.Location = new System.Drawing.Point(12, 114);
             this.DgvInventario.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.DgvInventario.Name = "DgvInventario";
             this.DgvInventario.Size = new System.Drawing.Size(543, 208);
@@ -88,7 +91,7 @@
             this.BtnModificar.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnModificar.Image = ((System.Drawing.Image)(resources.GetObject("BtnModificar.Image")));
             this.BtnModificar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnModificar.Location = new System.Drawing.Point(62, 254);
+            this.BtnModificar.Location = new System.Drawing.Point(36, 349);
             this.BtnModificar.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.BtnModificar.Name = "BtnModificar";
             this.BtnModificar.Size = new System.Drawing.Size(100, 35);
@@ -103,7 +106,7 @@
             this.BtnMenu.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnMenu.Image = ((System.Drawing.Image)(resources.GetObject("BtnMenu.Image")));
             this.BtnMenu.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnMenu.Location = new System.Drawing.Point(216, 254);
+            this.BtnMenu.Location = new System.Drawing.Point(211, 349);
             this.BtnMenu.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.BtnMenu.Name = "BtnMenu";
             this.BtnMenu.Size = new System.Drawing.Size(94, 35);
@@ -118,7 +121,7 @@
             this.BtnConsultarComp.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnConsultarComp.Image = ((System.Drawing.Image)(resources.GetObject("BtnConsultarComp.Image")));
             this.BtnConsultarComp.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnConsultarComp.Location = new System.Drawing.Point(367, 254);
+            this.BtnConsultarComp.Location = new System.Drawing.Point(365, 349);
             this.BtnConsultarComp.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.BtnConsultarComp.Name = "BtnConsultarComp";
             this.BtnConsultarComp.Size = new System.Drawing.Size(190, 35);
@@ -131,7 +134,7 @@
             // button1
             // 
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(584, 18);
+            this.button1.Location = new System.Drawing.Point(579, 12);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(117, 155);
             this.button1.TabIndex = 4;
@@ -145,6 +148,34 @@
     "SkinVS.NET\\Emerald\\EmeraldColor2.ssk";
             this.skinEngine1.SkinStreamMain = ((System.IO.Stream)(resources.GetObject("skinEngine1.SkinStreamMain")));
             // 
+            // TxtNombre
+            // 
+            this.TxtNombre.Location = new System.Drawing.Point(171, 37);
+            this.TxtNombre.Name = "TxtNombre";
+            this.TxtNombre.Size = new System.Drawing.Size(222, 25);
+            this.TxtNombre.TabIndex = 26;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(-3, 37);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(149, 20);
+            this.label1.TabIndex = 25;
+            this.label1.Text = "Nombre del Componente";
+            // 
+            // BtnBuscar
+            // 
+            this.BtnBuscar.Image = ((System.Drawing.Image)(resources.GetObject("BtnBuscar.Image")));
+            this.BtnBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnBuscar.Location = new System.Drawing.Point(468, 34);
+            this.BtnBuscar.Name = "BtnBuscar";
+            this.BtnBuscar.Size = new System.Drawing.Size(87, 33);
+            this.BtnBuscar.TabIndex = 24;
+            this.BtnBuscar.Text = "Buscar";
+            this.BtnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnBuscar.UseVisualStyleBackColor = true;
+            // 
             // Inventario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 20F);
@@ -152,7 +183,10 @@
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(727, 302);
+            this.ClientSize = new System.Drawing.Size(706, 398);
+            this.Controls.Add(this.TxtNombre);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.BtnBuscar);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.BtnConsultarComp);
             this.Controls.Add(this.BtnMenu);
@@ -165,6 +199,7 @@
             this.Load += new System.EventHandler(this.Inventario_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DgvInventario)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -181,5 +216,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Cantidad;
         private System.Windows.Forms.Button button1;
         private Sunisoft.IrisSkin.SkinEngine skinEngine1;
+        private System.Windows.Forms.TextBox TxtNombre;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button BtnBuscar;
     }
 }

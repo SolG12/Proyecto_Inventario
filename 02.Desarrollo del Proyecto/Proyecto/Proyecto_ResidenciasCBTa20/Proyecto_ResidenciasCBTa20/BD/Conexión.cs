@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.Odbc;
 using System.Data;
+using System.Windows.Forms;
 
 namespace Proyecto_ResidenciasCBTa20.BD
 {
@@ -20,10 +21,19 @@ namespace Proyecto_ResidenciasCBTa20.BD
 
         public DataTable EjecutarConsulta(string SQL)
         {
-            OdbcDataAdapter AdaptadorDatos = new OdbcDataAdapter(SQL, ConexionMYSQL);
-            DataTable Result = new DataTable();
-            AdaptadorDatos.Fill(Result);
-            return Result;
+            try
+            {
+                OdbcDataAdapter AdaptadorDatos = new OdbcDataAdapter(SQL, ConexionMYSQL);
+                DataTable Result = new DataTable();
+                AdaptadorDatos.Fill(Result);
+                return Result;
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.ToString());
+                throw;
+            }
+ 
         }
         public void EjecutarActualizacion(string SQL)
         {

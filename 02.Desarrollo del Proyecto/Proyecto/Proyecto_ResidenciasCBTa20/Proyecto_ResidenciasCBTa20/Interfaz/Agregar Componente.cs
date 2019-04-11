@@ -25,24 +25,20 @@ namespace Proyecto_ResidenciasCBTa20.Interfaz
         private void BtnAgregar_Click(object sender, EventArgs e)
         {
 
-            if (TxtNombre.Text != "" && TxtCantidad.Text != "" && TxtCosto.Text != "" && TxtFecha_Ingreso.Text != "" && CmbEstado.Text != "")
+            if (TxtNombre.Text != "" && TxtDescipcion.Text != "" && TxtCosto.Text != "" && TxtFecha_Ingreso.Text != "")
             {
-                try
-                {
                     Componente mComponente = new Componente();
                     mComponente.Nombre = TxtNombre.Text;
-                    mComponente.Cantidad = int.Parse(TxtCantidad.Text);
+                    mComponente.Descripcion = TxtDescipcion.Text;
                     mComponente.Costo = int.Parse(TxtCosto.Text);
 
                     ControlComponente mControlComponente = new ControlComponente();
-                    mControlComponente.AgregarComponente(mComponente);
-                    MessageBox.Show("Equipo Guardado");
-                }
-                catch (Exception)
-                {
-                    MessageBox.Show("Error al Actualizar: " + e);
 
-                }
+                    
+                    
+                    mControlComponente.AgregarComponente(mComponente);
+                    MessageBox.Show("Componente Guardado");
+          
 
             }
             else

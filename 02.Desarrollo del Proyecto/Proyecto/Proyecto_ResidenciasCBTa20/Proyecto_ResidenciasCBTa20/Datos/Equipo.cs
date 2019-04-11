@@ -13,9 +13,7 @@ namespace Proyecto_ResidenciasCBTa20.Datos
         public string Encargado { get; set; }
         public string Marca { get; set; }
         public string Modelo { get; set; }
-        public string Funcionalidad { get; set; }
         public string Tipo { get; set; }
-        public string Codigo_Barras { get; set; }
         public string Descripcion { get; set; }
         public string Area { get; set; }
     }

@@ -42,5 +42,6 @@ namespace Proyecto_ResidenciasCBTa20.Interfaz
         {
 
         }
+
     }
 }

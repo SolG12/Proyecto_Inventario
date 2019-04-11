@@ -45,7 +45,7 @@
             this.TxtMarca = new System.Windows.Forms.TextBox();
             this.TxtModelo = new System.Windows.Forms.TextBox();
             this.TxtEncargado = new System.Windows.Forms.TextBox();
-            this.CmbFuncionalidad = new System.Windows.Forms.ComboBox();
+            this.CmbEstado = new System.Windows.Forms.ComboBox();
             this.TxtDescripcion = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
@@ -72,9 +72,9 @@
             this.LblFuncionalidad.AutoSize = true;
             this.LblFuncionalidad.Location = new System.Drawing.Point(25, 238);
             this.LblFuncionalidad.Name = "LblFuncionalidad";
-            this.LblFuncionalidad.Size = new System.Drawing.Size(89, 20);
+            this.LblFuncionalidad.Size = new System.Drawing.Size(47, 20);
             this.LblFuncionalidad.TabIndex = 2;
-            this.LblFuncionalidad.Text = "Funcionalidad";
+            this.LblFuncionalidad.Text = "Estado";
             // 
             // LblTipo
             // 
@@ -218,16 +218,16 @@
             this.TxtEncargado.Size = new System.Drawing.Size(121, 25);
             this.TxtEncargado.TabIndex = 24;
             // 
-            // CmbFuncionalidad
+            // CmbEstado
             // 
-            this.CmbFuncionalidad.FormattingEnabled = true;
-            this.CmbFuncionalidad.Items.AddRange(new object[] {
+            this.CmbEstado.FormattingEnabled = true;
+            this.CmbEstado.Items.AddRange(new object[] {
             "Funcional ",
             "No Funcional"});
-            this.CmbFuncionalidad.Location = new System.Drawing.Point(120, 235);
-            this.CmbFuncionalidad.Name = "CmbFuncionalidad";
-            this.CmbFuncionalidad.Size = new System.Drawing.Size(121, 28);
-            this.CmbFuncionalidad.TabIndex = 25;
+            this.CmbEstado.Location = new System.Drawing.Point(120, 235);
+            this.CmbEstado.Name = "CmbEstado";
+            this.CmbEstado.Size = new System.Drawing.Size(121, 28);
+            this.CmbEstado.TabIndex = 25;
             // 
             // TxtDescripcion
             // 
@@ -246,7 +246,7 @@
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(508, 513);
             this.Controls.Add(this.TxtDescripcion);
-            this.Controls.Add(this.CmbFuncionalidad);
+            this.Controls.Add(this.CmbEstado);
             this.Controls.Add(this.TxtEncargado);
             this.Controls.Add(this.TxtModelo);
             this.Controls.Add(this.TxtMarca);
@@ -290,7 +290,7 @@
         private System.Windows.Forms.TextBox TxtMarca;
         private System.Windows.Forms.TextBox TxtModelo;
         private System.Windows.Forms.TextBox TxtEncargado;
-        private System.Windows.Forms.ComboBox CmbFuncionalidad;
+        private System.Windows.Forms.ComboBox CmbEstado;
         private System.Windows.Forms.TextBox TxtDescripcion;
     }
 }

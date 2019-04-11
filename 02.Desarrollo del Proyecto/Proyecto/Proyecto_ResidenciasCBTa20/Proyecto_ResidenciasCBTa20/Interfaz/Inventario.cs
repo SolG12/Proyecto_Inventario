@@ -25,7 +25,7 @@ namespace Proyecto_ResidenciasCBTa20.Interfaz
             ControlComponente mControlComponente = new ControlComponente();
             try
             {
-                DgvInventario.DataSource = mControlComponente.ConsultarComponente();
+                DgvInventario.DataSource = mControlComponente.ConsultarComponentes();
             }
             catch (Exception)
             {

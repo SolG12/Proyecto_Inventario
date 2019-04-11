@@ -21,15 +21,14 @@ namespace Proyecto_ResidenciasCBTa20.Logica
 
         public void AgregarEquipo(Equipo mEquipo)
         {
-            String SQL = "insert into equipo values (null, '?2', '?3', '?4', '?5', '?6', '?7', '?8')";
-            SQL = SQL.Replace("?1", mEquipo.id_Equipo.ToString());
-            SQL = SQL.Replace("?2", mEquipo.Tipo);
-            SQL = SQL.Replace("?3", mEquipo.Area);
-            SQL = SQL.Replace("?4", mEquipo.Marca);
-            SQL = SQL.Replace("?5", mEquipo.Modelo);
-            SQL = SQL.Replace("?6", mEquipo.Encargado);
-            SQL = SQL.Replace("?7", mEquipo.Funcionalidad);
-            SQL = SQL.Replace("?8", mEquipo.Descripcion);
+            String SQL = "insert into equipo values (null, '?1', '?2', '?3', '?4', '?5', '?6', '?7')";
+            SQL = SQL.Replace("?1", mEquipo.Marca);
+            SQL = SQL.Replace("?2", mEquipo.Modelo);
+            SQL = SQL.Replace("?3", mEquipo.Estado);
+            SQL = SQL.Replace("?4", mEquipo.Tipo);
+            SQL = SQL.Replace("?5", mEquipo.Descripcion);
+            SQL = SQL.Replace("?6", mEquipo.Area);
+            SQL = SQL.Replace("?7", mEquipo.Encargado);
        
 
 
@@ -42,7 +41,7 @@ namespace Proyecto_ResidenciasCBTa20.Logica
             String SQL = "update equipo set marca='?1', modelo='?2', funcionalidad='?3', tipo='?4',  where id='?5'";
             SQL = SQL.Replace("?1", mEquipo.Marca);
             SQL = SQL.Replace("?2", mEquipo.Modelo);
-            SQL = SQL.Replace("?3", mEquipo.Funcionalidad);
+            SQL = SQL.Replace("?3", mEquipo.Estado);
             SQL = SQL.Replace("?4", mEquipo.Tipo);
             SQL = SQL.Replace("?5", mEquipo.id_Equipo.ToString());
 
@@ -53,7 +52,7 @@ namespace Proyecto_ResidenciasCBTa20.Logica
 
         public DataTable ConsultarEquipo(string Codigo_Barras)
         {
-            String SQL = "select codigo_barras, marca, modelo, funcionalidad, tipo, encargado, area,";
+            String SQL = "select codigo_barras, marca, modelo, estado, tipo, encargado, area,";
             SQL = SQL.Replace("?1", Codigo_Barras);
             DataTable ListaEquipos = mConexion.EjecutarConsulta(SQL);
             return ListaEquipos;
@@ -61,7 +60,7 @@ namespace Proyecto_ResidenciasCBTa20.Logica
 
         public DataTable ConsultarEquipos()
         {
-            String SQL = "select codigo_barras, marca, modelo, funcionalidad, tipo, encargado, area,";
+            String SQL = "select codigo_barras, marca, modelo, estado, tipo, encargado, area,";
             DataTable ListaEquipos = mConexion.EjecutarConsulta(SQL);
             return ListaEquipos;
         }
