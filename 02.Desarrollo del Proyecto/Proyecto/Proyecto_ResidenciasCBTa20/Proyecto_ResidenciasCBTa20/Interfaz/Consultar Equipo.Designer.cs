@@ -39,6 +39,7 @@
             this.Marca = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Modelo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Funcionalidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Tipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Encargado = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Área = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -49,6 +50,7 @@
             this.BtnInventario = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.skinEngine1 = new Sunisoft.IrisSkin.SkinEngine(((System.ComponentModel.Component)(this)));
+            this.BtnAEquipo = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.DgvEquipos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -76,7 +78,7 @@
             this.LblArea.Name = "LblArea";
             this.LblArea.Size = new System.Drawing.Size(34, 20);
             this.LblArea.TabIndex = 2;
-            this.LblArea.Text = "Area";
+            this.LblArea.Text = "Área";
             // 
             // TxtArea
             // 
@@ -109,13 +111,14 @@
             this.Marca,
             this.Modelo,
             this.Funcionalidad,
+            this.Tipo,
             this.Encargado,
             this.Área,
             this.Estado});
             this.DgvEquipos.Location = new System.Drawing.Point(16, 56);
             this.DgvEquipos.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.DgvEquipos.Name = "DgvEquipos";
-            this.DgvEquipos.Size = new System.Drawing.Size(750, 282);
+            this.DgvEquipos.Size = new System.Drawing.Size(843, 282);
             this.DgvEquipos.TabIndex = 5;
             // 
             // Numero
@@ -137,6 +140,11 @@
             // 
             this.Funcionalidad.HeaderText = "Funcionalidad";
             this.Funcionalidad.Name = "Funcionalidad";
+            // 
+            // Tipo
+            // 
+            this.Tipo.HeaderText = "Tipo";
+            this.Tipo.Name = "Tipo";
             // 
             // Encargado
             // 
@@ -173,7 +181,7 @@
             this.BtnEliminar.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnEliminar.Image = ((System.Drawing.Image)(resources.GetObject("BtnEliminar.Image")));
             this.BtnEliminar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnEliminar.Location = new System.Drawing.Point(180, 373);
+            this.BtnEliminar.Location = new System.Drawing.Point(135, 373);
             this.BtnEliminar.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.BtnEliminar.Name = "BtnEliminar";
             this.BtnEliminar.Size = new System.Drawing.Size(92, 35);
@@ -188,7 +196,7 @@
             this.BtnCancelar.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnCancelar.Image = ((System.Drawing.Image)(resources.GetObject("BtnCancelar.Image")));
             this.BtnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnCancelar.Location = new System.Drawing.Point(324, 373);
+            this.BtnCancelar.Location = new System.Drawing.Point(244, 373);
             this.BtnCancelar.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.BtnCancelar.Name = "BtnCancelar";
             this.BtnCancelar.Size = new System.Drawing.Size(92, 35);
@@ -203,7 +211,7 @@
             this.BtnRepMantenimiento.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnRepMantenimiento.Image = ((System.Drawing.Image)(resources.GetObject("BtnRepMantenimiento.Image")));
             this.BtnRepMantenimiento.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnRepMantenimiento.Location = new System.Drawing.Point(463, 373);
+            this.BtnRepMantenimiento.Location = new System.Drawing.Point(354, 373);
             this.BtnRepMantenimiento.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.BtnRepMantenimiento.Name = "BtnRepMantenimiento";
             this.BtnRepMantenimiento.Size = new System.Drawing.Size(258, 35);
@@ -218,7 +226,7 @@
             this.BtnInventario.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnInventario.Image = ((System.Drawing.Image)(resources.GetObject("BtnInventario.Image")));
             this.BtnInventario.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnInventario.Location = new System.Drawing.Point(757, 373);
+            this.BtnInventario.Location = new System.Drawing.Point(623, 373);
             this.BtnInventario.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.BtnInventario.Name = "BtnInventario";
             this.BtnInventario.Size = new System.Drawing.Size(171, 35);
@@ -231,7 +239,7 @@
             // button1
             // 
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(786, 12);
+            this.button1.Location = new System.Drawing.Point(887, 11);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(169, 219);
             this.button1.TabIndex = 20;
@@ -245,6 +253,20 @@
     "SkinVS.NET\\Emerald\\EmeraldColor2.ssk";
             this.skinEngine1.SkinStreamMain = ((System.IO.Stream)(resources.GetObject("skinEngine1.SkinStreamMain")));
             // 
+            // BtnAEquipo
+            // 
+            this.BtnAEquipo.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnAEquipo.Image = ((System.Drawing.Image)(resources.GetObject("BtnAEquipo.Image")));
+            this.BtnAEquipo.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnAEquipo.Location = new System.Drawing.Point(816, 373);
+            this.BtnAEquipo.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.BtnAEquipo.Name = "BtnAEquipo";
+            this.BtnAEquipo.Size = new System.Drawing.Size(154, 35);
+            this.BtnAEquipo.TabIndex = 21;
+            this.BtnAEquipo.Text = "Actualizar Equipo";
+            this.BtnAEquipo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnAEquipo.UseVisualStyleBackColor = true;
+            // 
             // Consultar_Equipo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 20F);
@@ -252,7 +274,8 @@
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(967, 437);
+            this.ClientSize = new System.Drawing.Size(1068, 437);
+            this.Controls.Add(this.BtnAEquipo);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.BtnInventario);
             this.Controls.Add(this.BtnRepMantenimiento);
@@ -269,6 +292,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.Name = "Consultar_Equipo";
             this.Text = "Consultar Equipo";
+            this.Activated += new System.EventHandler(this.Consultar_Equipo_Activated);
             this.Load += new System.EventHandler(this.Consultar_Equipo_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DgvEquipos)).EndInit();
             this.ResumeLayout(false);
@@ -284,13 +308,6 @@
         private System.Windows.Forms.TextBox TxtArea;
         private System.Windows.Forms.Button BtnBuscarEquipo;
         private System.Windows.Forms.DataGridView DgvEquipos;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Numero;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Marca;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Modelo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Funcionalidad;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Encargado;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Área;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Estado;
         private System.Windows.Forms.Button BtnModificar;
         private System.Windows.Forms.Button BtnEliminar;
         private System.Windows.Forms.Button BtnCancelar;
@@ -298,5 +315,14 @@
         private System.Windows.Forms.Button BtnInventario;
         private System.Windows.Forms.Button button1;
         private Sunisoft.IrisSkin.SkinEngine skinEngine1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Numero;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Marca;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Modelo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Funcionalidad;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Tipo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Encargado;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Área;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Estado;
+        private System.Windows.Forms.Button BtnAEquipo;
     }
 }

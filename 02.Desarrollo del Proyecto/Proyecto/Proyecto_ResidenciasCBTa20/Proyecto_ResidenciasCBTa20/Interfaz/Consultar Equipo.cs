@@ -13,6 +13,8 @@ using System.Windows.Forms;
 using iTextSharp.text;
 using System.IO;
 using System.Diagnostics;
+using Proyecto_ResidenciasCBTa20.Datos;
+using Proyecto_ResidenciasCBTa20.Logica;
 
 namespace Proyecto_ResidenciasCBTa20.Interfaz
 {
@@ -52,12 +54,46 @@ namespace Proyecto_ResidenciasCBTa20.Interfaz
 
         private void BtnEliminar_Click(object sender, EventArgs e)
         {
+            try
+            {
+                Equipo mEquipo = new Equipo();
+                int id = (int)DgvEquipos.SelectedRows[0].Cells[0].Value;
 
+                ControlEquipo mControl = new ControlEquipo();
+                mControl.EliminarEquipo(id);
+                MessageBox.Show("Equipo Eliminado");
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Error al Eliminar");
+            }
         }
 
         private void BtnBuscarEquipo_Click(object sender, EventArgs e)
         {
+            ControlEquipo mControlEquipo = new ControlEquipo();
+            try
+            {
+                DgvEquipos.DataSource = mControlEquipo.ConsultarEquipo(TxtArea.Text);
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Error");
+            }
+        }
 
+
+        private void Consultar_Equipo_Activated(object sender, EventArgs e)
+        {
+            ControlEquipo mControlEquipo = new ControlEquipo();
+            try
+            {
+                DgvEquipos.DataSource = mControlEquipo.ConsultarEquipos();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Error");
+            }
         }
     }
 }

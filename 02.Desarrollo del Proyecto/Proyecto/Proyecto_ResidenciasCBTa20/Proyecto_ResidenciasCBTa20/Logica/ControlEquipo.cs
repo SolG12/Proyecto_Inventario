@@ -50,17 +50,17 @@ namespace Proyecto_ResidenciasCBTa20.Logica
 
         }
 
-        public DataTable ConsultarEquipo(string Codigo_Barras)
+        public DataTable ConsultarEquipo(string area)
         {
-            String SQL = "select codigo_barras, marca, modelo, estado, tipo, encargado, area,";
-            SQL = SQL.Replace("?1", Codigo_Barras);
+            String SQL = "select id, marca, modelo, funcionalidad, tipo, encargado, area,estado";
+            SQL = SQL.Replace("?1", area);
             DataTable ListaEquipos = mConexion.EjecutarConsulta(SQL);
             return ListaEquipos;
         }
 
         public DataTable ConsultarEquipos()
         {
-            String SQL = "select codigo_barras, marca, modelo, estado, tipo, encargado, area,";
+            String SQL = "select id, marca, modelo, funcionalidad, tipo, encargado, area, estado";
             DataTable ListaEquipos = mConexion.EjecutarConsulta(SQL);
             return ListaEquipos;
         }
