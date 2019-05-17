@@ -29,76 +29,35 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Componentes));
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Id_Componente = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Costo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Fecha_Ingreso = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DgvComp = new System.Windows.Forms.DataGridView();
             this.BtnRepCostos = new System.Windows.Forms.Button();
             this.BtnAgregarComp = new System.Windows.Forms.Button();
-            this.BtnSalir = new System.Windows.Forms.Button();
+            this.BtnMenu = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.skinEngine1 = new Sunisoft.IrisSkin.SkinEngine(((System.ComponentModel.Component)(this)));
             this.BtnBuscar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.TxtNombre = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.BtnEliminar = new System.Windows.Forms.Button();
+            this.BtnAgregarInventario = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.DgvComp)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // DgvComp
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Id_Componente,
-            this.Nombre,
-            this.Cantidad,
-            this.Costo,
-            this.Estado,
-            this.Fecha_Ingreso});
-            this.dataGridView1.Location = new System.Drawing.Point(12, 91);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(641, 208);
-            this.dataGridView1.TabIndex = 0;
-            // 
-            // Id_Componente
-            // 
-            this.Id_Componente.HeaderText = "Id";
-            this.Id_Componente.Name = "Id_Componente";
-            // 
-            // Nombre
-            // 
-            this.Nombre.HeaderText = "Nombre";
-            this.Nombre.Name = "Nombre";
-            // 
-            // Cantidad
-            // 
-            this.Cantidad.HeaderText = "Cantidad";
-            this.Cantidad.Name = "Cantidad";
-            // 
-            // Costo
-            // 
-            this.Costo.HeaderText = "Costo";
-            this.Costo.Name = "Costo";
-            // 
-            // Estado
-            // 
-            this.Estado.HeaderText = "Estado";
-            this.Estado.Name = "Estado";
-            // 
-            // Fecha_Ingreso
-            // 
-            this.Fecha_Ingreso.HeaderText = "Fecha de Ingreso";
-            this.Fecha_Ingreso.Name = "Fecha_Ingreso";
+            this.DgvComp.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DgvComp.Location = new System.Drawing.Point(12, 91);
+            this.DgvComp.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.DgvComp.Name = "DgvComp";
+            this.DgvComp.Size = new System.Drawing.Size(641, 208);
+            this.DgvComp.TabIndex = 0;
             // 
             // BtnRepCostos
             // 
             this.BtnRepCostos.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnRepCostos.Image = ((System.Drawing.Image)(resources.GetObject("BtnRepCostos.Image")));
             this.BtnRepCostos.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnRepCostos.Location = new System.Drawing.Point(31, 318);
+            this.BtnRepCostos.Location = new System.Drawing.Point(12, 318);
             this.BtnRepCostos.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.BtnRepCostos.Name = "BtnRepCostos";
             this.BtnRepCostos.Size = new System.Drawing.Size(206, 35);
@@ -113,7 +72,7 @@
             this.BtnAgregarComp.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnAgregarComp.Image = ((System.Drawing.Image)(resources.GetObject("BtnAgregarComp.Image")));
             this.BtnAgregarComp.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnAgregarComp.Location = new System.Drawing.Point(283, 318);
+            this.BtnAgregarComp.Location = new System.Drawing.Point(237, 318);
             this.BtnAgregarComp.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.BtnAgregarComp.Name = "BtnAgregarComp";
             this.BtnAgregarComp.Size = new System.Drawing.Size(179, 35);
@@ -123,20 +82,20 @@
             this.BtnAgregarComp.UseVisualStyleBackColor = true;
             this.BtnAgregarComp.Click += new System.EventHandler(this.BtnAgregarComp_Click);
             // 
-            // BtnSalir
+            // BtnMenu
             // 
-            this.BtnSalir.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnSalir.Image = ((System.Drawing.Image)(resources.GetObject("BtnSalir.Image")));
-            this.BtnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnSalir.Location = new System.Drawing.Point(524, 318);
-            this.BtnSalir.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
-            this.BtnSalir.Name = "BtnSalir";
-            this.BtnSalir.Size = new System.Drawing.Size(81, 35);
-            this.BtnSalir.TabIndex = 3;
-            this.BtnSalir.Text = "Salir";
-            this.BtnSalir.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnSalir.UseVisualStyleBackColor = true;
-            this.BtnSalir.Click += new System.EventHandler(this.BtnSalir_Click);
+            this.BtnMenu.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnMenu.Image = ((System.Drawing.Image)(resources.GetObject("BtnMenu.Image")));
+            this.BtnMenu.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnMenu.Location = new System.Drawing.Point(572, 318);
+            this.BtnMenu.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.BtnMenu.Name = "BtnMenu";
+            this.BtnMenu.Size = new System.Drawing.Size(81, 35);
+            this.BtnMenu.TabIndex = 3;
+            this.BtnMenu.Text = "Menú";
+            this.BtnMenu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnMenu.UseVisualStyleBackColor = true;
+            this.BtnMenu.Click += new System.EventHandler(this.BtnSalir_Click);
             // 
             // button1
             // 
@@ -166,6 +125,7 @@
             this.BtnBuscar.Text = "Buscar";
             this.BtnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnBuscar.UseVisualStyleBackColor = true;
+            this.BtnBuscar.Click += new System.EventHandler(this.BtnBuscar_Click);
             // 
             // label1
             // 
@@ -183,6 +143,34 @@
             this.TxtNombre.Size = new System.Drawing.Size(350, 25);
             this.TxtNombre.TabIndex = 23;
             // 
+            // BtnEliminar
+            // 
+            this.BtnEliminar.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnEliminar.Image = ((System.Drawing.Image)(resources.GetObject("BtnEliminar.Image")));
+            this.BtnEliminar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnEliminar.Location = new System.Drawing.Point(449, 318);
+            this.BtnEliminar.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.BtnEliminar.Name = "BtnEliminar";
+            this.BtnEliminar.Size = new System.Drawing.Size(92, 35);
+            this.BtnEliminar.TabIndex = 24;
+            this.BtnEliminar.Text = "Eliminar";
+            this.BtnEliminar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnEliminar.UseVisualStyleBackColor = true;
+            this.BtnEliminar.Click += new System.EventHandler(this.BtnEliminar_Click);
+            // 
+            // BtnAgregarInventario
+            // 
+            this.BtnAgregarInventario.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnAgregarInventario.Image = ((System.Drawing.Image)(resources.GetObject("BtnAgregarInventario.Image")));
+            this.BtnAgregarInventario.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnAgregarInventario.Location = new System.Drawing.Point(692, 318);
+            this.BtnAgregarInventario.Name = "BtnAgregarInventario";
+            this.BtnAgregarInventario.Size = new System.Drawing.Size(160, 35);
+            this.BtnAgregarInventario.TabIndex = 25;
+            this.BtnAgregarInventario.Text = "Enviar a Inventario";
+            this.BtnAgregarInventario.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnAgregarInventario.UseVisualStyleBackColor = true;
+            // 
             // Componentes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 20F);
@@ -191,20 +179,23 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(864, 371);
+            this.Controls.Add(this.BtnAgregarInventario);
+            this.Controls.Add(this.BtnEliminar);
             this.Controls.Add(this.TxtNombre);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.BtnBuscar);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.BtnSalir);
+            this.Controls.Add(this.BtnMenu);
             this.Controls.Add(this.BtnAgregarComp);
             this.Controls.Add(this.BtnRepCostos);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.DgvComp);
             this.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.Name = "Componentes";
             this.Text = "Componentes";
+            this.Activated += new System.EventHandler(this.Componentes_Activated);
             this.Load += new System.EventHandler(this.Componentes_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DgvComp)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -212,20 +203,16 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView DgvComp;
         private System.Windows.Forms.Button BtnRepCostos;
         private System.Windows.Forms.Button BtnAgregarComp;
-        private System.Windows.Forms.Button BtnSalir;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Id_Componente;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Cantidad;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Costo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Estado;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Fecha_Ingreso;
+        private System.Windows.Forms.Button BtnMenu;
         private System.Windows.Forms.Button button1;
         private Sunisoft.IrisSkin.SkinEngine skinEngine1;
         private System.Windows.Forms.Button BtnBuscar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox TxtNombre;
+        private System.Windows.Forms.Button BtnEliminar;
+        private System.Windows.Forms.Button BtnAgregarInventario;
     }
 }

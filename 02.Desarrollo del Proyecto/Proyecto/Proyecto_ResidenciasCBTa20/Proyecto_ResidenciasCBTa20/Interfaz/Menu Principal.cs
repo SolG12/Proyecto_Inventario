@@ -56,5 +56,6 @@ namespace Proyecto_ResidenciasCBTa20.Interfaz
         {
             Application.Exit();
         }
+
     }
 }

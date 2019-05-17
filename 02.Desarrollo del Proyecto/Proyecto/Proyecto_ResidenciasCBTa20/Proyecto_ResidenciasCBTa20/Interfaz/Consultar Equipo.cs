@@ -42,30 +42,25 @@ namespace Proyecto_ResidenciasCBTa20.Interfaz
             mMenu_Principal.Show();
         }
 
-        private void Consultar_Equipo_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void BtnModificar_Click(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void BtnEliminar_Click(object sender, EventArgs e)
         {
             try
             {
-                Equipo mEquipo = new Equipo();
-                int id = (int)DgvEquipos.SelectedRows[0].Cells[0].Value;
-
-                ControlEquipo mControl = new ControlEquipo();
-                mControl.EliminarEquipo(id);
+                //Equipo mEquipo = new Equipo();
+                int id_Equipo = (int)DgvEquipos.SelectedRows[0].Cells[0].Value;
+                ControlEquipo mControlEquipo = new ControlEquipo();
+                mControlEquipo.EliminarEquipo(id_Equipo);
+              
                 MessageBox.Show("Equipo Eliminado");
             }
             catch (Exception)
             {
-                MessageBox.Show("Error al Eliminar");
+                 MessageBox.Show("Error");
+               
+
+
             }
         }
 
@@ -93,6 +88,19 @@ namespace Proyecto_ResidenciasCBTa20.Interfaz
             catch (Exception)
             {
                 MessageBox.Show("Error");
+            }
+        }
+
+        private void BtnAEquipo_Click(object sender, EventArgs e)
+        {
+            ControlEquipo mControlEquipo = new ControlEquipo();
+            try
+            {
+                DgvEquipos.DataSource = mControlEquipo.ConsultarEquipos();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Error al Actualizar!!");
             }
         }
     }

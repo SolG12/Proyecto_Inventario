@@ -156,6 +156,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.Name = "Menu_Principal";
             this.Text = "Menu Principal";
+
             this.ResumeLayout(false);
 
         }

@@ -47,14 +47,14 @@ namespace Proyecto_ResidenciasCBTa20.Logica
         public DataTable ConsultarComponentes()
         {
             String SQL = "select * from componente";
-            DataTable ListaEquipos = mConexion.EjecutarConsulta(SQL);
-            return ListaEquipos;
+            DataTable ListaComponentes = mConexion.EjecutarConsulta(SQL);
+            return ListaComponentes;
         }
 
-        public DataTable ConsultarComponente(int id_Componente)
+        public DataTable ConsultarComponente(string Nombre)
         {
-            String SQL = "select * from componente where id='?1'";
-            SQL = SQL.Replace("?1", id_Componente.ToString());
+            String SQL = "select * from componente where Nombre='?1'";
+            SQL = SQL.Replace("?1",Nombre);
             DataTable ListaEquipos = mConexion.EjecutarConsulta(SQL);
             return ListaEquipos;
         }

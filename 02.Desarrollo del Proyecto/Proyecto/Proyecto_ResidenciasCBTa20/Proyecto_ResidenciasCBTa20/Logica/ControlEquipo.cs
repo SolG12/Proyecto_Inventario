@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Data;
 using Proyecto_ResidenciasCBTa20.BD;
 using Proyecto_ResidenciasCBTa20.Datos;
+using System.Windows.Forms;
 
 namespace Proyecto_ResidenciasCBTa20.Logica
 {
@@ -38,7 +39,7 @@ namespace Proyecto_ResidenciasCBTa20.Logica
 
         public void ModificarEquipo(Equipo mEquipo)
         {
-            String SQL = "update equipo set marca='?1', modelo='?2', funcionalidad='?3', tipo='?4',  where id='?5'";
+            String SQL = "update equipo set marca='?1', modelo='?2', funcionalidad='?3', tipo='?4',  where idEquipo='?5'";
             SQL = SQL.Replace("?1", mEquipo.Marca);
             SQL = SQL.Replace("?2", mEquipo.Modelo);
             SQL = SQL.Replace("?3", mEquipo.Estado);
@@ -52,7 +53,7 @@ namespace Proyecto_ResidenciasCBTa20.Logica
 
         public DataTable ConsultarEquipo(string area)
         {
-            String SQL = "select id, marca, modelo, funcionalidad, tipo, encargado, area,estado";
+            String SQL = "select * from equipo where area='?1'";
             SQL = SQL.Replace("?1", area);
             DataTable ListaEquipos = mConexion.EjecutarConsulta(SQL);
             return ListaEquipos;
@@ -60,15 +61,16 @@ namespace Proyecto_ResidenciasCBTa20.Logica
 
         public DataTable ConsultarEquipos()
         {
-            String SQL = "select id, marca, modelo, funcionalidad, tipo, encargado, area, estado";
+            String SQL = "select * from equipo";
             DataTable ListaEquipos = mConexion.EjecutarConsulta(SQL);
             return ListaEquipos;
         }
 
-        public void EliminarEquipo(int ID)
+        public void EliminarEquipo(int id_Equipo)
         {
-            String SQL = "delete from equipo where id='?1'";
-            SQL = SQL.Replace("?1", ID.ToString());
+            String SQL = "delete from equipo where idEquipo='?1'";
+            SQL = SQL.Replace("?1", id_Equipo.ToString());
+            mConexion.EjecutarActualizacion(SQL);
         }
     }
 }

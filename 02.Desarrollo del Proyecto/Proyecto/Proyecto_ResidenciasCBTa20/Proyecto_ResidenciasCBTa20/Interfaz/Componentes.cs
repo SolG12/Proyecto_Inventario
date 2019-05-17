@@ -10,6 +10,7 @@ using iTextSharp.text.pdf;
 using iTextSharp.text.xml;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Proyecto_ResidenciasCBTa20.Logica;
 
 namespace Proyecto_ResidenciasCBTa20.Interfaz
 {
@@ -43,5 +44,45 @@ namespace Proyecto_ResidenciasCBTa20.Interfaz
 
         }
 
+        private void Componentes_Activated(object sender, EventArgs e)
+        {
+            ControlComponente mControlComponente = new ControlComponente();
+            try
+            {
+                DgvComp.DataSource = mControlComponente.ConsultarComponentes();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Error");
+            }
+        }
+
+        private void BtnBuscar_Click(object sender, EventArgs e)
+        {
+            ControlComponente mControlComponente = new ControlComponente();
+            try
+            {
+                DgvComp.DataSource = mControlComponente.ConsultarComponente(TxtNombre.Text);
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Error");
+            }
+        }
+
+        private void BtnEliminar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int id_Componente = (int)DgvComp.SelectedRows[0].Cells[0].Value;
+                ControlComponente mControlComponente = new ControlComponente();
+                mControlComponente.EliminarComponente(id_Componente);
+                MessageBox.Show("Componente Eliminado");
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Error");
+            }
+        }
     }
 }
