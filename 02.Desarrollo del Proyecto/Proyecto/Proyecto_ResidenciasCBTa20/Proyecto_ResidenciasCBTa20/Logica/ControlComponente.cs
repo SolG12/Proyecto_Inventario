@@ -38,7 +38,7 @@ namespace Proyecto_ResidenciasCBTa20.Logica
             SQL = SQL.Replace("?2", mComponente.Fecha_Ingreso.ToString());
             SQL = SQL.Replace("?3", mComponente.Nombre);
             SQL = SQL.Replace("?4", mComponente.Descripcion);
-            SQL = SQL.Replace("?5", mComponente.id_Componente.ToString());
+            SQL = SQL.Replace("?5", mComponente.idComponente.ToString());
 
             mConexion.EjecutarActualizacion(SQL);
 
@@ -59,10 +59,11 @@ namespace Proyecto_ResidenciasCBTa20.Logica
             return ListaEquipos;
         }
 
-        public void EliminarComponente(int ID)
+        public void EliminarComponente(int idComponente)
         {
-            String SQL = "delete from componente where id='?1'";
-            SQL = SQL.Replace("?1", ID.ToString());
+            String SQL = "delete from componente where idComponente='?1'";
+            SQL = SQL.Replace("?1", idComponente.ToString());
+            mConexion.EjecutarActualizacion(SQL);
         }
     }
 }

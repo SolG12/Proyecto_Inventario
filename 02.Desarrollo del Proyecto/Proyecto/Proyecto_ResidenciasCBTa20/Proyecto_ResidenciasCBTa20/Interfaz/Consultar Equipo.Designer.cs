@@ -77,10 +77,15 @@
             // 
             // DgvEquipos
             // 
+            this.DgvEquipos.AllowUserToAddRows = false;
+            this.DgvEquipos.AllowUserToDeleteRows = false;
             this.DgvEquipos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DgvEquipos.Location = new System.Drawing.Point(16, 56);
             this.DgvEquipos.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.DgvEquipos.MultiSelect = false;
             this.DgvEquipos.Name = "DgvEquipos";
+            this.DgvEquipos.ReadOnly = true;
+            this.DgvEquipos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.DgvEquipos.Size = new System.Drawing.Size(843, 282);
             this.DgvEquipos.TabIndex = 5;
             // 
@@ -199,7 +204,6 @@
             this.Name = "Consultar_Equipo";
             this.Text = "Consultar Equipo";
             this.Activated += new System.EventHandler(this.Consultar_Equipo_Activated);
-
             ((System.ComponentModel.ISupportInitialize)(this.DgvEquipos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

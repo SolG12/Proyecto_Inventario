@@ -43,6 +43,7 @@
             this.TxtNombre = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.BtnBuscar = new System.Windows.Forms.Button();
+            this.BtnRepCostos = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.DgvInventario)).BeginInit();
             this.SuspendLayout();
             // 
@@ -91,7 +92,7 @@
             this.BtnModificar.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnModificar.Image = ((System.Drawing.Image)(resources.GetObject("BtnModificar.Image")));
             this.BtnModificar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnModificar.Location = new System.Drawing.Point(36, 349);
+            this.BtnModificar.Location = new System.Drawing.Point(12, 349);
             this.BtnModificar.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.BtnModificar.Name = "BtnModificar";
             this.BtnModificar.Size = new System.Drawing.Size(100, 35);
@@ -106,7 +107,7 @@
             this.BtnMenu.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnMenu.Image = ((System.Drawing.Image)(resources.GetObject("BtnMenu.Image")));
             this.BtnMenu.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnMenu.Location = new System.Drawing.Point(211, 349);
+            this.BtnMenu.Location = new System.Drawing.Point(141, 349);
             this.BtnMenu.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.BtnMenu.Name = "BtnMenu";
             this.BtnMenu.Size = new System.Drawing.Size(94, 35);
@@ -121,7 +122,7 @@
             this.BtnConsultarComp.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnConsultarComp.Image = ((System.Drawing.Image)(resources.GetObject("BtnConsultarComp.Image")));
             this.BtnConsultarComp.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnConsultarComp.Location = new System.Drawing.Point(365, 349);
+            this.BtnConsultarComp.Location = new System.Drawing.Point(254, 349);
             this.BtnConsultarComp.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.BtnConsultarComp.Name = "BtnConsultarComp";
             this.BtnConsultarComp.Size = new System.Drawing.Size(190, 35);
@@ -136,7 +137,7 @@
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.Location = new System.Drawing.Point(579, 12);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(117, 155);
+            this.button1.Size = new System.Drawing.Size(136, 168);
             this.button1.TabIndex = 4;
             this.button1.UseVisualStyleBackColor = true;
             // 
@@ -176,6 +177,21 @@
             this.BtnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnBuscar.UseVisualStyleBackColor = true;
             // 
+            // BtnRepCostos
+            // 
+            this.BtnRepCostos.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnRepCostos.Image = ((System.Drawing.Image)(resources.GetObject("BtnRepCostos.Image")));
+            this.BtnRepCostos.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnRepCostos.Location = new System.Drawing.Point(468, 349);
+            this.BtnRepCostos.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.BtnRepCostos.Name = "BtnRepCostos";
+            this.BtnRepCostos.Size = new System.Drawing.Size(206, 35);
+            this.BtnRepCostos.TabIndex = 27;
+            this.BtnRepCostos.Text = "Generar Reporte de Costos";
+            this.BtnRepCostos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnRepCostos.UseVisualStyleBackColor = true;
+            this.BtnRepCostos.Click += new System.EventHandler(this.BtnRepCostos_Click);
+            // 
             // Inventario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 20F);
@@ -183,7 +199,8 @@
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(706, 398);
+            this.ClientSize = new System.Drawing.Size(721, 395);
+            this.Controls.Add(this.BtnRepCostos);
             this.Controls.Add(this.TxtNombre);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.BtnBuscar);
@@ -219,5 +236,6 @@
         private System.Windows.Forms.TextBox TxtNombre;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button BtnBuscar;
+        private System.Windows.Forms.Button BtnRepCostos;
     }
 }

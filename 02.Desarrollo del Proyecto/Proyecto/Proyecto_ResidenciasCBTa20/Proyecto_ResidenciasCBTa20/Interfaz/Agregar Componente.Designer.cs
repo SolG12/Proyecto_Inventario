@@ -170,7 +170,7 @@
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(532, 436);
+            this.ClientSize = new System.Drawing.Size(477, 436);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.BtnSalir);
             this.Controls.Add(this.BtnAgregar);
@@ -198,13 +198,13 @@
         private System.Windows.Forms.Label LblDescripcion;
         private System.Windows.Forms.Label LblCosto;
         private System.Windows.Forms.Label LblFecha;
-        private System.Windows.Forms.TextBox TxtNombre;
-        private System.Windows.Forms.TextBox TxtDescipcion;
-        private System.Windows.Forms.TextBox TxtCosto;
         private System.Windows.Forms.Button BtnAgregar;
         private System.Windows.Forms.Button BtnSalir;
         private System.Windows.Forms.Button button1;
         private Sunisoft.IrisSkin.SkinEngine skinEngine1;
-        private System.Windows.Forms.TextBox TxtFecha_Ingreso;
+        public System.Windows.Forms.TextBox TxtNombre;
+        public System.Windows.Forms.TextBox TxtDescipcion;
+        public System.Windows.Forms.TextBox TxtCosto;
+        public System.Windows.Forms.TextBox TxtFecha_Ingreso;
     }
 }

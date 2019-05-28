@@ -10,6 +10,9 @@ using Proyecto_ResidenciasCBTa20.Logica;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using iTextSharp.text.pdf;
+using iTextSharp.text;
+using System.Diagnostics;
 
 namespace Proyecto_ResidenciasCBTa20.Interfaz
 {
@@ -50,6 +53,35 @@ namespace Proyecto_ResidenciasCBTa20.Interfaz
         private void Inventario_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void BtnRepCostos_Click(object sender, EventArgs e)
+        {
+            Document doc = new Document(iTextSharp.text.PageSize.LETTER, 10, 10, 42, 35);
+            PdfWriter wri = PdfWriter.GetInstance(doc, new FileStream("Reporte.pdf", FileMode.Create));
+            doc.Open();
+
+            PdfPTable table = new PdfPTable(DgvInventario.Columns.Count);
+            table.AddCell(new Phrase("idComponente"));
+            table.AddCell(new Phrase("Nombre"));
+            table.AddCell(new Phrase("Costo"));
+            table.AddCell(new Phrase("Descripcion"));
+            table.AddCell(new Phrase("Fecha_Ingreso"));
+          
+         
+            for (int i = 0; i < DgvInventario.Rows.Count; i++)
+            {
+                for (int k = 0; k < DgvInventario.Columns.Count; k++)
+                {
+                    if (DgvInventario[k, i].Value != null)
+                    {
+                        table.AddCell(new Phrase(DgvInventario[k, i].Value.ToString()));
+                    }
+                }
+            }
+            doc.Add(table);
+            doc.Close();
+            Process.Start("Reporte.pdf");
         }
     }
 }

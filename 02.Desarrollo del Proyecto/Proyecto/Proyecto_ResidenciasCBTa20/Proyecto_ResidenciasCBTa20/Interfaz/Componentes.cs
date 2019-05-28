@@ -34,11 +34,6 @@ namespace Proyecto_ResidenciasCBTa20.Interfaz
             mMenu_Principal.Show();
         }
 
-        private void BtnRepCostos_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void Componentes_Load(object sender, EventArgs e)
         {
 
@@ -74,14 +69,14 @@ namespace Proyecto_ResidenciasCBTa20.Interfaz
         {
             try
             {
-                int id_Componente = (int)DgvComp.SelectedRows[0].Cells[0].Value;
+                int id_Componente = int.Parse(DgvComp.SelectedRows[0].Cells[0].Value.ToString());
                 ControlComponente mControlComponente = new ControlComponente();
                 mControlComponente.EliminarComponente(id_Componente);
                 MessageBox.Show("Componente Eliminado");
             }
-            catch (Exception)
+            catch (Exception error)
             {
-                MessageBox.Show("Error");
+                MessageBox.Show("Error" + error.ToString());
             }
         }
     }

@@ -223,7 +223,8 @@
             this.CmbEstado.FormattingEnabled = true;
             this.CmbEstado.Items.AddRange(new object[] {
             "Funcional ",
-            "No Funcional"});
+            "No Funcional",
+            "En reparación"});
             this.CmbEstado.Location = new System.Drawing.Point(120, 235);
             this.CmbEstado.Name = "CmbEstado";
             this.CmbEstado.Size = new System.Drawing.Size(121, 28);
@@ -285,12 +286,12 @@
         private System.Windows.Forms.Button BtnRegresar;
         private System.Windows.Forms.Button button1;
         private Sunisoft.IrisSkin.SkinEngine skinEngine1;
-        private System.Windows.Forms.ComboBox CmbTipo;
-        private System.Windows.Forms.ComboBox CmbArea;
-        private System.Windows.Forms.TextBox TxtMarca;
-        private System.Windows.Forms.TextBox TxtModelo;
-        private System.Windows.Forms.TextBox TxtEncargado;
-        private System.Windows.Forms.ComboBox CmbEstado;
-        private System.Windows.Forms.TextBox TxtDescripcion;
+        public System.Windows.Forms.ComboBox CmbTipo;
+        public System.Windows.Forms.ComboBox CmbArea;
+        public System.Windows.Forms.TextBox TxtMarca;
+        public System.Windows.Forms.TextBox TxtModelo;
+        public System.Windows.Forms.TextBox TxtEncargado;
+        public System.Windows.Forms.ComboBox CmbEstado;
+        public System.Windows.Forms.TextBox TxtDescripcion;
     }
 }

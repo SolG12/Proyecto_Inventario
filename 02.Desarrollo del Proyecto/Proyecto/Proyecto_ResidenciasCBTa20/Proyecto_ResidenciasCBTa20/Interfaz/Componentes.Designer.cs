@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Componentes));
             this.DgvComp = new System.Windows.Forms.DataGridView();
-            this.BtnRepCostos = new System.Windows.Forms.Button();
             this.BtnAgregarComp = new System.Windows.Forms.Button();
             this.BtnMenu = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -45,34 +44,24 @@
             // 
             // DgvComp
             // 
+            this.DgvComp.AllowUserToAddRows = false;
+            this.DgvComp.AllowUserToDeleteRows = false;
             this.DgvComp.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DgvComp.Location = new System.Drawing.Point(12, 91);
             this.DgvComp.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.DgvComp.MultiSelect = false;
             this.DgvComp.Name = "DgvComp";
-            this.DgvComp.Size = new System.Drawing.Size(641, 208);
+            this.DgvComp.ReadOnly = true;
+            this.DgvComp.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.DgvComp.Size = new System.Drawing.Size(546, 208);
             this.DgvComp.TabIndex = 0;
-            // 
-            // BtnRepCostos
-            // 
-            this.BtnRepCostos.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnRepCostos.Image = ((System.Drawing.Image)(resources.GetObject("BtnRepCostos.Image")));
-            this.BtnRepCostos.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnRepCostos.Location = new System.Drawing.Point(12, 318);
-            this.BtnRepCostos.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
-            this.BtnRepCostos.Name = "BtnRepCostos";
-            this.BtnRepCostos.Size = new System.Drawing.Size(206, 35);
-            this.BtnRepCostos.TabIndex = 1;
-            this.BtnRepCostos.Text = "Generar Reporte de Costos";
-            this.BtnRepCostos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnRepCostos.UseVisualStyleBackColor = true;
-            this.BtnRepCostos.Click += new System.EventHandler(this.BtnRepCostos_Click);
             // 
             // BtnAgregarComp
             // 
             this.BtnAgregarComp.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnAgregarComp.Image = ((System.Drawing.Image)(resources.GetObject("BtnAgregarComp.Image")));
             this.BtnAgregarComp.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnAgregarComp.Location = new System.Drawing.Point(237, 318);
+            this.BtnAgregarComp.Location = new System.Drawing.Point(12, 322);
             this.BtnAgregarComp.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.BtnAgregarComp.Name = "BtnAgregarComp";
             this.BtnAgregarComp.Size = new System.Drawing.Size(179, 35);
@@ -87,7 +76,7 @@
             this.BtnMenu.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnMenu.Image = ((System.Drawing.Image)(resources.GetObject("BtnMenu.Image")));
             this.BtnMenu.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnMenu.Location = new System.Drawing.Point(572, 318);
+            this.BtnMenu.Location = new System.Drawing.Point(331, 322);
             this.BtnMenu.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.BtnMenu.Name = "BtnMenu";
             this.BtnMenu.Size = new System.Drawing.Size(81, 35);
@@ -100,7 +89,7 @@
             // button1
             // 
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(692, 12);
+            this.button1.Location = new System.Drawing.Point(597, 85);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(145, 214);
             this.button1.TabIndex = 20;
@@ -148,7 +137,7 @@
             this.BtnEliminar.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnEliminar.Image = ((System.Drawing.Image)(resources.GetObject("BtnEliminar.Image")));
             this.BtnEliminar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnEliminar.Location = new System.Drawing.Point(449, 318);
+            this.BtnEliminar.Location = new System.Drawing.Point(213, 322);
             this.BtnEliminar.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.BtnEliminar.Name = "BtnEliminar";
             this.BtnEliminar.Size = new System.Drawing.Size(92, 35);
@@ -163,7 +152,7 @@
             this.BtnAgregarInventario.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnAgregarInventario.Image = ((System.Drawing.Image)(resources.GetObject("BtnAgregarInventario.Image")));
             this.BtnAgregarInventario.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnAgregarInventario.Location = new System.Drawing.Point(692, 318);
+            this.BtnAgregarInventario.Location = new System.Drawing.Point(440, 323);
             this.BtnAgregarInventario.Name = "BtnAgregarInventario";
             this.BtnAgregarInventario.Size = new System.Drawing.Size(160, 35);
             this.BtnAgregarInventario.TabIndex = 25;
@@ -178,7 +167,7 @@
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(864, 371);
+            this.ClientSize = new System.Drawing.Size(751, 371);
             this.Controls.Add(this.BtnAgregarInventario);
             this.Controls.Add(this.BtnEliminar);
             this.Controls.Add(this.TxtNombre);
@@ -187,12 +176,11 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.BtnMenu);
             this.Controls.Add(this.BtnAgregarComp);
-            this.Controls.Add(this.BtnRepCostos);
             this.Controls.Add(this.DgvComp);
             this.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.Name = "Componentes";
-            this.Text = "Componentes";
+            this.Text = "                                                             ";
             this.Activated += new System.EventHandler(this.Componentes_Activated);
             this.Load += new System.EventHandler(this.Componentes_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DgvComp)).EndInit();
@@ -204,7 +192,6 @@
         #endregion
 
         private System.Windows.Forms.DataGridView DgvComp;
-        private System.Windows.Forms.Button BtnRepCostos;
         private System.Windows.Forms.Button BtnAgregarComp;
         private System.Windows.Forms.Button BtnMenu;
         private System.Windows.Forms.Button button1;
