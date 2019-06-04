@@ -38,7 +38,7 @@ namespace Proyecto_ResidenciasCBTa20
                 }
                 else
                 {
-                    MessageBox.Show("Incorrecto");
+                    MessageBox.Show("¡Usuario y/o contraseña incorrectos!");
                     Contador++;
                     if (Contador == 3)
                     {

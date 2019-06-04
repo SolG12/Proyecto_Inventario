@@ -130,7 +130,7 @@ namespace Proyecto_ResidenciasCBTa20.Interfaz
             }
             else
             {
-                MessageBox.Show("¡Favor de llenar campos vacíos!");
+                MessageBox.Show("¡Favor de ingresar un Área!");
             }
         }
 
