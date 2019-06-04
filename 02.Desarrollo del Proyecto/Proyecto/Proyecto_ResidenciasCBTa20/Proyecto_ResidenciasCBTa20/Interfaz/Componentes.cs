@@ -54,16 +54,25 @@ namespace Proyecto_ResidenciasCBTa20.Interfaz
 
         private void BtnBuscar_Click(object sender, EventArgs e)
         {
-            ControlComponente mControlComponente = new ControlComponente();
-            try
+            if (TxtNombre.Text !="")
             {
-                DgvComp.DataSource = mControlComponente.ConsultarComponente(TxtNombre.Text);
+                ControlComponente mControlComponente = new ControlComponente();
+                try
+                {
+                    DgvComp.DataSource = mControlComponente.ConsultarComponente(TxtNombre.Text);
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Error");
+                }
             }
-            catch (Exception)
+            else
             {
-                MessageBox.Show("Error");
+                MessageBox.Show("¡Favor de llenar Campos Vacios!");
             }
         }
+
+           
 
         private void BtnEliminar_Click(object sender, EventArgs e)
         {

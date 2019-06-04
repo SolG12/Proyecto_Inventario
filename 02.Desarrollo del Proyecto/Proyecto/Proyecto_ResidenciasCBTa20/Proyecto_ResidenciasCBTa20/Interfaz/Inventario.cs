@@ -67,8 +67,8 @@ namespace Proyecto_ResidenciasCBTa20.Interfaz
             table.AddCell(new Phrase("Costo"));
             table.AddCell(new Phrase("Descripcion"));
             table.AddCell(new Phrase("Fecha_Ingreso"));
-          
-         
+
+
             for (int i = 0; i < DgvInventario.Rows.Count; i++)
             {
                 for (int k = 0; k < DgvInventario.Columns.Count; k++)
@@ -83,7 +83,28 @@ namespace Proyecto_ResidenciasCBTa20.Interfaz
             doc.Close();
             Process.Start("Reporte.pdf");
         }
+
+        private void BtnBuscar_Click(object sender, EventArgs e)
+        {
+            if (TxtNombre.Text != "")
+            {
+                ControlComponente mControlComponente = new ControlComponente();
+                try
+                {
+                    DgvInventario.DataSource = mControlComponente.ConsultarComponente(TxtNombre.Text);
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Error");
+                }
+            }
+            else
+            {
+                MessageBox.Show("¡Favor de llenar Campos Vacios!");
+            }
+        }
     }
 }
+    
 
 

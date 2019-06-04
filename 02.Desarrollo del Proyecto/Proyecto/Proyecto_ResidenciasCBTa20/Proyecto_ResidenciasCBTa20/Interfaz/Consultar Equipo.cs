@@ -45,12 +45,13 @@ namespace Proyecto_ResidenciasCBTa20.Interfaz
                 "Reporte de Equipos " + "\n"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 14, iTextSharp.text.Font.BOLD));
             title.Alignment = Element.ALIGN_CENTER;
             doc.Add(title);
-         
 
+            Paragraph saltoDeLinea = new Paragraph("                                                                                                                                                                                                                                                                                                                                                                                   ");
+            doc.Add(saltoDeLinea);
 
 
             PdfPTable table = new PdfPTable(DgvEquipos.Columns.Count);
-            
+
             table.AddCell(new Phrase("idEquipo"));
             table.AddCell(new Phrase("Marca"));
             table.AddCell(new Phrase("Modelo"));
@@ -59,6 +60,7 @@ namespace Proyecto_ResidenciasCBTa20.Interfaz
             table.AddCell(new Phrase("Descripcion"));
             table.AddCell(new Phrase("Area"));
             table.AddCell(new Phrase("Encargado"));
+            table.HeaderRows = 1;
             //table.AddCell(new Phrase("idEquipo"));
             for (int i = 0; i < DgvEquipos.Rows.Count; i++)
             {
@@ -90,7 +92,7 @@ namespace Proyecto_ResidenciasCBTa20.Interfaz
             mMenu_Principal.Show();
         }
 
-       
+
 
         private void BtnEliminar_Click(object sender, EventArgs e)
         {
@@ -100,13 +102,13 @@ namespace Proyecto_ResidenciasCBTa20.Interfaz
                 int id_Equipo = int.Parse(DgvEquipos.SelectedRows[0].Cells[0].Value.ToString());
                 ControlEquipo mControlEquipo = new ControlEquipo();
                 mControlEquipo.EliminarEquipo(id_Equipo);
-              
+
                 MessageBox.Show("Equipo Eliminado");
             }
             catch (Exception error)
             {
-                 MessageBox.Show("Error "+error.ToString());
-               
+                MessageBox.Show("Error " + error.ToString());
+
 
 
             }
@@ -114,14 +116,21 @@ namespace Proyecto_ResidenciasCBTa20.Interfaz
 
         private void BtnBuscarEquipo_Click(object sender, EventArgs e)
         {
-            ControlEquipo mControlEquipo = new ControlEquipo();
-            try
+            if (TxtArea.Text != "")
             {
-                DgvEquipos.DataSource = mControlEquipo.ConsultarEquipo(TxtArea.Text);
+                ControlEquipo mControlEquipo = new ControlEquipo();
+                try
+                {
+                    DgvEquipos.DataSource = mControlEquipo.ConsultarEquipo(TxtArea.Text);
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Error");
+                }
             }
-            catch (Exception)
+            else
             {
-                MessageBox.Show("Error");
+                MessageBox.Show("¡Favor de llenar campos vacíos!");
             }
         }
 
@@ -141,7 +150,7 @@ namespace Proyecto_ResidenciasCBTa20.Interfaz
 
         private void BtnAEquipo_Click(object sender, EventArgs e)
         {
-            ControlEquipo mControlEquipo = new ControlEquipo();
+             ControlEquipo mControlEquipo = new ControlEquipo();
             try
             {
                 DgvEquipos.DataSource = mControlEquipo.ConsultarEquipos();

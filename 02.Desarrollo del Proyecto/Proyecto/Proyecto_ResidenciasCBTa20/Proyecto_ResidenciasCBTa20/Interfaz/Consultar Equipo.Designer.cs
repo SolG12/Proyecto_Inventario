@@ -179,7 +179,7 @@
             this.BtnAEquipo.Text = "Actualizar Equipo";
             this.BtnAEquipo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnAEquipo.UseVisualStyleBackColor = true;
-            this.BtnAEquipo.Click += new System.EventHandler(this.BtnAEquipo_Click);
+           
             // 
             // Consultar_Equipo
             // 
