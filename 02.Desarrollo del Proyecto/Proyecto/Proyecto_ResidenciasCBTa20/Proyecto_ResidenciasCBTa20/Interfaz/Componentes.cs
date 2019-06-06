@@ -88,5 +88,13 @@ namespace Proyecto_ResidenciasCBTa20.Interfaz
                 MessageBox.Show("Error" + error.ToString());
             }
         }
+
+        private void BtnAgregarInventario_Click(object sender, EventArgs e)
+        {
+            AgregarInventario mAgregarInventario = new AgregarInventario();
+            mAgregarInventario.lblComponente.Text = DgvComp.SelectedRows[0].Cells[1].Value.ToString();
+            mAgregarInventario.idComponente = int.Parse(DgvComp.SelectedRows[0].Cells[0].Value.ToString());
+            mAgregarInventario.Show();
+        }
     }
 }

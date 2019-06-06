@@ -31,9 +31,9 @@ namespace Proyecto_ResidenciasCBTa20.Interfaz
                     mComponente.Nombre = TxtNombre.Text;
                     mComponente.Descripcion = TxtDescipcion.Text;
                     mComponente.Costo = int.Parse(TxtCosto.Text);
+                mComponente.Fecha_Ingreso = TxtFecha_Ingreso.Value;
 
                     ControlComponente mControlComponente = new ControlComponente();
-
                     
                     
                     mControlComponente.AgregarComponente(mComponente);

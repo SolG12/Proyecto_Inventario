@@ -148,7 +148,7 @@ namespace Proyecto_ResidenciasCBTa20.Interfaz
             }
         }
 
-        private void BtnAEquipo_Click(object sender, EventArgs e)
+        private void BtnAEquipo_Click_1(object sender, EventArgs e)
         {
              ControlEquipo mControlEquipo = new ControlEquipo();
             try

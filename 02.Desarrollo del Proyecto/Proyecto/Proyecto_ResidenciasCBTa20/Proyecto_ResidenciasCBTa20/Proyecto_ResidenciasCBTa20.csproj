@@ -68,6 +68,12 @@
     <Compile Include="Interfaz\Agregar Equipo.Designer.cs">
       <DependentUpon>Agregar Equipo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Interfaz\AgregarInventario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\AgregarInventario.Designer.cs">
+      <DependentUpon>AgregarInventario.cs</DependentUpon>
+    </Compile>
     <Compile Include="Interfaz\Componentes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,6 +106,7 @@
     </Compile>
     <Compile Include="Logica\ControlComponente.cs" />
     <Compile Include="Logica\ControlEquipo.cs" />
+    <Compile Include="Logica\ControlInventario.cs" />
     <Compile Include="Logica\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Interfaz\Agregar Componente.resx">
@@ -107,6 +114,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Interfaz\Agregar Equipo.resx">
       <DependentUpon>Agregar Equipo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\AgregarInventario.resx">
+      <DependentUpon>AgregarInventario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Interfaz\Componentes.resx">
       <DependentUpon>Componentes.cs</DependentUpon>

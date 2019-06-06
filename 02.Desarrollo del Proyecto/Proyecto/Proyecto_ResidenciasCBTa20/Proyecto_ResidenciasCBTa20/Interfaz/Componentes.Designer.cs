@@ -159,6 +159,7 @@
             this.BtnAgregarInventario.Text = "Enviar a Inventario";
             this.BtnAgregarInventario.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnAgregarInventario.UseVisualStyleBackColor = true;
+            this.BtnAgregarInventario.Click += new System.EventHandler(this.BtnAgregarInventario_Click);
             // 
             // Componentes
             // 

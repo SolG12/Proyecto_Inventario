@@ -40,7 +40,7 @@
             this.BtnSalir = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.skinEngine1 = new Sunisoft.IrisSkin.SkinEngine(((System.ComponentModel.Component)(this)));
-            this.TxtFecha_Ingreso = new System.Windows.Forms.TextBox();
+            this.TxtFecha_Ingreso = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // LblNombre
@@ -158,10 +158,9 @@
             // TxtFecha_Ingreso
             // 
             this.TxtFecha_Ingreso.Location = new System.Drawing.Point(150, 156);
-            this.TxtFecha_Ingreso.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.TxtFecha_Ingreso.Name = "TxtFecha_Ingreso";
             this.TxtFecha_Ingreso.Size = new System.Drawing.Size(140, 25);
-            this.TxtFecha_Ingreso.TabIndex = 8;
+            this.TxtFecha_Ingreso.TabIndex = 14;
             // 
             // Agregar_Componente
             // 
@@ -171,10 +170,10 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(477, 436);
+            this.Controls.Add(this.TxtFecha_Ingreso);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.BtnSalir);
             this.Controls.Add(this.BtnAgregar);
-            this.Controls.Add(this.TxtFecha_Ingreso);
             this.Controls.Add(this.TxtCosto);
             this.Controls.Add(this.TxtDescipcion);
             this.Controls.Add(this.TxtNombre);
@@ -205,6 +204,6 @@
         public System.Windows.Forms.TextBox TxtNombre;
         public System.Windows.Forms.TextBox TxtDescipcion;
         public System.Windows.Forms.TextBox TxtCosto;
-        public System.Windows.Forms.TextBox TxtFecha_Ingreso;
+        private System.Windows.Forms.DateTimePicker TxtFecha_Ingreso;
     }
 }

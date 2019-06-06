@@ -7,6 +7,7 @@ using System.Data;
 using Proyecto_ResidenciasCBTa20.BD;
 using Proyecto_ResidenciasCBTa20.Datos;
 using Proyecto_ResidenciasCBTa20.Interfaz;
+using System.Windows.Forms;
 
 namespace Proyecto_ResidenciasCBTa20.Logica
 {
@@ -24,7 +25,7 @@ namespace Proyecto_ResidenciasCBTa20.Logica
         {
             String SQL = "insert into componente values (null, '?1', '?2', '?3', '?4')";
             SQL = SQL.Replace("?1", mComponente.Nombre);
-            SQL = SQL.Replace("?2", mComponente.Fecha_Ingreso.ToString());
+            SQL = SQL.Replace("?2", mComponente.Fecha_Ingreso.Year + "-" + mComponente.Fecha_Ingreso.Month + "-" + mComponente.Fecha_Ingreso.Day);
             SQL = SQL.Replace("?3", mComponente.Costo.ToString());
             SQL = SQL.Replace("?4", mComponente.Descripcion);
 
@@ -35,7 +36,7 @@ namespace Proyecto_ResidenciasCBTa20.Logica
         {
             String SQL = "update componente set Costo='?1', Fecha_Ingreso='?2', Nombre='?3', Descripcion='?4'  where idComponente='?5'";
             SQL = SQL.Replace("?1", mComponente.Costo.ToString());
-            SQL = SQL.Replace("?2", mComponente.Fecha_Ingreso.ToString());
+            SQL = SQL.Replace("?2", mComponente.Fecha_Ingreso.Year + "-" + mComponente.Fecha_Ingreso.Month + "-" + mComponente.Fecha_Ingreso.Day);
             SQL = SQL.Replace("?3", mComponente.Nombre);
             SQL = SQL.Replace("?4", mComponente.Descripcion);
             SQL = SQL.Replace("?5", mComponente.idComponente.ToString());
