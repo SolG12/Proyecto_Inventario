@@ -39,12 +39,15 @@ namespace Proyecto_ResidenciasCBTa20.Logica
 
         public void ModificarEquipo(Equipo mEquipo)
         {
-            String SQL = "update equipo set marca='?1', modelo='?2', funcionalidad='?3', tipo='?4',  where idEquipo='?5'";
+            String SQL = "update equipo set marca='?1', modelo='?2', estado='?3', tipo='?4', descripcion='?5', area='?6', encargado='?7' , where idEquipo='?8'";
             SQL = SQL.Replace("?1", mEquipo.Marca);
             SQL = SQL.Replace("?2", mEquipo.Modelo);
             SQL = SQL.Replace("?3", mEquipo.Estado);
             SQL = SQL.Replace("?4", mEquipo.Tipo);
-            SQL = SQL.Replace("?5", mEquipo.id_Equipo.ToString());
+            SQL = SQL.Replace("?5", mEquipo.Descripcion);
+            SQL = SQL.Replace("?6", mEquipo.Area);
+            SQL = SQL.Replace("?7", mEquipo.Encargado);
+            SQL = SQL.Replace("?8", mEquipo.id_Equipo.ToString());
 
             
             mConexion.EjecutarActualizacion(SQL);

@@ -39,7 +39,7 @@
             this.BtnInventario = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.skinEngine1 = new Sunisoft.IrisSkin.SkinEngine(((System.ComponentModel.Component)(this)));
-            this.BtnAEquipo = new System.Windows.Forms.Button();
+            this.BtnModificarE = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.DgvEquipos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -166,20 +166,20 @@
     "SkinVS.NET\\Emerald\\EmeraldColor2.ssk";
             this.skinEngine1.SkinStreamMain = ((System.IO.Stream)(resources.GetObject("skinEngine1.SkinStreamMain")));
             // 
-            // BtnAEquipo
+            // BtnModificarE
             // 
-            this.BtnAEquipo.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnAEquipo.Image = ((System.Drawing.Image)(resources.GetObject("BtnAEquipo.Image")));
-            this.BtnAEquipo.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnAEquipo.Location = new System.Drawing.Point(18, 373);
-            this.BtnAEquipo.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
-            this.BtnAEquipo.Name = "BtnAEquipo";
-            this.BtnAEquipo.Size = new System.Drawing.Size(154, 35);
-            this.BtnAEquipo.TabIndex = 22;
-            this.BtnAEquipo.Text = "Actualizar Equipo";
-            this.BtnAEquipo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnAEquipo.UseVisualStyleBackColor = true;
-            this.BtnAEquipo.Click += new System.EventHandler(this.BtnAEquipo_Click_1);
+            this.BtnModificarE.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnModificarE.Image = ((System.Drawing.Image)(resources.GetObject("BtnModificarE.Image")));
+            this.BtnModificarE.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnModificarE.Location = new System.Drawing.Point(18, 373);
+            this.BtnModificarE.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.BtnModificarE.Name = "BtnModificarE";
+            this.BtnModificarE.Size = new System.Drawing.Size(154, 35);
+            this.BtnModificarE.TabIndex = 22;
+            this.BtnModificarE.Text = "Modificar Equipo";
+            this.BtnModificarE.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnModificarE.UseVisualStyleBackColor = true;
+            this.BtnModificarE.Click += new System.EventHandler(this.BtnAEquipo_Click_1);
             // 
             // Consultar_Equipo
             // 
@@ -189,7 +189,7 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1068, 437);
-            this.Controls.Add(this.BtnAEquipo);
+            this.Controls.Add(this.BtnModificarE);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.BtnInventario);
             this.Controls.Add(this.BtnRepMantenimiento);
@@ -221,6 +221,6 @@
         private System.Windows.Forms.Button BtnInventario;
         private System.Windows.Forms.Button button1;
         private Sunisoft.IrisSkin.SkinEngine skinEngine1;
-        private System.Windows.Forms.Button BtnAEquipo;
+        private System.Windows.Forms.Button BtnModificarE;
     }
 }

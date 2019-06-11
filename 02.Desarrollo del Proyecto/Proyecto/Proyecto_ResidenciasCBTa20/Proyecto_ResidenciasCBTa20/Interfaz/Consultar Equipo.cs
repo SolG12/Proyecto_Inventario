@@ -150,15 +150,16 @@ namespace Proyecto_ResidenciasCBTa20.Interfaz
 
         private void BtnAEquipo_Click_1(object sender, EventArgs e)
         {
-             ControlEquipo mControlEquipo = new ControlEquipo();
-            try
-            {
-                DgvEquipos.DataSource = mControlEquipo.ConsultarEquipos();
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("Error al Actualizar!!");
-            }
+            ModificarEquipo mModificarEquipo = new ModificarEquipo();
+            mModificarEquipo.CmbTipo.Text = DgvEquipos.SelectedRows[0].Cells[4].Value.ToString();
+            mModificarEquipo.CmbArea.Text = DgvEquipos.SelectedRows[0].Cells[6].Value.ToString();
+            mModificarEquipo.TxtMarca.Text = DgvEquipos.SelectedRows[0].Cells[1].Value.ToString();
+            mModificarEquipo.TxtModelo.Text = DgvEquipos.SelectedRows[0].Cells[2].Value.ToString();
+            mModificarEquipo.TxtEncargado.Text = DgvEquipos.SelectedRows[0].Cells[7].Value.ToString();
+            mModificarEquipo.CmbEstado.Text = DgvEquipos.SelectedRows[0].Cells[3].Value.ToString();
+            mModificarEquipo.TxtDescripcion.Text = DgvEquipos.SelectedRows[0].Cells[5].Value.ToString();
+
+            mModificarEquipo.Show();
         }
     }
 }
