@@ -1,6 +1,7 @@
 ﻿using Proyecto_ResidenciasCBTa20.BD;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,12 +24,17 @@ namespace Proyecto_ResidenciasCBTa20.Logica
             String SQL = "insert into inventario values (null, null, '?1', 'FUNCIONAL')";
             SQL = SQL.Replace("?1", id.ToString());
 
-            MessageBox.Show(SQL);
-
             for (int i = 0; i < cantidad; i++)
             {
                 mConexion.EjecutarActualizacion(SQL);
             }
         }
+        public DataTable ConsultarComponentes()
+            {
+                String SQL = "select * from inventario";
+                DataTable ListaComponentes = mConexion.EjecutarConsulta(SQL);
+                return ListaComponentes;
+            }
+        }
     }
-}
+

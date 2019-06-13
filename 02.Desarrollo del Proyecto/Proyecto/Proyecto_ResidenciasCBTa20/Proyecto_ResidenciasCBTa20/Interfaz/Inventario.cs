@@ -103,6 +103,19 @@ namespace Proyecto_ResidenciasCBTa20.Interfaz
                 MessageBox.Show("¡Favor de ingresar un Componente!");
             }
         }
+
+        private void Inventario_Activated(object sender, EventArgs e)
+        {
+            ControlInventario mControlInventario = new ControlInventario();
+            try
+            {
+                DgvInventario.DataSource = mControlInventario.ConsultarComponentes();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Error");
+            }
+        }
     }
 }
     

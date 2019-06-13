@@ -30,11 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Inventario));
             this.DgvInventario = new System.Windows.Forms.DataGridView();
-            this.Numero = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BtnModificar = new System.Windows.Forms.Button();
             this.BtnMenu = new System.Windows.Forms.Button();
             this.BtnConsultarComp = new System.Windows.Forms.Button();
@@ -49,43 +44,15 @@
             // 
             // DgvInventario
             // 
+            this.DgvInventario.AllowUserToAddRows = false;
+            this.DgvInventario.AllowUserToDeleteRows = false;
             this.DgvInventario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DgvInventario.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Numero,
-            this.Nombre,
-            this.Estado,
-            this.Fecha,
-            this.Cantidad});
             this.DgvInventario.Location = new System.Drawing.Point(12, 114);
             this.DgvInventario.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.DgvInventario.Name = "DgvInventario";
+            this.DgvInventario.ReadOnly = true;
             this.DgvInventario.Size = new System.Drawing.Size(543, 208);
             this.DgvInventario.TabIndex = 0;
-            // 
-            // Numero
-            // 
-            this.Numero.HeaderText = "No.Parte";
-            this.Numero.Name = "Numero";
-            // 
-            // Nombre
-            // 
-            this.Nombre.HeaderText = "Nombre";
-            this.Nombre.Name = "Nombre";
-            // 
-            // Estado
-            // 
-            this.Estado.HeaderText = "Estado";
-            this.Estado.Name = "Estado";
-            // 
-            // Fecha
-            // 
-            this.Fecha.HeaderText = "Fecha_Ingreso";
-            this.Fecha.Name = "Fecha";
-            // 
-            // Cantidad
-            // 
-            this.Cantidad.HeaderText = "Cantidad";
-            this.Cantidad.Name = "Cantidad";
             // 
             // BtnModificar
             // 
@@ -214,6 +181,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.Name = "Inventario";
             this.Text = "Inventario";
+            this.Activated += new System.EventHandler(this.Inventario_Activated);
             this.Load += new System.EventHandler(this.Inventario_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DgvInventario)).EndInit();
             this.ResumeLayout(false);
@@ -227,11 +195,6 @@
         private System.Windows.Forms.Button BtnModificar;
         private System.Windows.Forms.Button BtnMenu;
         private System.Windows.Forms.Button BtnConsultarComp;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Numero;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Estado;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Fecha;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Cantidad;
         private System.Windows.Forms.Button button1;
         private Sunisoft.IrisSkin.SkinEngine skinEngine1;
         private System.Windows.Forms.TextBox TxtNombre;
