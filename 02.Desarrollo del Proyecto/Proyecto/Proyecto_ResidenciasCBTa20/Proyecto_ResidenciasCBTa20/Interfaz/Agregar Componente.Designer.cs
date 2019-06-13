@@ -107,6 +107,7 @@
             this.TxtCosto.Name = "TxtCosto";
             this.TxtCosto.Size = new System.Drawing.Size(140, 25);
             this.TxtCosto.TabIndex = 7;
+            this.TxtCosto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtCosto_KeyPress);
             // 
             // BtnAgregar
             // 

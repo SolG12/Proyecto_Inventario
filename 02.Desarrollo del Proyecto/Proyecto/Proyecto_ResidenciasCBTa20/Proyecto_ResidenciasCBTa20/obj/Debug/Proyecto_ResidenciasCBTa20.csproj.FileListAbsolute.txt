@@ -29,3 +29,4 @@ C:\Users\Luis\Documents\GitHub\Proyecto_Inventario\02.Desarrollo del Proyecto\Pr
 C:\Users\Luis\Documents\GitHub\Proyecto_Inventario\02.Desarrollo del Proyecto\Proyecto\Proyecto_ResidenciasCBTa20\Proyecto_ResidenciasCBTa20\bin\Debug\IrisSkin2.dll
 C:\Users\Luis\Documents\GitHub\Proyecto_Inventario\02.Desarrollo del Proyecto\Proyecto\Proyecto_ResidenciasCBTa20\Proyecto_ResidenciasCBTa20\obj\Debug\Proyecto_ResidenciasCBTa20.Interfaz.AgregarInventario.resources
 C:\Users\Luis\Documents\GitHub\Proyecto_Inventario\02.Desarrollo del Proyecto\Proyecto\Proyecto_ResidenciasCBTa20\Proyecto_ResidenciasCBTa20\obj\Debug\Proyecto_ResidenciasCBTa20.Interfaz.ModificarEquipo.resources
+C:\Users\Luis\Documents\GitHub\Proyecto_Inventario\02.Desarrollo del Proyecto\Proyecto\Proyecto_ResidenciasCBTa20\Proyecto_ResidenciasCBTa20\obj\Debug\Proyecto_ResidenciasCBTa20.Interfaz.AsignarEquipo.resources

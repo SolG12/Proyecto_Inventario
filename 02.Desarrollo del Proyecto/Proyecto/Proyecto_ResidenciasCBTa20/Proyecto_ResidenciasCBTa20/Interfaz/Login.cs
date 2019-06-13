@@ -30,7 +30,7 @@ namespace Proyecto_ResidenciasCBTa20
         {
             if ((TxtUsuario.Text != "") && (TxtContraseña.Text != ""))
             {
-                if ((TxtUsuario.Text == "admin") && (TxtContraseña.Text == "1234"))
+                if ((TxtUsuario.Text == "ByGo-s") && (TxtContraseña.Text == "160974"))
                 {
                     Menu_Principal mMenu_Principal = new Menu_Principal();
                     mMenu_Principal.Show();

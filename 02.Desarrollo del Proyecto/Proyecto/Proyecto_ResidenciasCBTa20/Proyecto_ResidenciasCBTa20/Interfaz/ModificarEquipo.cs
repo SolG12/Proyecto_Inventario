@@ -15,6 +15,7 @@ namespace Proyecto_ResidenciasCBTa20.Interfaz
 {
     public partial class ModificarEquipo : Form
     {
+        public int id;
         public ModificarEquipo()
         {
             InitializeComponent();
@@ -33,6 +34,7 @@ namespace Proyecto_ResidenciasCBTa20.Interfaz
                 try
                 {
                     Equipo mEquipo = new Equipo();
+                    mEquipo.id_Equipo = id;
                     mEquipo.Marca = TxtMarca.Text;
                     mEquipo.Modelo = TxtModelo.Text;
                     mEquipo.Tipo = CmbTipo.Text;

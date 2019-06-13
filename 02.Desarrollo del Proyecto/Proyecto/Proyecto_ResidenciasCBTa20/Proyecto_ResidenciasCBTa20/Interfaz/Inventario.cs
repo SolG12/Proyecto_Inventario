@@ -62,11 +62,13 @@ namespace Proyecto_ResidenciasCBTa20.Interfaz
             doc.Open();
 
             PdfPTable table = new PdfPTable(DgvInventario.Columns.Count);
-            table.AddCell(new Phrase("idComponente"));
+            table.AddCell(new Phrase("Numero"));
             table.AddCell(new Phrase("Nombre"));
-            table.AddCell(new Phrase("Costo"));
             table.AddCell(new Phrase("Descripcion"));
-            table.AddCell(new Phrase("Fecha_Ingreso"));
+            table.AddCell(new Phrase("Estado"));
+            table.AddCell(new Phrase("Fecha"));
+            table.AddCell(new Phrase("Equipo"));
+            table.AddCell(new Phrase("Costo"));
 
 
             for (int i = 0; i < DgvInventario.Rows.Count; i++)
@@ -115,6 +117,15 @@ namespace Proyecto_ResidenciasCBTa20.Interfaz
             {
                 MessageBox.Show("Error");
             }
+        }
+
+        private void btnAsignarEquipo_Click(object sender, EventArgs e)
+        {
+            AsignarEquipo mAsignarEquipo = new AsignarEquipo();
+            mAsignarEquipo.idComponente = 0;                    
+            mAsignarEquipo.lblComponente.Text = DgvInventario.SelectedRows[0].Cells[1].Value.ToString();
+            mAsignarEquipo.idComponente = int.Parse(DgvInventario.SelectedRows[0].Cells[0].Value.ToString());
+            mAsignarEquipo.Show();
         }
     }
 }

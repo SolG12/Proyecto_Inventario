@@ -50,28 +50,29 @@ namespace Proyecto_ResidenciasCBTa20.Interfaz
             doc.Add(saltoDeLinea);
 
 
-            PdfPTable table = new PdfPTable(DgvEquipos.Columns.Count);
+            PdfPTable table = new PdfPTable(DgvEquipos.Columns.Count-1);
 
             table.AddCell(new Phrase("idEquipo"));
             table.AddCell(new Phrase("Marca"));
             table.AddCell(new Phrase("Modelo"));
             table.AddCell(new Phrase("Estado"));
             table.AddCell(new Phrase("Tipo"));
-            table.AddCell(new Phrase("Descripcion"));
+            //table.AddCell(new Phrase("Descripcion"));
             table.AddCell(new Phrase("Area"));
             table.AddCell(new Phrase("Encargado"));
             table.HeaderRows = 1;
-            //table.AddCell(new Phrase("idEquipo"));
-            for (int i = 0; i < DgvEquipos.Rows.Count; i++)
+
+            for (int k = 0; k < DgvEquipos.Columns.Count; k++)
             {
-                for (int k = 0; k < DgvEquipos.Columns.Count; k++)
+                if (DgvEquipos.SelectedRows[0].Cells[k].Value != null && k!=5)
                 {
-                    if (DgvEquipos[k, i].Value != null)
-                    {
-                        table.AddCell(new Phrase(DgvEquipos[k, i].Value.ToString()));
-                    }
+                    table.AddCell(new Phrase(DgvEquipos.SelectedRows[0].Cells[k].Value.ToString()));
                 }
             }
+
+            Paragraph descripcion = new Paragraph(string.Format("\n" + DgvEquipos.SelectedRows[0].Cells[5].Value.ToString() + "\n"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 14, iTextSharp.text.Font.BOLD));
+            title.Alignment = Element.ALIGN_CENTER;
+            doc.Add(descripcion);
 
             doc.Add(imagen);
             doc.Add(table);
@@ -151,6 +152,7 @@ namespace Proyecto_ResidenciasCBTa20.Interfaz
         private void BtnAEquipo_Click_1(object sender, EventArgs e)
         {
             ModificarEquipo mModificarEquipo = new ModificarEquipo();
+            mModificarEquipo.id = int.Parse(DgvEquipos.SelectedRows[0].Cells[0].Value.ToString());
             mModificarEquipo.CmbTipo.Text = DgvEquipos.SelectedRows[0].Cells[4].Value.ToString();
             mModificarEquipo.CmbArea.Text = DgvEquipos.SelectedRows[0].Cells[6].Value.ToString();
             mModificarEquipo.TxtMarca.Text = DgvEquipos.SelectedRows[0].Cells[1].Value.ToString();

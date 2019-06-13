@@ -39,7 +39,7 @@ namespace Proyecto_ResidenciasCBTa20.Logica
 
         public void ModificarEquipo(Equipo mEquipo)
         {
-            String SQL = "update equipo set marca='?1', modelo='?2', estado='?3', tipo='?4', descripcion='?5', area='?6', encargado='?7' , where idEquipo='?8'";
+            String SQL = "update equipo set marca='?1', modelo='?2', estado='?3', tipo='?4', descripcion='?5', area='?6', encargado='?7' where idEquipo='?8'";
             SQL = SQL.Replace("?1", mEquipo.Marca);
             SQL = SQL.Replace("?2", mEquipo.Modelo);
             SQL = SQL.Replace("?3", mEquipo.Estado);
@@ -49,7 +49,6 @@ namespace Proyecto_ResidenciasCBTa20.Logica
             SQL = SQL.Replace("?7", mEquipo.Encargado);
             SQL = SQL.Replace("?8", mEquipo.id_Equipo.ToString());
 
-            
             mConexion.EjecutarActualizacion(SQL);
 
         }
@@ -68,6 +67,7 @@ namespace Proyecto_ResidenciasCBTa20.Logica
             DataTable ListaEquipos = mConexion.EjecutarConsulta(SQL);
             return ListaEquipos;
         }
+
 
         public void EliminarEquipo(int id_Equipo)
         {
