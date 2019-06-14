@@ -754,4 +754,7 @@
         PPt3dxnr3KBZsDK0/P+pUr5vqVayd7Va+K3IdCYpiZg/w9+WsLC/AddtlSLcjsyvAAAAAElFTkSuQmCC
 </value>
   </data>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>25</value>
+  </metadata>
 </root>

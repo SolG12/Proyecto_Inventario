@@ -78,14 +78,19 @@ namespace Proyecto_ResidenciasCBTa20.Interfaz
         {
             try
             {
-                int id_Componente = int.Parse(DgvComp.SelectedRows[0].Cells[0].Value.ToString());
+                //Equipo mEquipo = new Equipo();
+                int idComponente = int.Parse(DgvComp.SelectedRows[0].Cells[0].Value.ToString());
                 ControlComponente mControlComponente = new ControlComponente();
-                mControlComponente.EliminarComponente(id_Componente);
+                mControlComponente.EliminarComponente(idComponente);
+
                 MessageBox.Show("Componente Eliminado");
             }
             catch (Exception error)
             {
-                MessageBox.Show("Error" + error.ToString());
+                MessageBox.Show("Error " + error.ToString());
+
+
+
             }
         }
 

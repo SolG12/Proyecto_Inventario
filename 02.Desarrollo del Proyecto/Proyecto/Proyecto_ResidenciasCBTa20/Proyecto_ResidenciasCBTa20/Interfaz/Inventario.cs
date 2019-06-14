@@ -25,10 +25,10 @@ namespace Proyecto_ResidenciasCBTa20.Interfaz
 
         private void BtnModificar_Click(object sender, EventArgs e)
         {
-            ControlComponente mControlComponente = new ControlComponente();
+            ControlInventario mControlInventario = new ControlInventario();
             try
             {
-                DgvInventario.DataSource = mControlComponente.ConsultarComponentes();
+                DgvInventario.DataSource = mControlInventario.ConsultarComponentes();
             }
             catch (Exception)
             {
@@ -60,6 +60,24 @@ namespace Proyecto_ResidenciasCBTa20.Interfaz
             Document doc = new Document(iTextSharp.text.PageSize.LETTER, 10, 10, 42, 35);
             PdfWriter wri = PdfWriter.GetInstance(doc, new FileStream("Reporte.pdf", FileMode.Create));
             doc.Open();
+
+            iTextSharp.text.Image imagen = iTextSharp.text.Image.GetInstance("c:/Users/Luis/Documents/GitHub/Proyecto_Inventario/02.Desarrollo del Proyecto/Proyecto/Proyecto_ResidenciasCBTa20/Proyecto_ResidenciasCBTa20/bin/Debug/img/Logo1.png");
+            imagen.BorderWidth = 0;
+            imagen.SetAbsolutePosition(460, 720);
+            imagen.Alignment = Element.ALIGN_RIGHT;
+            float percentage = 0.0f;
+            percentage = 100 / imagen.Width;
+            imagen.ScalePercent(percentage * 70);
+
+            Paragraph Encabezado = new Paragraph(string.Format("\n" +
+                "CENTRO DE BACHILLERATO TECNOLOGICO AGROPECUARIO No. 20 " + "\n"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 14, iTextSharp.text.Font.BOLD));
+            Encabezado.Alignment = Element.ALIGN_CENTER;
+            doc.Add(Encabezado);
+
+            Paragraph title = new Paragraph(string.Format("\n" +
+                "Reporte de Ingresos " + "\n"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 14, iTextSharp.text.Font.BOLD));
+            title.Alignment = Element.ALIGN_CENTER;
+            doc.Add(title);
 
             PdfPTable table = new PdfPTable(DgvInventario.Columns.Count);
             table.AddCell(new Phrase("Numero"));

@@ -35,14 +35,19 @@ namespace Proyecto_ResidenciasCBTa20.Interfaz
 
             iTextSharp.text.Image imagen = iTextSharp.text.Image.GetInstance("c:/Users/Luis/Documents/GitHub/Proyecto_Inventario/02.Desarrollo del Proyecto/Proyecto/Proyecto_ResidenciasCBTa20/Proyecto_ResidenciasCBTa20/bin/Debug/img/Logo1.png");
             imagen.BorderWidth = 0;
-            imagen.SetAbsolutePosition(460, 720);
+            imagen.SetAbsolutePosition(480, 700);
             imagen.Alignment = Element.ALIGN_RIGHT;
             float percentage = 0.0f;
             percentage = 100 / imagen.Width;
             imagen.ScalePercent(percentage * 70);
 
+            Paragraph encabezado = new Paragraph(string.Format("\n" +
+                "CENTRO DE BACHILLERATO TECNOLOGICO AGROPECUARIO No. 20 " + "\n"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 10, iTextSharp.text.Font.BOLD));
+            encabezado.Alignment = Element.ALIGN_CENTER;
+            doc.Add(encabezado);
+
             Paragraph title = new Paragraph(string.Format("\n" +
-                "Reporte de Equipos " + "\n"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 14, iTextSharp.text.Font.BOLD));
+                "Reporte de Equipos " + "\n"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 10, iTextSharp.text.Font.BOLD));
             title.Alignment = Element.ALIGN_CENTER;
             doc.Add(title);
 
@@ -50,29 +55,30 @@ namespace Proyecto_ResidenciasCBTa20.Interfaz
             doc.Add(saltoDeLinea);
 
 
-            PdfPTable table = new PdfPTable(DgvEquipos.Columns.Count-1);
+            PdfPTable table = new PdfPTable(DgvEquipos.Columns.Count);
 
             table.AddCell(new Phrase("idEquipo"));
             table.AddCell(new Phrase("Marca"));
             table.AddCell(new Phrase("Modelo"));
             table.AddCell(new Phrase("Estado"));
             table.AddCell(new Phrase("Tipo"));
-            //table.AddCell(new Phrase("Descripcion"));
+            table.AddCell(new Phrase("Descripcion"));
             table.AddCell(new Phrase("Area"));
             table.AddCell(new Phrase("Encargado"));
-            table.HeaderRows = 1;
+            table.HeaderRows = 0;
 
             for (int k = 0; k < DgvEquipos.Columns.Count; k++)
             {
-                if (DgvEquipos.SelectedRows[0].Cells[k].Value != null && k!=5)
+                if (DgvEquipos.SelectedRows[0].Cells[k].Value != null) //&& k!=5
                 {
                     table.AddCell(new Phrase(DgvEquipos.SelectedRows[0].Cells[k].Value.ToString()));
                 }
             }
 
-            Paragraph descripcion = new Paragraph(string.Format("\n" + DgvEquipos.SelectedRows[0].Cells[5].Value.ToString() + "\n"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 14, iTextSharp.text.Font.BOLD));
-            title.Alignment = Element.ALIGN_CENTER;
-            doc.Add(descripcion);
+            //table.AddCell(new Phrase("Descripcion"));
+            //Paragraph descripcion = new Paragraph(string.Format("\n" + DgvEquipos.SelectedRows[0].Cells[5].Value.ToString() + "\n"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 14, iTextSharp.text.Font.BOLD));
+            //title.Alignment = Element.ALIGN_CENTER;
+            //doc.Add(descripcion);
 
             doc.Add(imagen);
             doc.Add(table);
